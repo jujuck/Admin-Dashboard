@@ -12,7 +12,11 @@ body {
     background-size: cover;
     text-align: center;
 }
-
+/*Mise en place du bandeau supérieur*/
+.logo {
+    width: 100px;
+    
+}
 /*Mise en place de la section centrale*/
 .header-btn {
     margin: 50px;
@@ -47,4 +51,6 @@ body {
 footer {
     position: fixed;
     bottom: 0;
+    color: white;
+    text-align: center;
 }
