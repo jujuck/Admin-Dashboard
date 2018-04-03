@@ -1,0 +1,50 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+/* Mise en place de l'image de fond*/
+body {
+    background-image: url('../img/background-accueil.jpg');
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/*Mise en place de la section centrale*/
+.header-btn {
+    margin: 50px;
+}
+
+.btn,
+.btn:focus,
+.btn:active,
+.btn:visited {
+    margin-top: 75px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: 400;
+    color: red;
+    border: 1px solid red;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s; 
+}
+
+.btn:hover {
+    background-color: red;
+    border: white;
+    color: white;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
