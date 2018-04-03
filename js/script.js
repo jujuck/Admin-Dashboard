@@ -1,17 +1,25 @@
+var header = document.getElementById("header");
+var formulaire = document.getElementById("formulaire");
+
+
+
 function sendConnexion() {
-    document.getElementById("formulaire").innerHTML = "";
+    //formulaire.content= "";
     var myRequestConnexion = new XMLHttpRequest();
     myRequestConnexion.open('GET', 'html/connexion.html');
     myRequestConnexion.onreadystatechange = function () {
         if (myRequestConnexion.readyState === 4) {
-            document.getElementById("formulaire").innerHTML = myRequestConnexion.responseText;
+            header.style.height = "200px";
+            formulaire.style.display = "inline";
+            formulaire.style.height = "200px";
+            formulaire.innerHTML = myRequestConnexion.responseText;
         }
     };
     myRequestConnexion.send();
 }
 
 function sendInscription() {
-    document.getElementById("formulaire").innerHTML = "";
+    formulaire.content = "";
     var myRequestInscription = new XMLHttpRequest();
     myRequestInscription.open('GET', 'html/inscription.html');
     myRequestInscription.onreadystatechange = function () {

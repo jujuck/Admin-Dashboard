@@ -40,6 +40,17 @@ body {
 }
 
 #formulaire {
-    width: 50%;
-    height: 30%;
+    display : none;
+}
+
+h3 {
+    @include font-H3(); 
+}
+
+h4 {
+    @include font-H4();
+}
+
+p  {
+    @include paragraphe();
 }

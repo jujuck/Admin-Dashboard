@@ -78,8 +78,46 @@ body {
 
 /* line 42, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 #formulaire {
-  width: 50%;
-  height: 30%; }
+  display: none; }
+
+/* line 46, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+h3 {
+  font-family: Source sans Pro, sans-serif;
+  color: #262525;
+  font-size: 1.3rem;
+  font-weight: 330;
+  text-align: center;
+  margin: 15px; }
+  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
+  h3:after {
+    content: "";
+    widht: 250px;
+    height: 1px;
+    background-color: #ff0000;
+    box-shadow: 1px 1px #f7db04;
+    position: absolute;
+    bottom: -15px; }
+
+/* line 50, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+h4 {
+  font-family: Source sans Pro, sans-serif;
+  color: #262525;
+  font-size: 1.2rem;
+  font-weight: 330;
+  text-align: center;
+  margin: 10px; }
+
+/* line 54, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+p {
+  font-family: Source sans Pro, sans-serif;
+  color: #262525;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  text-align: justify; }
 
 /*Mise en place du bandeau supérieur*/
 /* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
@@ -113,7 +151,8 @@ header {
   text-shadow: 3px 3px white;
   font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 25px; }
+  margin-bottom: 25px;
+  padding: 20px; }
 
 /* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil p {
@@ -121,16 +160,8 @@ header {
   color: #262525;
   font-size: 1.5rem;
   font-weight: 360;
-  text-align: center; }
-  /* line 34, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
-  .accueil p:after {
-    content: "";
-    widht: 250px;
-    height: 1px;
-    background-color: #ff0000;
-    box-shadow: 1px 1px #f7db04;
-    position: absolute;
-    bottom: -15px; }
+  text-align: center;
+  text-shadow: 3px 3px white; }
 
 /* line 38, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .nav li {
@@ -146,5 +177,20 @@ footer {
   text-align: center;
   font-family: Chicle, fantasy;
   font-size: 14px; }
+
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
+.connexion {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border: 2px solid #262525;
+  border-radius: 6px; }
+
+/* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
+.mdp {
+  font-size: 10px;
+  color: blue;
+  text-decoration: underline; }
 
 /*# sourceMappingURL=style.css.map */
