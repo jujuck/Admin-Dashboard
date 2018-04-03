@@ -76,6 +76,11 @@ body {
     border: #fff;
     color: #fff; }
 
+/* line 42, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+#formulaire {
+  width: 50%;
+  height: 30%; }
+
 /*Mise en place du bandeau supérieur*/
 /* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .logo {
@@ -116,9 +121,8 @@ header {
   color: #262525;
   font-size: 1.5rem;
   font-weight: 360;
-  text-align: center;
-  text-shadow: 3px 3px white; }
-  /* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
+  text-align: center; }
+  /* line 34, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
   .accueil p:after {
     content: "";
     widht: 250px;
