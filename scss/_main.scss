@@ -1,0 +1,41 @@
+* {
+    padding:0;
+    margin: 0;
+}
+
+/* Mise en place de l'image de fond*/
+body {
+    background-image: url('img/background-accueil.jpg');
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/*description des boutons*/
+.btn,
+.btn:focus,
+.btn:active,
+.btn:visited {
+    margin-top: 75px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: $font-autres;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $font-btn;
+    border: 1px solid $font-btn;
+    border-radius: 6px;
+    background-color: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s; 
+    &:hover {
+        background-color: $font-btn;
+        border: $font-bckgd;
+        color: $font-bckgd;
+    }
+}
+

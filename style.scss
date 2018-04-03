@@ -1,0 +1,11 @@
+//importation des fichiers de program Css
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/functions";
+@import "scss/grid";
+
+//Importation des fichiers structuraux
+@import "scss/main";
+@import "scss/accueil";
+@import "scss/connexion";
+@import "scss/dashboard";

@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/*vararibles de font*/
+/*Variables de couleur*/
+/*varaibles de tailles*/
+@media all {
+  /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); }
+  /* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-1 {
+    grid-column-end: span 1; }
+  /* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-2 {
+    grid-column-end: span 2; }
+  /* line 15, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-3 {
+    grid-column-end: span 3; }
+  /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-4 {
+    grid-column-end: span 4; }
+  /* line 23, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-5 {
+    grid-column-end: span 5; }
+  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-6 {
+    grid-column-end: span 6; }
+  /* line 31, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-7 {
+    grid-column-end: span 7; }
+  /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-8 {
+    grid-column-end: span 8; } }
+
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* Mise en place de l'image de fond*/
+/* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+body {
+  background-image: url("img/background-accueil.jpg");
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+
+/*description des boutons*/
+/* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+.btn,
+.btn:focus,
+.btn:active,
+.btn:visited {
+  margin-top: 75px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: Chicle, fantasy;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s; }
+  /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+  .btn:hover,
+  .btn:focus:hover,
+  .btn:active:hover,
+  .btn:visited:hover {
+    background-color: #ff0000;
+    border: #fff;
+    color: #fff; }
+
+/*Mise en place du bandeau supérieur*/
+/* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.logo {
+  width: 150px; }
+
+/*Mise en place de la section centrale*/
+/* line 9, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+header {
+  height: 400px; }
+
+/* line 13, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.header-btn {
+  margin: 50px; }
+
+/* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.navigation {
+  position: fixed;
+  top: 30px;
+  right: 50px; }
+  /* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  .navigation li {
+    display: inline;
+    margin: 10px;
+    padding: 10px; }
+
+/* line 29, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.accueil h1 {
+  font-family: Merriweather, Arial, serif;
+  color: #262525;
+  text-shadow: 3px 3px white;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 25px; }
+
+/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.accueil p {
+  font-family: Merriweather, Arial, serif;
+  color: #262525;
+  font-size: 1.5rem;
+  font-weight: 360;
+  text-align: center;
+  text-shadow: 3px 3px white; }
+  /* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
+  .accueil p:after {
+    content: "";
+    widht: 250px;
+    height: 1px;
+    background-color: #ff0000;
+    box-shadow: 1px 1px #f7db04;
+    position: absolute;
+    bottom: -15px; }
+
+/* line 38, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.nav li {
+  display: inline;
+  margin: 10px;
+  padding: 10px; }
+
+/* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  font-family: Chicle, fantasy;
+  font-size: 14px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,52 @@
+
+/*Mise en place du bandeau supérieur*/
+.logo {
+    width: 150px;  
+}
+
+
+/*Mise en place de la section centrale*/
+header {
+    height: 400px;
+}
+
+.header-btn {
+    margin: 50px;
+}
+
+.navigation {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    li {
+        display: inline;
+        margin: 10px;
+        padding: 10px;
+    }//end li
+}//end navigation
+
+.accueil {
+    h1{
+        @include font-H1();
+    }//end h1
+    p{
+        @include font-H2();
+    }//end p
+}//end Accueil
+
+.nav {
+    li {
+        display: inline;
+        margin: 10px;
+        padding: 10px;
+    }//end li
+}//end navigation
+
+footer {
+    position: fixed;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    font-family: $font-autres;
+    font-size: 14px;
+}

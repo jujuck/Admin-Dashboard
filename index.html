@@ -3,23 +3,37 @@
     
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <title>Developpeur.COM</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
-        <link rel="stylesheet" href="css/style.css">
+        
+        <!--Selction des polices -->
+        <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet"> 
+        
+        <!--Lien vers les css -->
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <div>
-                <img src="img/logo_vector.png" class="logo">
+            <div class="container">
+                <div class="col-3">
+                    <img src="img/logo_vector.png" class="logo">
+                </div>
+                <div class="col-5">
+                    <nav>
+                        <ul class="navigation">
+                            <li class="btn">Se connecter</li>
+                            <li class="btn">S'inscrire</li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li>Se connecter</li>
-                    <li>S'inscrire</li>
-                </ul>
-            </nav>
         </header>
-        <section>
+        <div id="formulaire">
+        </div>
+        <section class="accueil">
             <h1>Developpeur, un monde s'offre à vous</h1>
             <p>Apprennez à coder et découvrez un univers nouveau, pleins de surpise et d'opportunité</p>
             <div class="header-btn">
@@ -28,7 +42,20 @@
             
         </section>
         <footer>
-            <p>Photo by Ian Froome on Unsplash</p>
+            <div class="container">
+                <div class="col-2">
+                    <p>Photo by Ian Froome on Unsplash</p>
+                </div>
+                <div class="col-3">
+                    <ul class="nav">
+                        <li>Facebook</li>
+                        <li>GitHub</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <p>Made by J.Richard</p>
+                </div>
+            </div>    
         </footer>
         
     </body>

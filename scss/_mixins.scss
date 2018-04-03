@@ -1,0 +1,56 @@
+@mixin font-H1() {
+    font-family: $font-titre;
+    color: $font-color;
+    text-shadow: 3px 3px white;
+    font-size: 3 * $font-size;
+    font-weight: 2 * $font-weight;
+    margin-bottom: 25px;
+}
+
+@mixin font-H2() {
+    font-family: $font-titre;
+    color: $font-color;
+    font-size: 1.5 * $font-size;
+    font-weight: 1.2 * $font-weight;
+    text-align: center;
+    text-shadow: 3px 3px white;
+    &:after {
+        content: "";
+        widht: 250px;
+        height: 1px;
+        background-color: $font-btn;
+        box-shadow: 1px 1px $font-btn-degrade;
+        position: absolute;
+        bottom: -15px;
+    }
+}
+
+@mixin font-H2() {
+    font-family: $font-titre;
+    color: $font-color;
+    font-size: 1.5 * $font-size;
+    font-weight: 1.2 * $font-weight;
+    text-align: center;
+    &:after {
+        content: "";
+        widht: 250px;
+        height: 1px;
+        background-color: $font-btn;
+        box-shadow: 1px 1px $font-btn-degrade;
+        position: absolute;
+        bottom: -15px;
+    }
+}
+
+@mixin paragraphe() {
+    font-family: $font-paragraphe;
+    color: $font-color;
+    font-size: 1.2 * $font-size;
+    font-weight: 1 * $font-weight;
+    line-height: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
