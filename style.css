@@ -39,7 +39,7 @@
 
 /* Mise en place de l'image de fond*/
 /* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
-body {
+.accueilWeb {
   background-image: url("img/background-accueil.jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -126,7 +126,7 @@ p {
 
 /*Mise en place de la section centrale*/
 /* line 9, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
-header {
+#header {
   height: 400px; }
 
 /* line 13, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
@@ -197,5 +197,36 @@ footer {
 /* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .validation {
   margin: 15px; }
+
+/* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.header {
+  background-color: gray;
+  height: 150px; }
+
+/* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.imgHeader {
+  height: 50px; }
+
+/* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.recherche {
+  vertical-align: middle; }
+
+/* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.presentation {
+  background-image: url("img/jumboaccueil.jpeg");
+  background-attachment: fixed;
+  background-position: 20% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 350px;
+  padding: 50px; }
+  /* line 24, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  .presentation h2 {
+    font-family: Merriweather, Arial, serif;
+    color: #262525;
+    font-size: 1.5rem;
+    font-weight: 360;
+    text-align: center;
+    text-shadow: 3px 3px white; }
 
 /*# sourceMappingURL=style.css.map */
