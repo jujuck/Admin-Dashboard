@@ -5,6 +5,7 @@
     background-color: $font-bckgd;
     border: 2px solid $font-color;
     border-radius: 6px;
+    padding: 10px;
 }
 
 .mdp {
@@ -13,7 +14,9 @@
     text-decoration: underline;
 }
 
-
+.validation {
+    margin: 15px;
+}
 
 
 

@@ -185,12 +185,17 @@ footer {
   margin-right: auto;
   background-color: #fff;
   border: 2px solid #262525;
-  border-radius: 6px; }
+  border-radius: 6px;
+  padding: 10px; }
 
-/* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
+/* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .mdp {
   font-size: 10px;
   color: blue;
   text-decoration: underline; }
+
+/* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
+.validation {
+  margin: 15px; }
 
 /*# sourceMappingURL=style.css.map */

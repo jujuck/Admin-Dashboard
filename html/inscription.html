@@ -6,62 +6,64 @@
                 <h2>Inscription</h2>
             </div>
         </div>
-        <div class="contact-us-form">
-            <form role="form">
-                <div class="container">
-                        <div class="col-4">
-                            <h3>Signup form</h3>
-                            <p>
-                                <label for="username">Username</label> :
-                                <input type="text" name="username" placeholder="Nom" id="username" required>
-                                <span id="usernameHelp"></span>
-                            </p>
-                            <p class="password">
-                                <label for="password">Password</label> :
-                                <input class="password" type="password" name="password" id="password" required>
-                                <span id="passwordHelp"></span>
-                            </p>
-                            <p>
-                                <label for="emailAddress">Email address</label> :
-                                <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@gmail.com">
-                                <span id="emailHelp"></span>
-                            </p>
-                        </div>
-                        <div class="col-4">
-                            <p>
-                                <input type="checkbox" name="confirmation" id="confirmation">
-                                <label for="confirmation">Send me a confirmation email</label>
-                            </p>
-                            <p>
-                                <input type="radio" name="subscription" id="newsroom" value="newspromo">
-                                <label for="newsroom">Subscribe me to newsletters and promotions</label>
-                                <br>
-                                <input type="radio" name="subscription" id="news" value="news">
-                                <label for="news">Subscribe me only to the newsletter</label>
-                                <br>
-                                <input type="radio" name="subscription" id="no" value="no" checked>
-                                <label for="no">No subscriptions please</label>
-                                <br>
-                            </p>
-                            <p>
-                                <label for="nationality">Nationality :</label>
-                                <select name="nationality" id="nationality">
-                                    <option value="US" selected>American</option>
-                                    <option value="FR">French</option>
-                                    <option value="ES">Spanish</option>
-                                    <option value="CH">Chinese</option>
-                                    <option value="GER">German</option>
-                                    <option value="EN">English</option>
-                                    <option value="Ho">Dutch</option>
-                                    <option value="P">Portugese</option>
-                                    <option value="OZ">Australian</option>
-                                    <option value="XX">Other</option>
-                                </select>
-                            </p>
-                        </div>
-                </div>
-             </form>
-       </div>
     </div>
+    <div class="contact-us-form">
+        <form role="form">
+            <div class="container">
+                <div class="col-4">
+                    <p>
+                        <label for="username">Username</label> :
+                        <input type="text" name="username" placeholder="Nom" id="username" required>
+                        <span id="usernameHelp"></span>
+                    </p>
+                    <p class="password">
+                        <label for="password">Password</label> :
+                        <input class="password" type="password" name="password" id="password" required>
+                        <span id="passwordHelp"></span>
+                    </p>
+                    <p>
+                        <label for="emailAddress">Email address</label> :
+                        <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@gmail.com">
+                        <span id="emailHelp"></span>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="confirmation" id="confirmation">
+                        <label for="confirmation">Send me a confirmation email</label>
+                    </p>
+                </div>
+                <div class="col-4">
+                     <p>
+                        <label for="addresse">Address</label> :
+                        <input type="adresse" name="Address" id="Address" required>
+                        <span id="adresseHelp"></span>
+                    </p>
+                     <p>
+                        <label for="ZipCode">Code Postal</label> :
+                        <input type="code-postal" name="code-postal" id="code-postal" required>
+                        <span id="zipCodeHelp"></span>
+                    </p>
+                    <p>
+                        <label for="Ville">Ville</label> :
+                        <input type="ville" name="ville" id="ville" required>
+                        <span id="villeHelp"></span>
+                    </p>
+                    <p>
+                        <input type="radio" name="subscription" id="newsroom" value="newspromo">
+                        <label for="newsroom">Subscribe me to newsletters and promotions</label>
+                        <br>
+                        <input type="radio" name="subscription" id="news" value="news">
+                        <label for="news">Subscribe me only to the newsletter</label>
+                        <br>
+                        <input type="radio" name="subscription" id="no" value="no" checked>
+                        <label for="no">No subscriptions please</label>
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="validation">
+                <a href="#" class="btn">Validez</a>
+            </div>
+         </form>
+   </div>
 </section>
                         

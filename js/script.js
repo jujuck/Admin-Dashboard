@@ -9,7 +9,7 @@ function sendConnexion() {
     myRequestConnexion.open('GET', 'html/connexion.html');
     myRequestConnexion.onreadystatechange = function () {
         if (myRequestConnexion.readyState === 4) {
-            header.style.height = "200px";
+            header.style.height = "250px";
             formulaire.style.display = "inline";
             formulaire.style.height = "200px";
             formulaire.innerHTML = myRequestConnexion.responseText;
@@ -24,7 +24,10 @@ function sendInscription() {
     myRequestInscription.open('GET', 'html/inscription.html');
     myRequestInscription.onreadystatechange = function () {
         if (myRequestInscription.readyState === 4) {
-            document.getElementById("formulaire").innerHTML = myRequestInscription.responseText;
+            header.style.height = "100px";
+            formulaire.style.display = "inline";
+            formulaire.style.height = "300px";
+            formulaire.innerHTML = myRequestInscription.responseText;
         }
     };
     myRequestInscription.send();

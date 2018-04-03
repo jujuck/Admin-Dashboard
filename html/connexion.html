@@ -5,20 +5,28 @@
             <div class="titre-description">
                 <h3>Connexion</h3>
             </div>
-            <form role="form">
-                <h4>Signup form</h4>
-                <p>
+       </div>
+    </div>
+    <form role="form" class>
+        <div class="container">
+            <div class="col-4">
+                 <p>
                     <label for="username">Username</label> :
                     <input type="text" name="username" placeholder="Nom" id="username" required>
                     <span id="usernameHelp"></span>
                 </p>
+            </div>
+            <div class="col-4">
                 <p class="password">
                     <label for="password">Password</label> :
                     <input class="password" type="password" name="password" id="password" required>
                     <span id="passwordHelp"></span>
+                    <a onclick="sendForgotMdp" class="mdp">mot de passe oublié</a>
                 </p>
-                <a onclick="sendForgotMdp" class="mdp">mot de passe oublié</a>
-              </form>    
+            </div>
         </div>
-    </div>
+        <div class="validation">
+            <a href="#" class="btn">Validez</a>
+        </div>
+    </form>    
 </section>     
