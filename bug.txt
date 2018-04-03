@@ -1,0 +1,13 @@
+//Vérification du ficheir Json et affichage des espace produits
+
+//Vérification des formulaires (nom, mail....)
+
+//Mise en place du footer de la page d'acceuil
+
+//Mise en place du formulaire de contact
+
+//Ajustement des icons avatar et recherche
+
+//Mise en place du dashboard
+
+//problème de taille par défault du container
