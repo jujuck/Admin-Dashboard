@@ -7,23 +7,30 @@
             </div>
        </div>
     </div>
-    <form role="form" class>
+    <form role="form" class="form">
         <div class="container">
+            <div class="col-2"></div>
             <div class="col-4">
-                 <p>
-                    <label for="username">Username</label> :
-                    <input type="text" name="username" placeholder="Nom" id="username" required>
-                    <span id="usernameHelp"></span>
-                </p>
+                <table>
+                    <tr>
+                        <td><label for="username">Username</label> :</td>
+                        <td><input type="text" name="username" placeholder="Nom" id="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label> :</td>
+                        <td><input class="password" type="password" name="password" id="password" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td class="password"><a onclick="sendForgotMdp()" class="mdp">mot de passe oublié</a></td>
+                    </tr>
+                    <tr>
+                        <td><label for="souvenir">Se souvenir de moi</label> :</td>
+                        <td><input type="checkbox" name="souvenir"></td>
+                    </tr>
+                </table>
             </div>
-            <div class="col-4">
-                <p class="password">
-                    <label for="password">Password</label> :
-                    <input class="password" type="password" name="password" id="password" required>
-                    <span id="passwordHelp"></span>
-                    <a onclick="sendForgotMdp()" class="mdp">mot de passe oublié</a>
-                </p>
-            </div>
+            <div class="col-2"></div>
         </div>
         <div class="validation">
             <a href="html/dashboard.html" class="btn">Validez</a>

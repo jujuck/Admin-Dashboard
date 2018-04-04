@@ -7,29 +7,27 @@
             </div>
         </div>
     </div>
-    <form role="form">
+    <form role="form" class="form">
         <div class="container">
             <div class="col-4">
-                <p>
-                    <label for="username">Username</label> :
-                    <input type="text" name="username" placeholder="Nom" id="username" required>
-                    <span id="usernameHelp"></span>
-                </p>
-                <p>
-                    <label for="emailAddress">Email address</label> :
-                    <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@gmail.com">
-                    <span id="emailHelp"></span>
-                </p>
+                <table>
+                    <tr>
+                        <td><label for="username">Username</label> :</td>
+                        <td><input type="text" name="username" placeholder="Nom" id="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="emailAddress">Email address</label> :</td>
+                        <td><input type="email" name="emailAddress" id="emailAddress" required placeholder="user@gmail.com"></td>
+                    </tr>
+                </table>
             </div>
             <div class="col-4">
-                 <p>
-                    <label for="questionSecrete">Quelle est la couleur du cheval blanc d'Henri IV?</label> :
-                    <input type="validation" name="Validation" id="Validation" required>
-                    <span id="valiadationHelp"></span>
-                </p>
-                <p>Un email vient de vous etre envoyé pour mettre à jour votre mot de passe.</p>
+                <p><label for="questionSecrete">Quelle est la couleur du cheval blanc d'Henri IV?</label> : </p>
+                <input type="validation" name="validation" id="validation" required>
             </div>
         </div>
+        <br>
+        <span id="emailpassword" class="emailpassword"></span>
         <div class="validation">
             <a href="html/dashboard.html" class="btn">Validez</a>
         </div>

@@ -9,7 +9,7 @@ function sendConnexion() {
     myRequestConnexion.open('GET', 'html/connexion.html');
     myRequestConnexion.onreadystatechange = function () {
         if (myRequestConnexion.readyState === 4) {
-            header.style.height = "220px";
+            header.style.height = "160px";
             formulaire.style.display = "inline";
             formulaire.style.height = "200px";
             formulaire.innerHTML = myRequestConnexion.responseText;
@@ -39,9 +39,9 @@ function sendForgotMdp() {
     myRequestForgotMdp.open('GET', 'html/forgotMdp.html');
     myRequestForgotMdp.onreadystatechange = function () {
         if (myRequestForgotMdp.readyState === 4) {
-            header.style.height = "150px";
+            header.style.height = "200px";
             formulaire.style.display = "inline";
-            formulaire.style.height = "300px";
+            formulaire.style.height = "200px";
             formulaire.innerHTML = myRequestForgotMdp.responseText;
         }
     };

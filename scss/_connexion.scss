@@ -1,5 +1,5 @@
 .connexion {
-    width: 50%;
+    width: 40%;
     margin-left: auto;
     margin-right: auto;
     background-color: $font-bckgd;
@@ -8,15 +8,29 @@
     padding: 10px;
 }
 
+.password {
+    text-align: center;
+}
+
 .mdp {
     font-size : 10px;
     color: blue;
+    text-decoration: none;
+}
+
+.mdp:hover {
     text-decoration: underline;
 }
 
-.validation {
-    margin: 15px;
+/*.validation {
+    margin: 10px;
+}*/
+
+.form {
+    margin-top: 35px;
+    margin-bottom: 0;
 }
+
 
 
 

@@ -39,7 +39,6 @@
     }
 }
 
-
 h3 {
     @include font-H3(); 
 }
@@ -50,4 +49,25 @@ h4 {
 
 p  {
     @include paragraphe();
+}
+
+td {
+    @include paragraphe();
+}
+
+tr {
+    margin-top: 5px;
+    width: 100%;
+}
+table {
+    margin-top: 20px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+input {
+    border: 1px solid $font-color;
+    border-radius: 6px;
+    background-color: #d3d3d3;
+    text-align: left;
 }

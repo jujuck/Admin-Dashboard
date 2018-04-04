@@ -7,56 +7,71 @@
             </div>
         </div>
     </div>
-    <form role="form">
+    <form role="form" class="form">
         <div class="container">
             <div class="col-4">
-                <p>
-                    <label for="username">Username</label> :
-                    <input type="text" name="username" placeholder="Nom" id="username" required>
-                    <span id="usernameHelp"></span>
-                </p>
-                <p class="password">
-                    <label for="password">Password</label> :
-                    <input class="password" type="password" name="password" id="password" required>
-                    <span id="passwordHelp"></span>
-                </p>
-                <p>
-                    <label for="emailAddress">Email address</label> :
-                    <input type="email" name="emailAddress" id="emailAddress" required placeholder="user@gmail.com">
-                    <span id="emailHelp"></span>
-                </p>
-                <p>
-                    <input type="checkbox" name="confirmation" id="confirmation">
-                    <label for="confirmation">Send me a confirmation email</label>
-                </p>
+                <table>
+                    <tr>
+                        <td><label for="username">Username</label> :</td>
+                        <td><input type="text" name="username" placeholder="Nom" id="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password</label> :</td>
+                        <td><input class="password" type="password" name="password" id="password" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="emailAddress">Email address</label> :</td>
+                        <td><input type="email" name="emailAddress" id="emailAddress" required placeholder="user@gmail.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="confirmation">Confirmation email</label></td>
+                        <td><input type="checkbox" name="confirmation" id="confirmation"></td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td><label for="addresse">Address</label> :</td>
+                        <td><input type="adresse" name="Address" id="Address" required></td>
+                    </tr>
+                     <tr>
+                        <td><label for="ZipCode">Code Postal</label> :</td>
+                        <td><input type="code-postal" name="code-postal" id="code-postal" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="Ville">Ville</label> :</td>
+                        <td><input type="ville" name="ville" id="ville" required></td>
+                    </tr>
+                </table>
             </div>
             <div class="col-4">
-                 <p>
-                    <label for="addresse">Address</label> :
-                    <input type="adresse" name="Address" id="Address" required>
-                    <span id="adresseHelp"></span>
-                </p>
-                 <p>
-                    <label for="ZipCode">Code Postal</label> :
-                    <input type="code-postal" name="code-postal" id="code-postal" required>
-                    <span id="zipCodeHelp"></span>
-                </p>
-                <p>
-                    <label for="Ville">Ville</label> :
-                    <input type="ville" name="ville" id="ville" required>
-                    <span id="villeHelp"></span>
-                </p>
-                <p>
-                    <input type="radio" name="subscription" id="newsroom" value="newspromo">
-                    <label for="newsroom">Subscribe me to newsletters and promotions</label>
-                    <br>
-                    <input type="radio" name="subscription" id="news" value="news">
-                    <label for="news">Subscribe me only to the newsletter</label>
-                    <br>
-                    <input type="radio" name="subscription" id="no" value="no" checked>
-                    <label for="no">No subscriptions please</label>
-                    <br>
-                </p>
+                <table>
+                    <tr>
+                        <td><label for="date de naissance">Date de naissance</label> :</td>
+                        <td><input type="date de naissance" name="date de naissance" id="date de naissance" required></td>
+                    </tr>
+                     <tr>
+                        <td><label for="lieu de naissance">Lieu de naissance</label> :</td>
+                        <td><input type="lieu de naissance" name="lieu de naissance" id="lieu de naissance" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="sexe">Sexe</label> :</td>
+                        <td><input type="sexe" name="sexe" id="sexe" required></td>
+                    </tr>
+                </table>
+                <table>
+                     <tr>
+                        <td><label for="newsroom">S'inscrire à la newsletter et aux promotions</label>
+                         <input type="radio" name="subscription" id="newsroom" value="newspromo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="news">S'inscire uniqument à la newsletter</label>
+                        <input type="radio" name="subscription" id="news" value="news"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="no">Pas d'abonnement</label>
+                        <input type="radio" name="subscription" id="no" value="no" checked></td>
+                    </tr>
+                </table>
             </div>
         </div>
         <div class="validation">
