@@ -9,9 +9,9 @@ document.getElementById("sendConnexion").addEventListener("click", function (e) 
     myRequestConnexion.open('GET', 'html/connexion.html');
     myRequestConnexion.onreadystatechange = function () {
         if (myRequestConnexion.readyState === 4) {
-            header.style.height = "160px";
+            header.style.height = "150px";
             formulaire.style.display = "inline";
-            formulaire.style.height = "200px";
+            formulaire.style.height = "100px";
             formulaire.innerHTML = myRequestConnexion.responseText;
         }
     };
@@ -21,20 +21,20 @@ document.getElementById("sendConnexion").addEventListener("click", function (e) 
 /*document.getElementById("nationalite").addEventListener("change", function(e) {
     console.log("Code de nationalité : " + e.target.value);
 });*/
-function sendInscription() {
+document.getElementById("sendInscription").addEventListener("click", function(e) {
     formulaire.content = "";
     var myRequestInscription = new XMLHttpRequest();
     myRequestInscription.open('GET', 'html/inscription.html');
     myRequestInscription.onreadystatechange = function () {
         if (myRequestInscription.readyState === 4) {
-            header.style.height = "100px";
+            header.style.height = "150px";
             formulaire.style.display = "inline";
-            formulaire.style.height = "300px";
+            formulaire.style.height = "150px";
             formulaire.innerHTML = myRequestInscription.responseText;
         }
     };
     myRequestInscription.send();
-}
+});
 
 function sendForgotMdp() {
     formulaire.content = "";

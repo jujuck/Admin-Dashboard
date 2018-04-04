@@ -1,7 +1,7 @@
 @mixin font-H1() {
     font-family: $font-titre;
     color: $font-color;
-    text-shadow: 3px 3px white;
+    text-shadow: 3px 3px $font-bckgd;
     font-size: 3 * $font-size;
     font-weight: 2 * $font-weight;
     margin-bottom: 25px;
@@ -14,7 +14,7 @@
     font-size: 1.5 * $font-size;
     font-weight: 1.2 * $font-weight;
     text-align: center;
-    text-shadow: 3px 3px white;
+    text-shadow: 3px 3px $font-bckgd;
 }
 
 @mixin font-H3() {
@@ -44,17 +44,15 @@
     margin: 10px;
 }
 
-
-
 @mixin paragraphe() {
     font-family: $font-paragraphe;
     color: $font-color;
-    font-size: 1 * $font-size;
-    font-weight: 1 * $font-weight;
+    font-size:  $font-size;
+    font-weight:  $font-weight;
     line-height: 15px;
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 5px;
+    margin-top: 2px;
     text-align: justify;
 }
 

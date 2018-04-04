@@ -7,7 +7,7 @@
 
 /*Mise en place de la section centrale*/
 #header {
-    height: 500px;
+    height: 300px;
 }
 
 .header-btn {
@@ -46,4 +46,7 @@ nav {
     font-family: $font-autres;
     font-size: 14px;
     width: 100%;
+    p {
+        color:$font-bckgd;
+    }
 }
