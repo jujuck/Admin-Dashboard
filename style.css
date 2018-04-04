@@ -331,6 +331,11 @@ nav {
 .cours-img img {
   height: 25px; }
 
+/* line 102, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.dash-implication {
+  padding-right: auto;
+  padding-left: auto; }
+
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
   background-image: url("img/background-accueil.jpg");
