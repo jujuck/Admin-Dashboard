@@ -172,8 +172,6 @@ p {
 
 /* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 footer {
-  position: fixed;
-  bottom: 0;
   color: white;
   text-align: center;
   font-family: Chicle, fantasy;
@@ -202,33 +200,33 @@ footer {
 
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
-  background-color: gray;
-  height: 150px; }
-
-/* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
-.imgHeader {
-  height: 50px; }
-
-/* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
-.recherche {
-  vertical-align: middle; }
-
-/* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
-.presentation {
-  background-image: url("img/jumboaccueil.jpeg");
+  background-image: url("img/background-accueil.jpg");
   background-attachment: fixed;
-  background-position: 20% 50%;
+  background-position: 95% 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 350px;
-  padding: 50px; }
-  /* line 24, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
-  .presentation h2 {
+  height: 350px; }
+  /* line 9, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  .header h2 {
     font-family: Merriweather, Arial, serif;
     color: #262525;
     font-size: 1.5rem;
     font-weight: 360;
     text-align: center;
     text-shadow: 3px 3px white; }
+
+/* line 15, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.entete {
+  background-color: gray;
+  opacity: 0.2;
+  width: 100%; }
+
+/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.imgHeader {
+  height: 35px; }
+
+/* line 25, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.recherche {
+  margin-top: -5px; }
 
 /*# sourceMappingURL=style.css.map */

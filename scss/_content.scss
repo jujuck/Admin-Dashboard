@@ -1,27 +1,33 @@
 //Mise en forme de l'espace bandeau supérieur
 .header {
+    background-image: url('img/background-accueil.jpg');
+    background-attachment: fixed;
+    background-position: 95% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    h2 {
+        @include font-H2();
+    }
+}
+
+//mise en forme de l'espace en-tete
+.entete {
     background-color: gray;
-    height: 150px;
+    opacity: 0.2;
+    width: 100%;
 }
 
 .imgHeader  {
-    height: 50px;
+    height: 35px;
 }
 
 .recherche {
-    vertical-align: middle;
+    margin-top: -5px;
 }
 
 //mise en forme de l'espace présentation
 .presentation {
-    background-image: url('img/jumboaccueil.jpeg');
-    background-attachment: fixed;
-    background-position: 20% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 350px;
-    padding: 50px;
-    h2 {
-        @include font-H2();
-    }
+
+   
 }
