@@ -6,10 +6,8 @@
 
 //Mise en place du formulaire de contact
 
-//Ajustement des icons avatar et recherche
+//Ajustement des icons avatar et recherche en content
 
 //Mise en place du dashboard
+    
 
-//css produit
-
-//Mise ne place du footer page d'accueil

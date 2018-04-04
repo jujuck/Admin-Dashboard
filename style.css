@@ -130,16 +130,14 @@ td {
 
 /* line 58, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 tr {
-  margin-top: 5px;
-  width: 100%; }
+  margin-top: 5px; }
 
 /* line 62, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 table {
   margin-top: 20px;
-  vertical-align: middle;
-  width: 100%; }
+  vertical-align: middle; }
 
-/* line 68, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
+/* line 67, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 input {
   border: 1px solid #262525;
   border-radius: 6px;
@@ -305,6 +303,33 @@ nav {
   float: right;
   background-color: #fff;
   opacity: 0.7; }
+
+/* line 71, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.cours-table {
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #262525;
+  border-radius: 6px;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 90%; }
+
+/* line 82, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.cours-ligne {
+  border: 1px solid #262525;
+  border-radius: 6px;
+  height: 20px;
+  vertical-align: middle;
+  background-color: #fff; }
+
+/* line 91, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.cours-nom {
+  width: 15%;
+  color: red; }
+
+/* line 97, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.cours-img img {
+  height: 25px; }
 
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
