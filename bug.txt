@@ -1,4 +1,4 @@
-//Vérification du ficheir Json et affichage des espace produits
+//Vérification du fichier Json
 
 //Vérification des formulaires (nom, mail....)
 
@@ -10,4 +10,6 @@
 
 //Mise en place du dashboard
 
-//problème de taille par défault du container
+//css produit
+
+//Mise ne place du footer page d'accueil

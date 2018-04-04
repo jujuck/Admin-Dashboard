@@ -19,25 +19,25 @@
     <body>
         <header class="header">
             <!-- Partie navigation -->
-            <section class="entete">
-                <div class="container">
+            <section>
+                <div class="container entete">
                        <div class="col-3">
                         <img src="../img/logo_vector.png" class="logo">
                     </div>
                     <div class="col-5">
                         <nav>
-                            <ul class="navigation">
-                                <img src="../img/recherche.png" class="imgHeader">
-                                <input class="recherche" type="recherche" name="recherche" id="recherche" required>
-                                <img src="../img/avatar.png" onclick="sendDashBoard()" class='imgHeader'>
+                            <ul class="avatar">
+                                <!-- <li><img src="../img/recherche.png" class="imgHeader"></li> -->
+                                <li><input class="recherche" type="recherche" name="recherche" id="recherche" placeholder="recherche"></li>
+                                <li><img src="../img/avatar.png" onclick="sendDashBoard()" class='imgHeader'></li>
                             </ul>
                         </nav>
                     </div>
                 </div>
             </section>
             <!-- titre et présentation -->
-            <section class="presentation">
-                <div class="container">
+            <section>
+                <div class="container presentation">
                     <div class="col-8">
                         <h2>Bienvenue sur Developpeur.com</h2>
                         <p>Huic Arabia est conserta, ex alio latere Nabataeis contigua; opima varietate conmerciorum castrisque oppleta validis et castellis, quae ad repellendos gentium vicinarum excursus sollicitudo pervigil veterum per oportunos saltus erexit et cautos. haec quoque civitates habet inter oppida quaedam ingentes Bostram et Gerasam atque Philadelphiam murorum firmitate cautissimas. hanc provinciae inposito nomine rectoreque adtributo obtemperare legibus nostris Traianus conpulit imperator incolarum tumore saepe contunso cum glorioso marte Mediam urgeret et Parthos.</p>
@@ -45,43 +45,62 @@
                 </div>
             </section>
         </header>
-        <section class="produit" id="produit">
+        <section>
+            <div class="container">
+                <div class="col-8">
+                    <h3>Découvrez tous nos cours</h3>              
+                </div>
+            </div>
+            <div class="produit" id="produit">
         
             <!--selection de produit à partir d'une base json-->
         
-        
+            </div>
         </section>
         <section class="contact">
             <div class="container">
                 <div class="col-8">
                     <div class="validation">
-                        <a onclick="sendContact" class="btn">Validez</a>
+                        <h3>Pour de plus amples informations</h3>
+                        <a onclick="sendContact" class="btn">Contactez-nous</a>
                     </div>
                 </div>
             </div>
         </section>
         <footer>
             <div class="container">
-                <div class="col-2">
+                <div class="col-2 espace-comm">
                     <h3>Developpeur.com</h3>
+                    <p>item 1</p>
+                    <p>item 2</p>
+                    <p>item 3</p>
+                    <p>item 4</p>
                 </div>
-                <div class="col-2">
+                <div class="col-2 espace-comm">
                     <h3>Espace Pro</h3>
+                    <p>item 1</p>
+                    <p>item 2</p>
+                    <p>item 3</p>
+                    <p>item 4</p>
                 </div>
-                <div class="col-2">
+                <div class="col-2 espace-comm">
                     <h3>En Plus</h3>
+                    <p>item 1</p>
+                    <p>item 2</p>
+                    <p>item 3</p>
+                    <p>item 4</p>
                 
                 </div>
-                <div class="col-2">
-                    <li><a href=""><i class="fa fa-youtube-play"></i></a></li>
-                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa fa-github"></i></a></li>
+                <div class="col-2 espace-comm">
+                    <li><a href=""><i class="">You Tube</i></a></li>
+                    <li><a href=""><i class="">Facebook</i></a></li>
+                    <li><a href=""><i class="">Twitter</i></a></li>
+                    <li><a href=""><i class="">GitHub</i></a></li>
                 </div>
             
             
             </div>
-            <div class="container">
+            <div class="container droit">
                 <div class="col-8">
                     <p>Photo by Johanna Persson on Unsplash</p>
                 </div>
