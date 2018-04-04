@@ -66,6 +66,21 @@
 	background-position: center;
 	border-radius: 6px;
     background-color: white;
+    p {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+.image-produit {
+    display : block;
+    height: 75px;
+    border : 1px solid $font-bckgd;
+    border-radius: 6px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 //mise en page de l'espace validation

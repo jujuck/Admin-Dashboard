@@ -407,8 +407,23 @@ nav {
   background-position: center;
   border-radius: 6px;
   background-color: white; }
+  /* line 69, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+  .item-produits p {
+    margin-right: 5px;
+    margin-left: 5px; }
 
-/* line 72, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 75, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+.image-produit {
+  display: block;
+  height: 75px;
+  border: 1px solid aqua;
+  border-radius: 6px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+/* line 87, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
 .validation {
   margin-right: auto;
   margin-left: auto;
@@ -416,7 +431,7 @@ nav {
   margin-bottom: 50px;
   text-align: center; }
 
-/* line 81, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 96, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
 .espace-comm {
   margin: 25px;
   padding: 10px;
@@ -426,7 +441,7 @@ nav {
   border-radius: 6px;
   text-align: center; }
 
-/* line 91, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 106, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
 .droit {
   margin: 35px;
   text-align: center; }
