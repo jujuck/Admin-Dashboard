@@ -3,7 +3,7 @@ var formulaire = document.getElementById("formulaire");
 
 
 
-function sendConnexion() {
+document.getElementById("sendConnexion").addEventListener("click", function (e) {
     //formulaire.content= "";
     var myRequestConnexion = new XMLHttpRequest();
     myRequestConnexion.open('GET', 'html/connexion.html');
@@ -16,8 +16,11 @@ function sendConnexion() {
         }
     };
     myRequestConnexion.send();
-}
+});
 
+/*document.getElementById("nationalite").addEventListener("change", function(e) {
+    console.log("Code de nationalité : " + e.target.value);
+});*/
 function sendInscription() {
     formulaire.content = "";
     var myRequestInscription = new XMLHttpRequest();
