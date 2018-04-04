@@ -1,4 +1,4 @@
-body {
+.dash-body {
     background-image: url('img/background-accueil.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
@@ -8,16 +8,62 @@ body {
     padding: 0;       
 }
 
-header {
+
+//Mise en page de l'espace header
+.dash-header {
     position: fixed;
-    top: 0;
+    top: 75px;
     left: 0;
     widht: 15%;
+    text-align: center;
+    margin-bottom: 45px;
+    margin-left: 45px;
+    margin-right: auto;
+    h2 {
+        @include font-H2();
+        color: white;
+        text-shadow: 3px 3px $font-color;
+    }
+    h4 {
+        color: white;
+    }
 }
 
-.main-content {
+.img-profil{
+    width: 75px;
+    border-radius: 100%;
+}
+
+.dash-menu {
+    margin-top: 45px;
+    margin-left: 20px;
+    text-align: left;
+    ul {
+    list-style-type: none;
+        li {
+            margin-top: 5px;
+            a {
+                text-decoration: none;
+                color: white;
+                transition: all 1s;
+                -webkit-transition: all 1s;
+                -moz-transition: all 1s;
+                -o-transition: all 1s; 
+            }//end a
+            a:hover{
+                text-shadow: 1px 1px white;
+                color: $font-color;
+            }//end a:hover
+        }//end li
+    }//end ul
+}//.dash-menu
+
+
+//Mise en place de l'espace content
+.dash-main-content {
     width: 80%;
     float: right;
     background-color: #fff;
     opacity: 0.7;  
 }
+

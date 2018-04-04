@@ -14,18 +14,7 @@
     margin: 50px;
 }
 
-.navigation {
-    position: fixed;
-    top: 30px;
-    right: 50px;
-    li {
-        display: inline;
-        margin: 10px;
-        padding: 10px;
-    }//end li
-}//end navigation
-
-.accueil {
+.accueil-titre {
     h1{
         @include font-H1();
     }//end h1
@@ -34,7 +23,10 @@
     }//end p
 }//end Accueil
 
-.nav {
+nav {
+    position: fixed;
+    top: 30px;
+    right: 50px;
     li {
         display: inline;
         margin: 10px;
@@ -46,9 +38,9 @@
     display : none;
 }
 
-footer {
-    //position: fixed;
-    //bottom: 0;
+.accueil-footer {
+    position: fixed;
+    bottom: 0;
     color: white;
     text-align: center;
     font-family: $font-autres;
