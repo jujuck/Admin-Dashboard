@@ -1,0 +1,23 @@
+body {
+    background-image: url('img/background-accueil.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    margin: 0;
+    padding: 0;       
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    widht: 15%;
+}
+
+.main-content {
+    width: 80%;
+    float: right;
+    background-color: #fff;
+    opacity: 0.7;  
+}

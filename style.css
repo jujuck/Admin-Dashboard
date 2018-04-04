@@ -198,6 +198,30 @@ footer {
 .validation {
   margin: 15px; }
 
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+body {
+  background-image: url("img/background-accueil.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  margin: 0;
+  padding: 0; }
+
+/* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  widht: 15%; }
+
+/* line 18, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.main-content {
+  width: 80%;
+  float: right;
+  background-color: #fff;
+  opacity: 0.7; }
+
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
   background-image: url("img/background-accueil.jpg");
