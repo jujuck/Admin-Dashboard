@@ -8,27 +8,47 @@ var chart = new Chart(ctx, {
         labels: ["Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet"],
         datasets: [{
             label: "Html débutant",
-            backgroundColor: 'rgb(255, 0, 54)',
-            borderColor: 'rgb(255, 0, 54)',
+            backgroundColor: 'rgba(255, 0, 54, 0.5)',
+            borderColor: 'rgba(255, 0, 54, 0.5)',
             data: [0, 10, 10, 15, 20, 10, 15],
         },
         {label: "Html avancée",
-            backgroundColor: 'rgb(235, 255, 0)',
-            borderColor: 'rgb(235, 255, 0)',
+            backgroundColor: 'rgba(235, 255, 0, 0.5)',
+            borderColor: 'rgba(235, 255, 0, 0.5)',
             data: [0, 0, 5, 2, 15, 18, 20],
         },
         {label: "Css débutant",
-            backgroundColor: 'rgb(61, 45, 253)',
-            borderColor: 'rgb(61, 45, 253)',
+            backgroundColor: 'rgba(61, 45, 253, 0.5)',
+            borderColor: 'rgba(61, 45, 253, 0.5)',
             data: [0, 5, 10, 20, 20, 15, 12],
         },
         {label: "Bootstrap",
-            backgroundColor: 'rgb(23, 248, 179)',
-            borderColor: 'rgb(23, 248, 179)',
+            backgroundColor: 'rgba(23, 248, 179, 0.5)',
+            borderColor: 'rgba(23, 248, 179, 0.5)',
             data: [0, 0, 0, 5, 15, 30, 40],
         }]
     },
 
     // Configuration options go here
     options: {}
+});
+
+var ctxPie = document.getElementById("myPie");
+var myPieChart = new Chart(ctxPie,{
+    type: 'pie',
+    data : {
+        labels: ['Html débutant','Html avancée','Css débutant','Bootstrap',],
+        datasets: [{
+            data: [40, 25, 20, 15],
+            backgroundColor: [
+                'rgba(255, 0, 54, 0.5)',
+                'rgba(235, 255, 0, 0.5)',
+                'rgba(61, 45, 253, 0.5)',
+                'rgba(23, 248, 179, 0.5)' 
+            ]
+        }]
+
+    // These labels appear in the legend and in the tooltips when hovering different arcs
+    
+    }
 });
