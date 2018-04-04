@@ -15,8 +15,6 @@
 //mise en forme de l'espace en-tete
 .entete {
     position: fixed;
-    background-color: gray;
-    opacity: 0.2;
     width: 100%;
 }
 
@@ -32,8 +30,18 @@
 }
 
 .imgHeader  {
-    height: 35px;
+    height: 60px;
+    border-radius: 100%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s; 
+    &:hover {
+        box-shadow: 3px 3px $font-color;
+        height: 65px;
+    }
 }
+
 
 //mise en forme de l'espace présentation
 .presentation { 

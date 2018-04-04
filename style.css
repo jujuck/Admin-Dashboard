@@ -327,34 +327,41 @@ nav {
 /* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .entete {
   position: fixed;
-  background-color: gray;
-  opacity: 0.2;
   width: 100%; }
 
-/* line 23, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .content-avatar {
   position: fixed;
   right: 50px;
   top: 25px; }
-  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 25, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .content-avatar li {
     display: inline;
     margin: 10px;
     padding: 10px; }
 
-/* line 34, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .imgHeader {
-  height: 35px; }
+  height: 60px;
+  border-radius: 100%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s; }
+  /* line 39, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  .imgHeader:hover {
+    box-shadow: 3px 3px #262525;
+    height: 65px; }
 
-/* line 39, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 47, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .presentation {
   padding-top: 175px; }
 
-/* line 44, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 52, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .produit {
   margin: 25px; }
 
-/* line 48, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 56, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .item-produits {
   width: 80%;
   margin: 10px;
@@ -369,7 +376,7 @@ nav {
   border-radius: 6px;
   background-color: white; }
 
-/* line 64, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 72, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .validation {
   margin-right: auto;
   margin-left: auto;
@@ -377,7 +384,7 @@ nav {
   margin-bottom: 50px;
   text-align: center; }
 
-/* line 73, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 81, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .espace-comm {
   margin: 25px;
   padding: 10px;
@@ -387,7 +394,7 @@ nav {
   border-radius: 6px;
   text-align: center; }
 
-/* line 83, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 91, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .droit {
   margin: 35px;
   text-align: center; }
