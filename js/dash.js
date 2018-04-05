@@ -52,3 +52,13 @@ var myPieChart = new Chart(ctxPie,{
     
     }
 });
+
+var menu = document.getElementById("menu-responsive");
+
+
+document.getElementById("img-menu").addEventListener("mouseover", function (e) {
+    menu.style.display = "inline";
+    setTimeout(function() {
+    menu.style.display = "none";
+    }, 3000);
+})
