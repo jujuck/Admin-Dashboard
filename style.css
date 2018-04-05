@@ -2,36 +2,52 @@
 /*Variables de couleur*/
 /*varaibles de tailles*/
 @media all {
-  /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .container {
     display: grid;
     grid-templates-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-flows: dense;
     width: 100%; }
-  /* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-1 {
     grid-column-end: span 1; }
-  /* line 14, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 15, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-2 {
     grid-column-end: span 2; }
-  /* line 18, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-3 {
     grid-column-end: span 3; }
-  /* line 22, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 23, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-4 {
     grid-column-end: span 4; }
-  /* line 26, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-5 {
     grid-column-end: span 5; }
-  /* line 30, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 31, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-6 {
     grid-column-end: span 6; }
-  /* line 34, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-7 {
     grid-column-end: span 7; }
-  /* line 38, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 39, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-8 {
+    grid-column-end: span 8; }
+  /* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .container-form {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-auto-flows: dense;
+    width: 100%; }
+  /* line 53, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-2-form {
+    grid-column-end: span 2; }
+  /* line 57, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-4-form {
+    grid-column-end: span 4; }
+  /* line 61, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  .col-8-form {
     grid-column-end: span 8; } }
 
 /* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
@@ -221,7 +237,7 @@ input {
 
 /* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .connexion {
-  width: 40%;
+  width: 680px;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -254,7 +270,7 @@ input {
 @media all and (max-width: 680px) {
   /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
   .connexion {
-    width: 90%; } }
+    width: 300px; } }
 
 /* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-body {

@@ -1,4 +1,5 @@
 @media all{
+    //grid general
     .container {
         display: grid;
         grid-templates-rows: auto;
@@ -36,6 +37,28 @@
     }
 
     .col-8 {
+        grid-column-end: span 8;
+    }
+    
+    
+    //grid pour l element form
+    .container-form {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+        grid-auto-flows: dense;
+        width: 100%;
+    }
+
+    .col-2-form {
+        grid-column-end: span 2;
+    }
+
+    .col-4-form {
+        grid-column-end: span 4;
+    }
+
+    .col-8-form {
         grid-column-end: span 8;
     }
 }
