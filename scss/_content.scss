@@ -21,7 +21,7 @@
 .content-avatar {
     position: fixed;
     right: 50px;
-    top: 25px;
+    top: 35px;
     li {
         display: inline;
         margin: 10px;
@@ -29,8 +29,12 @@
     }//end li
 }
 
+.recherche {
+    vertical-align: top;
+}
+
 .imgHeader  {
-    height: 60px;
+    height: 75px;
     border-radius: 100%;
     transition: all 1s;
     -webkit-transition: all 1s;
@@ -92,13 +96,50 @@
 }
 
 //mise en page de l'espace footer
-
+.content-footer {
+    background-color: rgba(185, 185, 185, 0.7)
+}
 .espace-comm {
+    background-color: #fff;
     margin: 25px;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid $font-bckgd;
     border-radius: 6px;
     text-align: center;
+    h3 {
+        color: $font-bckgd;
+    }//end h3
+    p {
+        color: $font-bckgd;
+        text-align: center;
+        a {
+            color: $font-bckgd;
+            text-decoration: none;
+            transition: all 1s;
+            -webkit-transition: all 1s;
+            -moz-transition: all 1s;
+            -o-transition: all 1s;
+        }//end a
+        a:hover {
+            color: $font-color;
+            text-shadow: 2px 2px $font-bckgd;
+        }//end a:hover
+    }//end p
+}
+
+
+/*Description pour les ecrans tablette en paysage page accueil*/
+@media all and (max-width: 680px) {
+    .header {
+        height: 100%;
+    }
+    .content-avatar {
+        position: fixed;
+        right: 10px;
+    }
+    .recherche {
+        display: none;
+    }
 }
 
 
