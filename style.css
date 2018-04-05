@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*vararibles de font*/
 /*Variables de couleur*/
 /*varaibles de tailles*/
@@ -6,30 +5,32 @@
   /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .container {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-templates-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-flows: dense;
     width: 100%; }
-  /* line 8, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-1 {
     grid-column-end: span 1; }
-  /* line 12, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 14, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-2 {
     grid-column-end: span 2; }
-  /* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 18, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-3 {
     grid-column-end: span 3; }
-  /* line 20, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 22, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-4 {
     grid-column-end: span 4; }
-  /* line 24, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 26, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-5 {
     grid-column-end: span 5; }
-  /* line 28, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 30, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-6 {
     grid-column-end: span 6; }
-  /* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 34, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-7 {
     grid-column-end: span 7; }
-  /* line 36, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
+  /* line 38, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-8 {
     grid-column-end: span 8; } }
 
@@ -85,7 +86,7 @@ h3 {
   font-weight: 330;
   text-align: center;
   margin: 15px; }
-  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
+  /* line 28, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
   h3:after {
     content: "";
     widht: 250px;
@@ -144,21 +145,31 @@ input {
   background-color: #d3d3d3;
   text-align: left; }
 
-/*Mise en place du bandeau supérieur*/
-/* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .logo {
   width: 150px; }
 
+/* line 6, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.accueil-navigation {
+  position: fixed;
+  top: 30px;
+  right: 50px; }
+  /* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  .accueil-navigation li {
+    display: inline;
+    margin: 10px;
+    padding: 10px; }
+
 /*Mise en place de la section centrale*/
-/* line 9, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 18, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #header {
   height: 300px; }
 
-/* line 13, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 22, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .header-btn {
   margin: 50px; }
 
-/* line 18, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre h1 {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -168,25 +179,15 @@ input {
   margin-bottom: 25px;
   padding: 20px; }
 
-/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 30, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre p {
   font-family: Merriweather, Arial, serif;
   color: #262525;
   font-size: 1.5rem;
   font-weight: 360;
+  line-height: 32px;
   text-align: center;
   text-shadow: 3px 3px aqua; }
-
-/* line 26, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
-nav {
-  position: fixed;
-  top: 30px;
-  right: 50px; }
-  /* line 30, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
-  nav li {
-    display: inline;
-    margin: 10px;
-    padding: 10px; }
 
 /* line 37, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #formulaire {
@@ -204,6 +205,17 @@ nav {
   /* line 49, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-footer p {
     color: aqua; }
+
+/*Description pour les ecrans tablette en paysage page accueil*/
+@media all and (max-width: 680px) {
+  /* line 56, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  #header {
+    height: 300px; }
+  /* line 59, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  .accueil-navigation {
+    position: relative;
+    right: 0px;
+    width: 100%; } }
 
 /* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .connexion {
@@ -236,6 +248,12 @@ nav {
   margin-top: 35px;
   margin-bottom: 0; }
 
+/*Description pour les ecrans tablette en paysage page accueil*/
+@media all and (max-width: 680px) {
+  /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
+  .connexion {
+    width: 90%; } }
+
 /* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-body {
   background-image: url("img/background-accueil.jpg");
@@ -262,6 +280,7 @@ nav {
     color: #262525;
     font-size: 1.5rem;
     font-weight: 360;
+    line-height: 32px;
     text-align: center;
     text-shadow: 3px 3px aqua;
     color: white;
@@ -343,15 +362,6 @@ nav {
   margin-top: 45px;
   margin-bottom: 25px;
   margin-left: 15px; }
-  /* line 111, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-  .perf :after {
-    content: "";
-    widht: 250px;
-    height: 1px;
-    background-color: #ff0000;
-    box-shadow: 1px 1px #f7db04;
-    position: absolute;
-    bottom: -15px; }
 
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
@@ -368,6 +378,7 @@ nav {
     color: #262525;
     font-size: 1.5rem;
     font-weight: 360;
+    line-height: 32px;
     text-align: center;
     text-shadow: 3px 3px aqua; }
 
@@ -400,15 +411,15 @@ nav {
     box-shadow: 3px 3px #262525;
     height: 65px; }
 
-/* line 47, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 46, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .presentation {
   padding-top: 175px; }
 
-/* line 52, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 51, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .produit {
   margin: 25px; }
 
-/* line 56, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 55, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .item-produits {
   width: 80%;
   margin: 10px;
@@ -422,12 +433,12 @@ nav {
   background-position: center;
   border-radius: 6px;
   background-color: white; }
-  /* line 69, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 68, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .item-produits p {
     margin-right: 5px;
     margin-left: 5px; }
 
-/* line 75, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 74, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .image-produit {
   display: block;
   height: 75px;
@@ -438,7 +449,7 @@ nav {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-/* line 87, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 86, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .validation {
   margin-right: auto;
   margin-left: auto;
@@ -450,15 +461,8 @@ nav {
 .espace-comm {
   margin: 25px;
   padding: 10px;
-  background-color: gray;
-  opacity: 0.5;
   border: 1px solid black;
   border-radius: 6px;
-  text-align: center; }
-
-/* line 106, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
-.droit {
-  margin: 35px;
   text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

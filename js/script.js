@@ -9,9 +9,9 @@ document.getElementById("sendConnexion").addEventListener("click", function (e) 
     myRequestConnexion.open('GET', 'html/connexion.html');
     myRequestConnexion.onreadystatechange = function () {
         if (myRequestConnexion.readyState === 4) {
-            header.style.height = "150px";
+            header.style.height = "250px";
             formulaire.style.display = "inline";
-            formulaire.style.height = "100px";
+            formulaire.style.height = "150px";
             formulaire.innerHTML = myRequestConnexion.responseText;
         }
     };
@@ -27,7 +27,7 @@ document.getElementById("sendInscription").addEventListener("click", function(e)
     myRequestInscription.open('GET', 'html/inscription.html');
     myRequestInscription.onreadystatechange = function () {
         if (myRequestInscription.readyState === 4) {
-            header.style.height = "150px";
+            header.style.height = "250px";
             formulaire.style.display = "inline";
             formulaire.style.height = "150px";
             formulaire.innerHTML = myRequestInscription.responseText;
@@ -42,9 +42,9 @@ function sendForgotMdp() {
     myRequestForgotMdp.open('GET', 'html/forgotMdp.html');
     myRequestForgotMdp.onreadystatechange = function () {
         if (myRequestForgotMdp.readyState === 4) {
-            header.style.height = "200px";
+            header.style.height = "250px";
             formulaire.style.display = "inline";
-            formulaire.style.height = "200px";
+            formulaire.style.height = "150px";
             formulaire.innerHTML = myRequestForgotMdp.responseText;
         }
     };

@@ -1,7 +1,9 @@
 @media all{
     .container {
         display: grid;
-        grid-template-columns: repeat(8, 1fr);
+        grid-templates-rows: auto;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-auto-flows: dense;
         width: 100%;
     }
 
@@ -37,3 +39,4 @@
         grid-column-end: span 8;
     }
 }
+

@@ -1,4 +1,4 @@
-//Mise en forme de l'espace bandeau supérieur
+//Mise en place du header
 .header {
     background-image: url('img/background-accueil.jpg');
     background-attachment: fixed;
@@ -42,8 +42,7 @@
     }
 }
 
-
-//mise en forme de l'espace présentation
+//Mise en forme de l'espace de presentation
 .presentation { 
     padding-top: 175px;
 }
@@ -93,20 +92,15 @@
 }
 
 //mise en page de l'espace footer
+
 .espace-comm {
     margin: 25px;
     padding: 10px;
-    background-color: gray;
-    opacity: 0.5;
     border: 1px solid black;
     border-radius: 6px;
     text-align: center;
 }
 
-.droit {
-    margin: 35px;
-    
-    text-align: center;
-}
+
 
 

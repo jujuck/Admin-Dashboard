@@ -1,9 +1,18 @@
-
-/*Mise en place du bandeau supérieur*/
+//Mise en place du bandeau de navigation
 .logo {
     width: 150px;  
 }
 
+.accueil-navigation {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    li {
+        display: inline;
+        margin: 10px;
+        padding: 10px;
+    }//end li
+}//end navigation
 
 /*Mise en place de la section centrale*/
 #header {
@@ -23,16 +32,7 @@
     }//end p
 }//end Accueil
 
-nav {
-    position: fixed;
-    top: 30px;
-    right: 50px;
-    li {
-        display: inline;
-        margin: 10px;
-        padding: 10px;
-    }//end li
-}//end navigation
+
 
 #formulaire {
     display : none;
@@ -49,4 +49,17 @@ nav {
     p {
         color:$font-bckgd;
     }
+}
+
+/*Description pour les ecrans tablette en paysage page accueil*/
+@media all and (max-width: 680px) {
+    #header {
+        height: 300px;
+    }
+    .accueil-navigation {
+        position: relative;
+        right: 0px;
+        width: 100%;
+    }
+
 }

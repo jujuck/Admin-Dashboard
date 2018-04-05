@@ -30,6 +30,11 @@
     margin-bottom: 0;
 }
 
-
+/*Description pour les ecrans tablette en paysage page accueil*/
+@media all and (max-width: 680px) {
+    .connexion {
+        width: 90%;
+    }
+}
 
 
