@@ -3,43 +3,43 @@
 /*Variables de couleur*/
 /*varaibles de tailles*/
 @media all {
-  /* line 2, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .container {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     width: 100%; }
-  /* line 8, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 8, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-1 {
     grid-column-end: span 1; }
-  /* line 12, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 12, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-2 {
     grid-column-end: span 2; }
-  /* line 16, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-3 {
     grid-column-end: span 3; }
-  /* line 20, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 20, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-4 {
     grid-column-end: span 4; }
-  /* line 24, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 24, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-5 {
     grid-column-end: span 5; }
-  /* line 28, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 28, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-6 {
     grid-column-end: span 6; }
-  /* line 32, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-7 {
     grid-column-end: span 7; }
-  /* line 36, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_grid.scss */
+  /* line 36, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-8 {
     grid-column-end: span 8; } }
 
-/* line 1, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 * {
   padding: 0;
   margin: 0; }
 
 /* Mise en place de l'image de fond*/
-/* line 7, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 .accueilWeb {
   background-image: url("img/background-accueil.jpg");
   background-attachment: fixed;
@@ -49,7 +49,7 @@
   text-align: center; }
 
 /*description des boutons*/
-/* line 17, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 .btn,
 .btn:focus,
 .btn:active,
@@ -68,7 +68,7 @@
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s; }
-  /* line 35, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+  /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
   .btn:hover,
   .btn:focus:hover,
   .btn:active:hover,
@@ -77,7 +77,7 @@
     border: aqua;
     color: aqua; }
 
-/* line 42, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 42, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 h3 {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -85,7 +85,7 @@ h3 {
   font-weight: 330;
   text-align: center;
   margin: 15px; }
-  /* line 27, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_mixins.scss */
+  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
   h3:after {
     content: "";
     widht: 250px;
@@ -95,7 +95,7 @@ h3 {
     position: absolute;
     bottom: -15px; }
 
-/* line 46, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 46, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 h4 {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -104,7 +104,7 @@ h4 {
   text-align: center;
   margin: 10px; }
 
-/* line 50, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 50, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 p {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -116,7 +116,7 @@ p {
   margin-top: 2px;
   text-align: justify; }
 
-/* line 54, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 54, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 td {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -128,16 +128,16 @@ td {
   margin-top: 2px;
   text-align: justify; }
 
-/* line 58, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 58, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 tr {
   margin-top: 5px; }
 
-/* line 62, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 62, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 table {
   margin-top: 20px;
   vertical-align: middle; }
 
-/* line 67, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_main.scss */
+/* line 67, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 input {
   border: 1px solid #262525;
   border-radius: 6px;
@@ -145,20 +145,20 @@ input {
   text-align: left; }
 
 /*Mise en place du bandeau supérieur*/
-/* line 3, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .logo {
   width: 150px; }
 
 /*Mise en place de la section centrale*/
-/* line 9, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 9, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #header {
   height: 300px; }
 
-/* line 13, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 13, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .header-btn {
   margin: 50px; }
 
-/* line 18, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 18, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre h1 {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -168,7 +168,7 @@ input {
   margin-bottom: 25px;
   padding: 20px; }
 
-/* line 21, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre p {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -177,22 +177,22 @@ input {
   text-align: center;
   text-shadow: 3px 3px aqua; }
 
-/* line 26, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 26, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 nav {
   position: fixed;
   top: 30px;
   right: 50px; }
-  /* line 30, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+  /* line 30, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   nav li {
     display: inline;
     margin: 10px;
     padding: 10px; }
 
-/* line 37, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 37, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #formulaire {
   display: none; }
 
-/* line 41, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+/* line 41, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-footer {
   position: fixed;
   bottom: 0;
@@ -201,11 +201,11 @@ nav {
   font-family: Chicle, fantasy;
   font-size: 14px;
   width: 100%; }
-  /* line 49, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_accueil.scss */
+  /* line 49, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-footer p {
     color: aqua; }
 
-/* line 1, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_connexion.scss */
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .connexion {
   width: 40%;
   margin-left: auto;
@@ -214,29 +214,29 @@ nav {
   border: 2px solid aqua;
   border-radius: 6px; }
 
-/* line 10, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_connexion.scss */
+/* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .password {
   text-align: center; }
 
-/* line 14, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_connexion.scss */
+/* line 14, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .mdp {
   font-size: 10px;
   color: blue;
   text-decoration: none; }
 
-/* line 20, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_connexion.scss */
+/* line 20, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .mdp:hover {
   text-decoration: underline; }
 
 /*.validation {
     margin: 10px;
 }*/
-/* line 28, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_connexion.scss */
+/* line 28, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .form {
   margin-top: 35px;
   margin-bottom: 0; }
 
-/* line 1, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-body {
   background-image: url("img/background-accueil.jpg");
   background-size: 100%;
@@ -246,7 +246,7 @@ nav {
   margin: 0;
   padding: 0; }
 
-/* line 13, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 13, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-header {
   position: fixed;
   top: 75px;
@@ -256,7 +256,7 @@ nav {
   margin-bottom: 45px;
   margin-left: 45px;
   margin-right: auto; }
-  /* line 22, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 22, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-header h2 {
     font-family: Merriweather, Arial, serif;
     color: #262525;
@@ -266,27 +266,27 @@ nav {
     text-shadow: 3px 3px aqua;
     color: white;
     text-shadow: 3px 3px #262525; }
-  /* line 27, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-header h4 {
     color: white; }
 
-/* line 32, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .img-profil {
   width: 75px;
   border-radius: 100%; }
 
-/* line 37, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 37, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-menu {
   margin-top: 45px;
   margin-left: 20px;
   text-align: left; }
-  /* line 41, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 41, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-menu ul {
     list-style-type: none; }
-    /* line 43, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+    /* line 43, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
     .dash-menu ul li {
       margin-top: 5px; }
-      /* line 45, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+      /* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
       .dash-menu ul li a {
         text-decoration: none;
         color: white;
@@ -294,19 +294,19 @@ nav {
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
         -o-transition: all 1s; }
-      /* line 53, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+      /* line 53, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
       .dash-menu ul li a:hover {
         text-shadow: 1px 1px aqua;
         color: #262525; }
 
-/* line 63, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 63, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-main-content {
   width: 80%;
   float: right;
   background-color: white;
   opacity: 0.7; }
 
-/* line 71, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 71, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-table {
   margin: 20px;
   padding: 10px;
@@ -316,7 +316,7 @@ nav {
   background-color: white;
   width: 90%; }
 
-/* line 82, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 82, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-ligne {
   border: 1px solid #262525;
   border-radius: 6px;
@@ -324,21 +324,36 @@ nav {
   vertical-align: middle;
   background-color: white; }
 
-/* line 91, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 91, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-nom {
   width: 15%;
   color: red; }
 
-/* line 97, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 97, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-img img {
   height: 25px; }
 
-/* line 102, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 102, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-implication {
   padding-right: auto;
   padding-left: auto; }
 
-/* line 2, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 107, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.perf {
+  margin-top: 45px;
+  margin-bottom: 25px;
+  margin-left: 15px; }
+  /* line 111, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .perf :after {
+    content: "";
+    widht: 250px;
+    height: 1px;
+    background-color: #ff0000;
+    box-shadow: 1px 1px #f7db04;
+    position: absolute;
+    bottom: -15px; }
+
+/* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
   background-image: url("img/background-accueil.jpg");
   background-attachment: fixed;
@@ -347,7 +362,7 @@ nav {
   background-size: cover;
   height: 350px;
   margin-top: 0px; }
-  /* line 10, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+  /* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .header h2 {
     font-family: Merriweather, Arial, serif;
     color: #262525;
@@ -356,23 +371,23 @@ nav {
     text-align: center;
     text-shadow: 3px 3px aqua; }
 
-/* line 16, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .entete {
   position: fixed;
   width: 100%; }
 
-/* line 21, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .content-avatar {
   position: fixed;
   right: 50px;
   top: 25px; }
-  /* line 25, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+  /* line 25, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .content-avatar li {
     display: inline;
     margin: 10px;
     padding: 10px; }
 
-/* line 32, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .imgHeader {
   height: 60px;
   border-radius: 100%;
@@ -380,20 +395,20 @@ nav {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s; }
-  /* line 39, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+  /* line 39, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .imgHeader:hover {
     box-shadow: 3px 3px #262525;
     height: 65px; }
 
-/* line 47, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 47, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .presentation {
   padding-top: 175px; }
 
-/* line 52, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 52, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .produit {
   margin: 25px; }
 
-/* line 56, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 56, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .item-produits {
   width: 80%;
   margin: 10px;
@@ -407,12 +422,12 @@ nav {
   background-position: center;
   border-radius: 6px;
   background-color: white; }
-  /* line 69, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+  /* line 69, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .item-produits p {
     margin-right: 5px;
     margin-left: 5px; }
 
-/* line 75, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 75, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .image-produit {
   display: block;
   height: 75px;
@@ -423,7 +438,7 @@ nav {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-/* line 87, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 87, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .validation {
   margin-right: auto;
   margin-left: auto;
@@ -431,7 +446,7 @@ nav {
   margin-bottom: 50px;
   text-align: center; }
 
-/* line 96, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 96, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .espace-comm {
   margin: 25px;
   padding: 10px;
@@ -441,7 +456,7 @@ nav {
   border-radius: 6px;
   text-align: center; }
 
-/* line 106, /home/julien/Documents/Webdev-exo/Arinfo/Admin-Dashboard/scss/_content.scss */
+/* line 106, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .droit {
   margin: 35px;
   text-align: center; }

@@ -104,6 +104,21 @@
     padding-left: auto;
 }
 
+.perf {
+    margin-top: 45px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    :after {
+        content: "";
+        widht: 250px;
+        height: 1px;
+        background-color: $font-btn;
+        box-shadow: 1px 1px $font-btn-degrade;
+        position: absolute;
+        bottom: -15px;
+    }
+}
+
 
 
 
