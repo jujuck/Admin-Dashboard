@@ -1,6 +1,6 @@
 .dash-body {
     background-image: url('img/background-accueil.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 50% 50%;
@@ -8,63 +8,10 @@
     padding: 0;       
 }
 
-
-//Mise en page de l'espace header
-.dash-header {
-    position: fixed;
-    top: 75px;
-    left: 0;
-    widht: 15%;
-    text-align: center;
-    margin-bottom: 45px;
-    margin-left: 45px;
-    margin-right: auto;
-    h2 {
-        @include font-H2();
-        color: white;
-        text-shadow: 3px 3px $font-color;
-    }
-    h4 {
-        color: white;
-    }
-}
-
 .img-profil{
     width: 75px;
     border-radius: 100%;
-}
-
-.dash-menu {
-    margin-top: 45px;
-    margin-left: 20px;
-    text-align: left;
-    ul {
-    list-style-type: none;
-        li {
-            margin-top: 5px;
-            a {
-                text-decoration: none;
-                color: white;
-                transition: all 1s;
-                -webkit-transition: all 1s;
-                -moz-transition: all 1s;
-                -o-transition: all 1s; 
-            }//end a
-            a:hover{
-                text-shadow: 1px 1px $font-bckgd;
-                color: $font-color;
-            }//end a:hover
-        }//end li
-    }//end ul
-}//.dash-menu
-
-
-//Mise en place de l'espace content
-.dash-main-content {
-    width: 80%;
-    float: right;
-    background-color: white;
-    opacity: 0.7;  
+    border: 2px solid $font-bckgd;
 }
 
 //Mise en place du tableau cours
@@ -108,7 +55,101 @@
     margin-top: 45px;
     margin-bottom: 25px;
     margin-left: 15px;
+}
 
+/*Description pour les grands ecrans*/
+@media all {
+    //Mise en page de l'espace header
+    .dash-header {
+        position: fixed;
+        top: 75px;
+        left: 0;
+        widht: 10%;
+        text-align: center;
+        margin-bottom: 45px;
+        margin-right: auto;
+        h2 {
+            @include font-H2();
+            color: white;
+            text-shadow: 3px 3px $font-color;
+        }
+        h4 {
+            color: white;
+        }
+    }
+    
+    .dash-menu {
+        margin-top: 45px;
+        margin-left: 20px;
+        text-align: left;
+        ul {
+        list-style-type: none;
+            li {
+                margin-top: 5px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    transition: all 1s;
+                    -webkit-transition: all 1s;
+                    -moz-transition: all 1s;
+                    -o-transition: all 1s; 
+                }//end a
+                a:hover{
+                    text-shadow: 1px 1px $font-bckgd;
+                    color: $font-color;
+                }//end a:hover
+            }//end li
+        }//end ul
+    }//.dash-menu
+    
+    //Mise en place de l'espace content
+    .dash-main-content {
+        width: 80%;
+        float: right;
+        background-color: white;
+        opacity: 0.7;  
+    }
+    
+    //suppression des elements inutiles
+
+    .dash-head {
+        height: 0px;
+    }
+    .dash-header-responsive {
+      display: none;
+    }   
+}
+
+/*Description pour les ecrans tablette en paysage page accueil*/
+@media all and (max-width: 800px) {
+    //Suppresssion des elements inutiles
+    .dash-header {
+        position: relative;
+        display: none;
+    }
+    
+    //Mise en place du menu
+    .dash-main-content {
+        width: 100%;
+        float: none;
+        position: relative;
+        z-index: -100;
+    }
+    .dash-head {
+        height: 80px;
+    }
+    .dash-header-responsive {
+        display: inline-block;
+        position: fixed;
+        top: 15px;
+        left: 15px;
+    }
+    .menu-responsive {
+        display: none;
+        float: right;
+        margin-top: -10px;
+        margin-left: 25px;
+    }
 }
 
 

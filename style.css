@@ -275,75 +275,20 @@ input {
 /* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-body {
   background-image: url("img/background-accueil.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
   margin: 0;
   padding: 0; }
 
-/* line 13, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-.dash-header {
-  position: fixed;
-  top: 75px;
-  left: 0;
-  widht: 15%;
-  text-align: center;
-  margin-bottom: 45px;
-  margin-left: 45px;
-  margin-right: auto; }
-  /* line 22, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-  .dash-header h2 {
-    font-family: Merriweather, Arial, serif;
-    color: #262525;
-    font-size: 1.5rem;
-    font-weight: 360;
-    line-height: 32px;
-    text-align: center;
-    text-shadow: 3px 3px aqua;
-    color: white;
-    text-shadow: 3px 3px #262525; }
-  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-  .dash-header h4 {
-    color: white; }
-
-/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+/* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .img-profil {
   width: 75px;
-  border-radius: 100%; }
+  border-radius: 100%;
+  border: 2px solid aqua; }
 
-/* line 37, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-.dash-menu {
-  margin-top: 45px;
-  margin-left: 20px;
-  text-align: left; }
-  /* line 41, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-  .dash-menu ul {
-    list-style-type: none; }
-    /* line 43, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-    .dash-menu ul li {
-      margin-top: 5px; }
-      /* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-      .dash-menu ul li a {
-        text-decoration: none;
-        color: white;
-        transition: all 1s;
-        -webkit-transition: all 1s;
-        -moz-transition: all 1s;
-        -o-transition: all 1s; }
-      /* line 53, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-      .dash-menu ul li a:hover {
-        text-shadow: 1px 1px aqua;
-        color: #262525; }
-
-/* line 63, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
-.dash-main-content {
-  width: 80%;
-  float: right;
-  background-color: white;
-  opacity: 0.7; }
-
-/* line 71, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+/* line 18, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-table {
   margin: 20px;
   padding: 10px;
@@ -353,7 +298,7 @@ input {
   background-color: white;
   width: 90%; }
 
-/* line 82, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+/* line 29, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-ligne {
   border: 1px solid #262525;
   border-radius: 6px;
@@ -361,25 +306,114 @@ input {
   vertical-align: middle;
   background-color: white; }
 
-/* line 91, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+/* line 38, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-nom {
   width: 15%;
   color: red; }
 
-/* line 97, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+/* line 44, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-img img {
   height: 25px; }
 
-/* line 102, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+/* line 49, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-implication {
   padding-right: auto;
   padding-left: auto; }
 
-/* line 107, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+/* line 54, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .perf {
   margin-top: 45px;
   margin-bottom: 25px;
   margin-left: 15px; }
+
+/*Description pour les grands ecrans*/
+@media all {
+  /* line 63, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-header {
+    position: fixed;
+    top: 75px;
+    left: 0;
+    widht: 10%;
+    text-align: center;
+    margin-bottom: 45px;
+    margin-right: auto; }
+    /* line 71, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+    .dash-header h2 {
+      font-family: Merriweather, Arial, serif;
+      color: #262525;
+      font-size: 1.5rem;
+      font-weight: 360;
+      line-height: 32px;
+      text-align: center;
+      text-shadow: 3px 3px aqua;
+      color: white;
+      text-shadow: 3px 3px #262525; }
+    /* line 76, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+    .dash-header h4 {
+      color: white; }
+  /* line 81, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-menu {
+    margin-top: 45px;
+    margin-left: 20px;
+    text-align: left; }
+    /* line 85, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+    .dash-menu ul {
+      list-style-type: none; }
+      /* line 87, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+      .dash-menu ul li {
+        margin-top: 5px; }
+        /* line 89, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+        .dash-menu ul li a {
+          text-decoration: none;
+          color: white;
+          transition: all 1s;
+          -webkit-transition: all 1s;
+          -moz-transition: all 1s;
+          -o-transition: all 1s; }
+        /* line 97, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+        .dash-menu ul li a:hover {
+          text-shadow: 1px 1px aqua;
+          color: #262525; }
+  /* line 106, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-main-content {
+    width: 80%;
+    float: right;
+    background-color: white;
+    opacity: 0.7; }
+  /* line 115, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-head {
+    height: 0px; }
+  /* line 118, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-header-responsive {
+    display: none; } }
+
+/*Description pour les ecrans tablette en paysage page accueil*/
+@media all and (max-width: 800px) {
+  /* line 126, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-header {
+    position: relative;
+    display: none; }
+  /* line 132, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-main-content {
+    width: 100%;
+    float: none;
+    position: relative;
+    z-index: -100; }
+  /* line 138, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-head {
+    height: 80px; }
+  /* line 141, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .dash-header-responsive {
+    display: inline-block;
+    position: fixed;
+    top: 15px;
+    left: 15px; }
+  /* line 147, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+  .menu-responsive {
+    display: none;
+    float: right;
+    margin-top: -10px;
+    margin-left: 25px; } }
 
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
