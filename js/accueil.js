@@ -8,7 +8,7 @@ function initProduit () {
             var produits = JSON.parse(myRequestProduit.responseText);
             var produitListe = '<div class="container">';
 
-            for (var i = 0; i < 12; i++) {
+            for (var i = 0; i < produits.length; i++) {
                 produitListe += '<div class="col-2">';
                 produitListe += '<div class="item-produits"'
                 produitListe += '<h3>' + produits[i].name + '</h3>';

@@ -16,6 +16,14 @@
     line-height: 32px;
     text-align: center;
     text-shadow: 3px 3px $font-bckgd;
+     &:after {
+        content: "";
+        width: 250px;
+        height: 2px;
+        background-color: $font-bckgd;
+        display: block;
+        margin: 10px auto;
+    }
 }
 
 @mixin font-H3() {
@@ -27,12 +35,12 @@
     margin: 15px;
     &:after {
         content: "";
-        widht: 250px;
+        width: 250px;
         height: 1px;
         background-color: $font-btn;
-        box-shadow: 1px 1px $font-btn-degrade;
-        position: absolute;
+        display: block;
         bottom: -15px;
+        margin: 10px auto;
     }
 }
 

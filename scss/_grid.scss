@@ -61,5 +61,30 @@
     .col-8-form {
         grid-column-end: span 8;
     }
+    
+    //grid pour dashboard element tableau
+    .cours-ligne {
+        display: grid;
+        grid-template-columns: repeat(8,  1fr);
+        width: 100%;
+    }
+
+    .cours-nom {
+        grid-column-end: span 1;
+    }
+    .cours-img {
+        grid-column-end: span 1;
+    }
+    .cours-pourcentage {
+        grid-column-end: span 1;
+    }
+    .cours-moyenne {
+        grid-column-end: span 1;
+    }
+
+    .cours-avance {
+        grid-column-end: span 4;
+    }
+
 }
 

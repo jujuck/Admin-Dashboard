@@ -15,8 +15,6 @@
 
 /*description des boutons*/
 .btn,
-.btn:focus,
-.btn:active,
 .btn:visited {
     margin-top: 15px;
     padding: 5px 10px;
@@ -32,11 +30,16 @@
     -webkit-transition: all 1s;
     -moz-transition: all 1s;
     -o-transition: all 1s; 
-    &:hover {
+    &:hover,
+    &:active {
         background-color: $font-btn;
         border: $font-bckgd;
         color: $font-bckgd;
     }
+}
+
+h2 {
+    @include font-H2();
 }
 
 h3 {
@@ -65,8 +68,13 @@ table {
 }
 
 input {
-    border: 1px solid $font-color;
-    border-radius: 6px;
-    background-color: #d3d3d3;
+    margin-top: 2px;
+    outline: 0;
+    border-width: 0 0 2px 0;
+    border-color: $font-bckgd;
+    //border-radius: 6px;
     text-align: left;
+    &:focus {
+        background-color: $font-bckgd;
+    }
 }

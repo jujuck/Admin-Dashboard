@@ -60,5 +60,5 @@ document.getElementById("img-menu").addEventListener("mouseover", function (e) {
     menu.style.display = "inline";
     setTimeout(function() {
     menu.style.display = "none";
-    }, 3000);
+    }, 4000);
 })
