@@ -1,13 +1,11 @@
-//Vérification du fichier Json
+//Création des pages informations personnelles et ressources
 
 //Vérification des formulaires (nom, mail....)
 
-//Mise en place du footer de la page d'acceuil
-
 //Mise en place du formulaire de contact
 
-//Ajustement des icons avatar et recherche en content
 
-//Mise en place du dashboard
+
+
     
 
