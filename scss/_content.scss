@@ -46,6 +46,18 @@
     }
 }
 
+.menu-content {
+    display: none;
+    position : fixed;
+    top: 80px;
+    right: 35px;
+    text-align: center;
+    text-shadow: 1px 1px $font-bckgd;
+    background-color: $font-color;
+    border-radius: 10px;
+    opacity: 0.3;
+}
+
 //Mise en forme de l'espace de presentation
 .presentation { 
     padding-top: 175px;

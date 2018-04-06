@@ -51,9 +51,11 @@ function sendForgotMdp() {
     myRequestForgotMdp.send();
 }
 
+//Remise à zéro de l'affichage
 function sendAccueil() {
     formulaire.content = "";
     header.style.height = "400px";
     formulaire.style.display = "none";
 }
+
 

@@ -20,20 +20,28 @@
         <header class="header">
             <!-- Partie navigation -->
             <section>
-                 <div id="overlay">
                     <div class="container entete">
-                           <div class="col-3">
-                            <img src="../img/logo_vector.png" class="logo">
+                        <div class="col-2">
+                            <center><a href="../index.html"><img src="../img/logo_vector.png" class="logo"></a></center>
                         </div>
-                        <div class="col-5">
+                        <div class="col-6">
                             <ul class="content-avatar">
                                 <!-- <li><img src="../img/recherche.png" class="imgHeader"></li> -->
                                 <li><input class="recherche" type="recherche" name="recherche" id="recherche" placeholder="recherche"></li>
-                                <li><a href="dashboard.html"><img src="../img/avatar.png" onclick="sendDashBoard()" class='imgHeader'></a></li>
+                                <li><a href="dashboard.html"><img src="../img/avatar.png" onclick="sendDashBoard()" class='imgHeader' id="img-menu"></a></li>
                             </ul>
                         </div>
                     </div>
-                </div> 
+                    <!--Menu de navigation en js-->
+                    <nav class="menu-content dash-menu" id="menu-responsive">
+                        <ul>
+                            <li><a href="dashboard.html">Espace perso</a></li>
+                            <li><a href="#">Vos statistiques</a></li>
+                            <li><a href="#">Vos informations</a></li>
+                            <li><a href="#">Vos ressources</a></li>
+                            <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
+                        </ul>
+                    </nav>       
             </section>
             <!-- titre et présentation -->
             <section>

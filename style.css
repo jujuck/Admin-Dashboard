@@ -204,29 +204,30 @@ input {
 
 /* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .logo {
-  width: 150px; }
+  width: 150px;
+  align-self: center; }
 
-/* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 8, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-navigation {
   position: fixed;
   top: 30px;
   right: 50px; }
-  /* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  /* line 12, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-navigation li {
     display: inline;
     margin: 10px;
     padding: 10px; }
 
 /*Mise en place de la section centrale*/
-/* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 20, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #header {
   height: 300px; }
 
-/* line 23, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 24, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .header-btn {
   margin: 50px; }
 
-/* line 28, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 29, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre h1 {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -236,7 +237,7 @@ input {
   margin-bottom: 25px;
   padding: 20px; }
 
-/* line 31, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre p {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -254,11 +255,11 @@ input {
     display: block;
     margin: 10px auto; }
 
-/* line 38, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 39, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #formulaire {
   display: none; }
 
-/* line 42, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+/* line 43, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-footer {
   position: fixed;
   bottom: 0;
@@ -267,16 +268,16 @@ input {
   font-family: Chicle, fantasy;
   font-size: 14px;
   width: 100%; }
-  /* line 50, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  /* line 51, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-footer p {
     color: aqua; }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 680px) {
-  /* line 57, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  /* line 58, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   #header {
     height: 300px; }
-  /* line 60, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  /* line 61, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-navigation {
     position: relative;
     right: 0px;
@@ -535,15 +536,27 @@ input {
     box-shadow: 3px 3px #262525;
     height: 65px; }
 
-/* line 50, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 49, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+.menu-content {
+  display: none;
+  position: fixed;
+  top: 80px;
+  right: 35px;
+  text-align: center;
+  text-shadow: 1px 1px aqua;
+  background-color: #262525;
+  border-radius: 10px;
+  opacity: 0.3; }
+
+/* line 62, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .presentation {
   padding-top: 175px; }
 
-/* line 55, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 67, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .produit {
   margin: 25px; }
 
-/* line 59, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 71, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .item-produits {
   width: 80%;
   margin: 10px;
@@ -557,12 +570,12 @@ input {
   background-position: center;
   border-radius: 6px;
   background-color: white; }
-  /* line 72, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 84, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .item-produits p {
     margin-right: 5px;
     margin-left: 5px; }
 
-/* line 78, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 90, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .image-produit {
   display: block;
   height: 75px;
@@ -573,7 +586,7 @@ input {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-/* line 90, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 102, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .validation {
   margin-right: auto;
   margin-left: auto;
@@ -581,11 +594,11 @@ input {
   margin-bottom: 50px;
   text-align: center; }
 
-/* line 99, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 111, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .content-footer {
   background-color: rgba(185, 185, 185, 0.7); }
 
-/* line 102, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 114, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .espace-comm {
   background-color: #fff;
   margin: 25px;
@@ -593,14 +606,14 @@ input {
   border: 1px solid aqua;
   border-radius: 6px;
   text-align: center; }
-  /* line 109, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 121, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .espace-comm h3 {
     color: aqua; }
-  /* line 112, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 124, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .espace-comm p {
     color: aqua;
     text-align: center; }
-    /* line 115, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+    /* line 127, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
     .espace-comm p a {
       color: aqua;
       text-decoration: none;
@@ -608,21 +621,21 @@ input {
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
       -o-transition: all 1s; }
-    /* line 123, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+    /* line 135, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
     .espace-comm p a:hover {
       color: #262525;
       text-shadow: 2px 2px aqua; }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 680px) {
-  /* line 133, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 145, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .header {
     height: 100%; }
-  /* line 136, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 148, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .content-avatar {
     position: fixed;
     right: 10px; }
-  /* line 140, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 152, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .recherche {
     display: none; } }
 
