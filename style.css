@@ -78,7 +78,7 @@
 /* Mise en place de l'image de fond*/
 /* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 .accueilWeb {
-  background-image: url("img/background-accueil.jpg");
+  background-image: url("img/background-accueil2.jpg");
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -260,6 +260,10 @@ input {
   display: none; }
 
 /* line 43, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+.hidden {
+  display: none; }
+
+/* line 48, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-footer {
   position: fixed;
   bottom: 0;
@@ -268,16 +272,16 @@ input {
   font-family: Chicle, fantasy;
   font-size: 14px;
   width: 100%; }
-  /* line 51, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  /* line 56, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-footer p {
     color: aqua; }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 680px) {
-  /* line 58, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  /* line 63, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   #header {
     height: 300px; }
-  /* line 61, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
+  /* line 66, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-navigation {
     position: relative;
     right: 0px;
@@ -478,7 +482,7 @@ input {
 
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
-  background-image: url("img/background-accueil.jpg");
+  background-image: url("img/background-accueil2.jpg");
   background-attachment: fixed;
   background-position: 95% 50%;
   background-repeat: no-repeat;

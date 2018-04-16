@@ -14,11 +14,11 @@
                 <table>
                     <tr>
                         <td><label for="username">Utilisateur</label> :</td>
-                        <td><input type="text" name="username" placeholder="Nom" id="username" required></td>
+                        <td><input type="text" name="username" placeholder="Nom" id="usernameConnexion" required></td>
                     </tr>
                     <tr>
                         <td><label for="password">Mot de passe</label> :</td>
-                        <td><input class="password" type="password" name="password" id="password" required></td>
+                        <td><input class="password" type="password" name="password" id="passwordConnexion" required></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -33,7 +33,8 @@
             <div class="col-2-form"></div>
         </div>
         <div class="validation">
-            <a href="html/dashboard.html" class="btn">Validez</a>
+            <a onclick="verificationUser()" class="btn">Validez</a>
         </div>
-    </form>    
+    </form> 
+    <script src="../js/script.js"></script>
 </section>     

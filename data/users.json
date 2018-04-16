@@ -1,0 +1,64 @@
+[
+    {
+        username: "Richard",
+        firstName: "Julien",
+        pseudo: "jujuck",
+        password : "julienMDP",
+        birthday : "11/02/1983",
+        adress : "La hinchere",
+        zipCode : "85600",
+        city: "Treize Septiers",
+        country: "France",
+        email: "julien.y.richard@gmail.com",
+        study : "STAPS, Communication, Web-developpement",
+        hobbies : "Sport Nature, guitare et lecture",
+        dashboardValid: true
+    }
+]
+    /*{
+        "username": "User1",
+        "firstName": "David",
+        "pseudo": "dada ",
+        "password" : "davidMDP",
+        "birthday" : "25/03/1988",
+        "adress" : "Avenue Charles de Gaulle",
+        "zipCode" : "85000",
+        "city": "Roche sur Yon",
+        "country": "France",
+        "email": "user14.david@gmail.com",
+        "study" : "Web-developpement",
+        "hobbies" : "WOW",
+        "dashboardValid": true
+    },
+    {
+        "username": "User2",
+        "firstName": "John",
+        "pseudo": "jojo ",
+        "password" : "johnMDP",
+        "birthday" : "15/10/1992",
+        "adress" : "Allée des tilleuls",
+        "zipCode" : "85000",
+        "city": "Roche sur Yon",
+        "country": "France",
+        "email": "user2.john@gmail.com",
+        "study": "Patisserie, web-Developpement",
+        "hobbies" : "Musique classique",
+        "dashboardValid": true
+    },
+    {
+        "username": "Invite",
+        "firstName": "",
+        "pseudo": "invite ",
+        "password" : "MDP",
+        "birthday" : "",
+        "adress" : "",
+        "zipCode" : "",
+        "city": "",
+        "country": "",
+        "email": "",
+        "study" : "",
+        "hobbies" : "",
+        "dashboardValid": false
+    }
+]
+*/
