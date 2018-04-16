@@ -147,7 +147,7 @@
     },
     {
         "name": "Doodle",
-        "tag": ["Doodle",],
+        "tag": ["Doodle"],
         "image": "img/php.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratifTool"
@@ -161,6 +161,7 @@
     },
     {
         "name": "Slack",
+        "tag": ["slack"],
         "image": "img/jsnode.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratifTool"
