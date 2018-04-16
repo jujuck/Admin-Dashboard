@@ -127,6 +127,7 @@
     },
     {
         "name": "A venir",
+        "tag": ["Html", "Css", "Bootstrap", "Jquery"],
         "image": "img/js.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "serveur"
@@ -147,21 +148,21 @@
     },
     {
         "name": "Doodle",
-        "tag": ["Doodle"],
+        "tag": ["Doodle", "sondage"],
         "image": "img/php.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratifTool"
     },
     {
         "name": "Trello", 
-        "tag": ["Trello"],
+        "tag": ["Trello", "Projet"],
         "image": "img/mysql.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratifTool"
     },
     {
         "name": "Slack",
-        "tag": ["slack"],
+        "tag": ["slack", "echange"],
         "image": "img/jsnode.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratifTool"
