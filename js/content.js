@@ -15,8 +15,19 @@ function createNewProduit(nom, image, text) {
 }
 
 
-//Mise en place des espaces de descritpion des produits
-function initProduit () {
+//Fonction de mise à jour des onglets
+function onglet() {
+    var onglet = new Array(document.getElementsByClassName("onglet"))
+    for (var i = 0; i < onglet.length; i++) {
+       if (onglet[i].classList.contains("active") {
+           onglet[i].classList.remove("active")
+           }
+    }
+}
+
+
+//initialisation de l'espace produit
+function initProduit (id) {
     var myRequestProduit = new XMLHttpRequest();
     myRequestProduit.open('GET','../data/produit.json');
 
@@ -26,18 +37,21 @@ function initProduit () {
             produitListe = '<div class="container">';
 
             for (var i = 0; i < produits.length; i++) {
-                if(produits[i].menu === "developpementWeb") {
+                if(produits[i].menu === id) {
                     createNewProduit(produits[i].name, produits[i].image, produits[i].text)
                 }
             }
         }
         produitListe += '</div>';
         document.getElementById("produit").innerHTML = produitListe;
+        //Mise à jour de l'affichage Onglet
+        onglet();
+        document.getElementById(id).classList.add("active")
    };
     myRequestProduit.send();
 }
+initProduit('developpementWeb');
 
-initProduit();
 
 //Script pour menu hamburger
 var menu = document.getElementById("menu-responsive");

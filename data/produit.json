@@ -144,27 +144,27 @@
         "tag": ["Google Drive", "Google Calendar", "Google Form"],
         "image": "img/php.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "menu": "collaboratifTool"
+        "menu": "collaboratif"
     },
     {
         "name": "Doodle",
         "tag": ["Doodle", "sondage"],
         "image": "img/php.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "menu": "collaboratifTool"
+        "menu": "collaboratif
     },
     {
         "name": "Trello", 
         "tag": ["Trello", "Projet"],
         "image": "img/mysql.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "menu": "collaboratifTool"
+        "menu": "collaboratif"
     },
     {
         "name": "Slack",
         "tag": ["slack", "echange"],
         "image": "img/jsnode.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "menu": "collaboratifTool"
+        "menu": "collaboratif"
     }
 ]
