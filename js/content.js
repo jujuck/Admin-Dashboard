@@ -45,7 +45,7 @@ function initProduit (id) {
         produitListe += '</div>';
         document.getElementById("produit").innerHTML = produitListe;
         //Mise à jour de l'affichage Onglet
-        onglet();
+        //onglet();
         document.getElementById(id).classList.add("active")
    };
     myRequestProduit.send();
