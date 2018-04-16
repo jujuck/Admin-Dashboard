@@ -19,7 +19,7 @@ function createNewProduit(nom, image, text) {
 function onglet() {
     var onglet = new Array(document.getElementsByClassName("onglet"))
     for (var i = 0; i < onglet.length; i++) {
-       if (onglet[i].classList.contains("active") {
+       if (onglet[i].classList.contains("active")) {
            onglet[i].classList.remove("active")
            }
     }
