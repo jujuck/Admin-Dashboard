@@ -1,4 +1,5 @@
 var produitListe;
+var Active = 'developpementWeb'
 
 //Fonction de création des objets Projet
 function createNewProduit(nom, image, text) {
@@ -44,9 +45,11 @@ function initProduit (id) {
         }
         produitListe += '</div>';
         document.getElementById("produit").innerHTML = produitListe;
+        
         //Mise à jour de l'affichage Onglet
-        //onglet();
+        document.getElementById(Active).classList.remove('active')
         document.getElementById(id).classList.add("active")
+        Active = id
    };
     myRequestProduit.send();
 }
