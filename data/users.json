@@ -1,18 +1,18 @@
 [
     {
-        username: "Richard",
-        firstName: "Julien",
-        pseudo: "jujuck",
-        password : "julienMDP",
-        birthday : "11/02/1983",
-        adress : "La hinchere",
-        zipCode : "85600",
-        city: "Treize Septiers",
-        country: "France",
-        email: "julien.y.richard@gmail.com",
-        study : "STAPS, Communication, Web-developpement",
-        hobbies : "Sport Nature, guitare et lecture",
-        dashboardValid: true
+        "username": "Richard",
+        "firstName": "Julien",
+        "pseudo": "jujuck",
+        "password" : "julienMDP",
+        "birthday" : "11/02/1983",
+        "adress" : "La hinchere",
+        "zipCode" : "85600",
+        "city": "Treize Septiers",
+        "country": "France",
+        "email": "julien.y.richard@gmail.com",
+        "study" : "STAPS, Communication, Web-developpement",
+        "hobbies" : "Sport Nature, guitare et lecture",
+        "dashboardValid": true
     }
 ]
     /*{

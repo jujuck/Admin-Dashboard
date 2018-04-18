@@ -2,81 +2,81 @@
 /*Variables de couleur*/
 /*varaibles de tailles*/
 @media all {
-  /* line 3, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .container {
     display: grid;
     grid-templates-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-flows: dense;
     width: 100%; }
-  /* line 11, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-1 {
     grid-column-end: span 1; }
-  /* line 15, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 15, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-2 {
     grid-column-end: span 2; }
-  /* line 19, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-3 {
     grid-column-end: span 3; }
-  /* line 23, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 23, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-4 {
     grid-column-end: span 4; }
-  /* line 27, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 27, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-5 {
     grid-column-end: span 5; }
-  /* line 31, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 31, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-6 {
     grid-column-end: span 6; }
-  /* line 35, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-7 {
     grid-column-end: span 7; }
-  /* line 39, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 39, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-8 {
     grid-column-end: span 8; }
-  /* line 45, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .container-form {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     grid-auto-flows: dense;
     width: 100%; }
-  /* line 53, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 53, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-2-form {
     grid-column-end: span 2; }
-  /* line 57, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 57, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-4-form {
     grid-column-end: span 4; }
-  /* line 61, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 61, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .col-8-form {
     grid-column-end: span 8; }
-  /* line 66, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 66, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .cours-ligne {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     width: 100%; }
-  /* line 72, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 72, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .cours-nom {
     grid-column-end: span 1; }
-  /* line 75, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 75, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .cours-img {
     grid-column-end: span 1; }
-  /* line 78, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 78, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .cours-pourcentage {
     grid-column-end: span 1; }
-  /* line 81, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 81, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .cours-moyenne {
     grid-column-end: span 1; }
-  /* line 85, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_grid.scss */
+  /* line 85, /home/eleve/Documents/Admin-Dashboard/scss/_grid.scss */
   .cours-avance {
     grid-column-end: span 4; } }
 
-/* line 1, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 * {
   padding: 0;
   margin: 0; }
 
 /* Mise en place de l'image de fond*/
-/* line 7, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 7, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 .accueilWeb {
   background-image: url("img/background-accueil2.jpg");
   background-attachment: fixed;
@@ -86,7 +86,7 @@
   text-align: center; }
 
 /*description des boutons*/
-/* line 17, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 .btn,
 .btn:visited {
   margin-top: 15px;
@@ -103,7 +103,7 @@
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s; }
-  /* line 33, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+  /* line 33, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
   .btn:hover, .btn:active,
   .btn:visited:hover,
   .btn:visited:active {
@@ -111,7 +111,7 @@
     border: aqua;
     color: aqua; }
 
-/* line 41, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 41, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 h2 {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -120,7 +120,7 @@ h2 {
   line-height: 32px;
   text-align: center;
   text-shadow: 3px 3px aqua; }
-  /* line 19, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_mixins.scss */
+  /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
   h2:after {
     content: "";
     width: 250px;
@@ -129,7 +129,7 @@ h2 {
     display: block;
     margin: 10px auto; }
 
-/* line 45, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 h3 {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -137,7 +137,7 @@ h3 {
   font-weight: 330;
   text-align: center;
   margin: 15px; }
-  /* line 36, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_mixins.scss */
+  /* line 36, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
   h3:after {
     content: "";
     width: 250px;
@@ -147,7 +147,7 @@ h3 {
     bottom: -15px;
     margin: 10px auto; }
 
-/* line 49, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 49, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 h4 {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -156,7 +156,7 @@ h4 {
   text-align: center;
   margin: 10px; }
 
-/* line 53, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 53, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 p {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -169,7 +169,7 @@ p {
   text-align: justify;
   margin-bottom: 10px; }
 
-/* line 57, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 57, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 td {
   font-family: Source sans Pro, sans-serif;
   color: #262525;
@@ -182,52 +182,52 @@ td {
   text-align: justify;
   margin-bottom: 10px; }
 
-/* line 61, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 61, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 tr {
   margin-top: 5px; }
 
-/* line 65, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 65, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 table {
   margin-top: 20px;
   vertical-align: middle; }
 
-/* line 70, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+/* line 70, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
 input {
   margin-top: 2px;
   outline: 0;
   border-width: 0 0 2px 0;
   border-color: aqua;
   text-align: left; }
-  /* line 77, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_main.scss */
+  /* line 77, /home/eleve/Documents/Admin-Dashboard/scss/_main.scss */
   input:focus {
     background-color: aqua; }
 
-/* line 3, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 3, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .logo {
   width: 150px;
   align-self: center; }
 
-/* line 8, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 8, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-navigation {
   position: fixed;
   top: 30px;
   right: 50px; }
-  /* line 12, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+  /* line 12, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-navigation li {
     display: inline;
     margin: 10px;
     padding: 10px; }
 
 /*Mise en place de la section centrale*/
-/* line 20, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 20, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #header {
   height: 300px; }
 
-/* line 24, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 24, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .header-btn {
   margin: 50px; }
 
-/* line 29, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 29, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre h1 {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -237,7 +237,7 @@ input {
   margin-bottom: 25px;
   padding: 20px; }
 
-/* line 32, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-titre p {
   font-family: Merriweather, Arial, serif;
   color: #262525;
@@ -246,7 +246,7 @@ input {
   line-height: 32px;
   text-align: center;
   text-shadow: 3px 3px aqua; }
-  /* line 19, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_mixins.scss */
+  /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
   .accueil-titre p:after {
     content: "";
     width: 250px;
@@ -255,15 +255,15 @@ input {
     display: block;
     margin: 10px auto; }
 
-/* line 39, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 39, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 #formulaire {
   display: none; }
 
-/* line 43, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 43, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .hidden {
   display: none; }
 
-/* line 48, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+/* line 48, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
 .accueil-footer {
   position: fixed;
   bottom: 0;
@@ -272,22 +272,22 @@ input {
   font-family: Chicle, fantasy;
   font-size: 14px;
   width: 100%; }
-  /* line 56, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+  /* line 56, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-footer p {
     color: aqua; }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 680px) {
-  /* line 63, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+  /* line 63, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   #header {
     height: 300px; }
-  /* line 66, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_accueil.scss */
+  /* line 66, /home/eleve/Documents/Admin-Dashboard/scss/_accueil.scss */
   .accueil-navigation {
     position: relative;
     right: 0px;
     width: 100%; } }
 
-/* line 1, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_connexion.scss */
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .connexion {
   width: 680px;
   margin-left: auto;
@@ -296,37 +296,37 @@ input {
   border: 2px solid aqua;
   border-radius: 6px; }
 
-/* line 10, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_connexion.scss */
+/* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .password {
   text-align: center; }
 
-/* line 14, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_connexion.scss */
+/* line 14, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .mdp {
   font-size: 10px;
   color: blue;
   text-decoration: none; }
 
-/* line 20, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_connexion.scss */
+/* line 20, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .mdp:hover {
   text-decoration: underline; }
 
 /*.validation {
     margin: 10px;
 }*/
-/* line 28, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_connexion.scss */
+/* line 28, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
 .form {
   margin-top: 35px;
   margin-bottom: 0; }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 680px) {
-  /* line 35, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_connexion.scss */
+  /* line 35, /home/eleve/Documents/Admin-Dashboard/scss/_connexion.scss */
   .connexion {
     width: 300px; } }
 
-/* line 1, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 1, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-body {
-  background-image: url("img/background-accueil.jpg");
+  background-image: url("img/background-accueil2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -334,27 +334,27 @@ input {
   margin: 0;
   padding: 0; }
 
-/* line 11, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .img-profil {
   width: 75px;
   border-radius: 100%;
   border: 2px solid aqua; }
 
-/* line 18, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 17, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.hidden {
+  display: none; }
+
+/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-table {
-  /*margin: 20px;
-    padding: 10px;
-    border: 1px solid $font-color;
-    border-radius: 6px;*/
   vertical-align: middle;
   background-color: white;
-  width: 90%; }
+  width: 85%; }
 
-/* line 30, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 28, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-presentation p {
   text-align: center; }
 
-/* line 35, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 33, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-ligne {
   border: 1px solid #262525;
   border-radius: 6px;
@@ -362,37 +362,44 @@ input {
   vertical-align: middle;
   background-color: white; }
 
-/* line 44, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 41, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-nom {
   width: 15%;
   color: red; }
 
-/* line 50, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 47, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .cours-img img {
   height: 25px; }
 
-/* line 55, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 52, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .dash-implication {
   padding-right: auto;
   padding-left: auto; }
 
-/* line 60, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+/* line 57, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
 .perf {
   margin-top: 45px;
   margin-bottom: 25px;
   margin-left: 15px; }
 
+/* line 63, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
+.outil {
+  background-color: white;
+  box-shadow: 3px 3px black;
+  text-align: center;
+  display: block; }
+
 /*Description pour les grands ecrans*/
 @media all {
-  /* line 69, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 73, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-header {
     position: fixed;
     top: 75px;
     left: 20px;
-    width: 10%;
+    width: 15%;
     text-align: center;
     margin: 45px auto; }
-    /* line 77, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+    /* line 81, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
     .dash-header h2 {
       font-family: Merriweather, Arial, serif;
       color: #262525;
@@ -403,7 +410,7 @@ input {
       text-shadow: 3px 3px aqua;
       color: white;
       text-shadow: 3px 3px #262525; }
-      /* line 19, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_mixins.scss */
+      /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
       .dash-header h2:after {
         content: "";
         width: 250px;
@@ -411,23 +418,23 @@ input {
         background-color: aqua;
         display: block;
         margin: 10px auto; }
-      /* line 81, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+      /* line 85, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
       .dash-header h2:after {
         content: none; }
-    /* line 85, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+    /* line 89, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
     .dash-header h4 {
       color: white; }
-  /* line 91, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 95, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-menu {
     margin-top: 45px;
     text-align: left; }
-    /* line 94, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+    /* line 98, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
     .dash-menu ul {
       list-style-type: none; }
-      /* line 96, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+      /* line 100, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
       .dash-menu ul li {
         margin-top: 5px; }
-        /* line 98, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+        /* line 102, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
         .dash-menu ul li a {
           text-decoration: none;
           color: white;
@@ -435,52 +442,52 @@ input {
           -webkit-transition: all 1s;
           -moz-transition: all 1s;
           -o-transition: all 1s; }
-        /* line 106, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+        /* line 110, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
         .dash-menu ul li a:hover {
           text-shadow: 1px 1px aqua;
           color: #262525; }
-  /* line 115, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 119, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-main-content {
     width: 85%;
     float: right;
     background-color: white;
     opacity: 0.7; }
-  /* line 124, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 128, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-head {
     height: 0px; }
-  /* line 127, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 131, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-header-responsive {
     display: none; } }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 800px) {
-  /* line 135, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 139, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-header {
     position: relative;
     display: none; }
-  /* line 141, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 145, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-main-content {
     width: 100%;
     float: none;
     position: relative;
     z-index: -100; }
-  /* line 147, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 151, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-head {
     height: 80px; }
-  /* line 150, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 154, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .dash-header-responsive {
     display: inline-block;
     position: fixed;
     top: 15px;
     left: 15px; }
-  /* line 156, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_dashboard.scss */
+  /* line 160, /home/eleve/Documents/Admin-Dashboard/scss/_dashboard.scss */
   .menu-responsive {
     display: none;
     float: right;
     margin-top: -10px;
     margin-left: 25px; } }
 
-/* line 2, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
   background-image: url("img/background-accueil2.jpg");
   background-attachment: fixed;
@@ -489,7 +496,7 @@ input {
   background-size: cover;
   height: 350px;
   margin-top: 0px; }
-  /* line 10, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .header h2 {
     font-family: Merriweather, Arial, serif;
     color: #262525;
@@ -498,7 +505,7 @@ input {
     line-height: 32px;
     text-align: center;
     text-shadow: 3px 3px aqua; }
-    /* line 19, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_mixins.scss */
+    /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_mixins.scss */
     .header h2:after {
       content: "";
       width: 250px;
@@ -507,27 +514,27 @@ input {
       display: block;
       margin: 10px auto; }
 
-/* line 16, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .entete {
   position: fixed;
   width: 100%; }
 
-/* line 21, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .content-avatar {
   position: fixed;
   right: 50px;
   top: 35px; }
-  /* line 25, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 25, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .content-avatar li {
     display: inline;
     margin: 10px;
     padding: 10px; }
 
-/* line 32, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .recherche {
   vertical-align: top; }
 
-/* line 36, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 36, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .imgHeader {
   height: 75px;
   border-radius: 100%;
@@ -535,12 +542,12 @@ input {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s; }
-  /* line 43, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 43, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .imgHeader:hover {
     box-shadow: 3px 3px #262525;
     height: 65px; }
 
-/* line 49, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 49, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .menu-content {
   display: none;
   position: fixed;
@@ -552,11 +559,11 @@ input {
   border-radius: 10px;
   opacity: 0.3; }
 
-/* line 62, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 62, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .presentation {
   padding-top: 175px; }
 
-/* line 67, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 67, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .menu-onglet {
   margin-left: auto;
   margin-right: auto;
@@ -565,7 +572,7 @@ input {
   border-bottom: 2px solid aqua;
   width: 100%; }
 
-/* line 76, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 76, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .onglet {
   width: 120px;
   border-radius: 20px;
@@ -581,21 +588,21 @@ input {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s; }
-  /* line 91, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 91, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .onglet:hover {
     text-decoration: underline;
     box-shadow: 2px 2px aqua; }
 
-/* line 97, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 97, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .active {
   background-color: white;
   color: aqua; }
 
-/* line 103, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 103, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .produit {
   margin: 25px; }
 
-/* line 107, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 107, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .item-produits {
   width: 80%;
   margin: 10px;
@@ -609,12 +616,12 @@ input {
   background-position: center;
   border-radius: 6px;
   background-color: white; }
-  /* line 120, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 120, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .item-produits p {
     margin-right: 5px;
     margin-left: 5px; }
 
-/* line 126, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 126, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .image-produit {
   display: block;
   height: 75px;
@@ -625,7 +632,7 @@ input {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-/* line 138, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 138, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .validation {
   margin-right: auto;
   margin-left: auto;
@@ -633,11 +640,11 @@ input {
   margin-bottom: 50px;
   text-align: center; }
 
-/* line 147, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 147, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .content-footer {
   background-color: rgba(185, 185, 185, 0.7); }
 
-/* line 150, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+/* line 150, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .espace-comm {
   background-color: #fff;
   margin: 25px;
@@ -645,14 +652,14 @@ input {
   border: 1px solid aqua;
   border-radius: 6px;
   text-align: center; }
-  /* line 157, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 157, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .espace-comm h3 {
     color: aqua; }
-  /* line 160, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 160, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .espace-comm p {
     color: aqua;
     text-align: center; }
-    /* line 163, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+    /* line 163, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
     .espace-comm p a {
       color: aqua;
       text-decoration: none;
@@ -660,21 +667,21 @@ input {
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
       -o-transition: all 1s; }
-    /* line 171, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+    /* line 171, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
     .espace-comm p a:hover {
       color: #262525;
       text-shadow: 2px 2px aqua; }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 680px) {
-  /* line 181, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 181, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .header {
     height: 100%; }
-  /* line 184, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 184, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .content-avatar {
     position: fixed;
     right: 10px; }
-  /* line 188, /home/julien/Documents/Webdev-exo/Admin-Dashboard/scss/_content.scss */
+  /* line 188, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .recherche {
     display: none; } }
 

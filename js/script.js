@@ -9,6 +9,7 @@ var header = document.getElementById("header");
 var formulaire = document.getElementById("formulaire");
 var id = "";
 var connexion;
+var chiffre = 25;
 
 /*
 //Partie 1 chargement des scripts en requete HTML

@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-    
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Mon espace Developpeur.COM</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
-        
+
         <!--Selction des polices -->
         <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-        
+
         <!-- Lien vers w3school -->
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-        
+
         <!--Lien vers les css -->
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" type="text/css" href="../css/fontawesome-all.css">
@@ -22,37 +22,206 @@
     <body class="dash-body">
         <header class="dash-head">
             <!-- espace personnel petit ecran-->
-            <div class="dash-header-responsive">
-                <img class="img-profil" id="img-menu" src="../img/avatar.png">
-                <nav class="menu-responsive dash-menu" id="menu-responsive">
-                    <ul>
-                        <li><a href="content.html">Espace cours</a></li>
-                        <li><a href="#">Vos statistiques</a></li>
-                        <li><a href="#">Vos informations</a></li>
-                        <li><a href="#">Vos ressources</a></li>
-                        <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
-                    </ul>
-                </nav>
-            </div>
-               
-            <!-- Espace personnel grand ecran -->
-            <div class="dash-header">
-                 <div class="dash-presentation">
-                    <img class="img-profil" src="../img/avatar.png">
-                    <h2>RICHARD</h2>
-                    <h2>Julien</h2>
-                    <h4>En formation</h4>
+            <div class="espacePerso">
+                <div class="dash-header-responsive">
+                    <img class="img-profil" id="img-menu" src="../img/avatar.png">
+                    <nav class="menu-responsive dash-menu" id="menu-responsive">
+                        <ul>
+                            <li><a href="content.html">Espace cours</a></li>
+                            <li><a href="#">Vos statistiques</a></li>
+                            <li><a href="#">Vos informations</a></li>
+                            <li><a href="#">Vos ressources</a></li>
+                            <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
+                        </ul>
+                    </nav>
                 </div>
-            
-                <!-- Espace menu -->
-                <div class="dash-menu">
-                    <ul>
-                        <li><a href="content.html">Espace cours</a></li>
-                        <li><a href="#">Vos statistiques</a></li>
-                        <li><a href="#">Vos informations</a></li>
-                        <li><a href="#">Vos ressources</a></li>
-                        <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
-                    </ul>
+
+                <!-- Espace personnel grand ecran -->
+                <div class="dash-header hidden">
+                    <div class="dash-presentation">
+                        <img class="img-profil" src="../img/avatar.png">
+                        <h2>RICHARD</h2>
+                        <h2>Julien</h2>
+                        <h4>En formation</h4>
+                    </div>
+
+                    <!-- Espace menu -->
+                    <div class="dash-menu">
+                        <ul>
+                            <li><a href="content.html">Espace cours</a></li>
+                            <li><a href="#">Vos statistiques</a></li>
+                            <li><a href="#">Vos informations</a></li>
+                            <li><a href="#">Vos ressources</a></li>
+                            <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Boite à outil -->
+            <div class="dash-header ">
+                <!--horloge -->
+                <div class="horloge outil">
+                    <div class="table">
+                        <div id="banner" class="td"><span>Your local time</span></div>
+                        <div id="clock" class="td"></div>
+                    </div>
+                </div>
+                <!--Calculatrice -->
+                <div class="calculatrice outil">
+                    <table>
+                        <tr>
+                            <td colspan="4" id="affichage"></td>
+                        </tr>
+                        <tr>
+                            <td id="7" onclick="jouer('7')">7</td>
+                            <td id="8" onclick="jouer('8')">8</td>
+                            <td id="9" onclick="jouer('9')">9</td>
+                            <td id="plus" onclick="jouer('+')">+</td>
+
+                        </tr>
+                        <tr>
+                            <td id="4" onclick="jouer('4')">4</td>
+                            <td id="5" onclick="jouer('5')">5</td>
+                            <td id="6" onclick="jouer('6')">6</td>
+                            <td id="moins" onclick="jouer('-')">-</td>
+                        </tr>
+                        <tr>
+                            <td id="1" onclick="jouer('1')">1</td>
+                            <td id="2" onclick="jouer('2')">2</td>
+                            <td id="3" onclick="jouer('3')">3</td>
+                            <td id="fois" onclick="jouer('*')">*</td>
+                        </tr>
+                        <tr>
+                            <td id="0" onclick="jouer('0')">0</td>
+                            <td id="virg" onclick="jouer('.')">.</td>
+                            <td id="reset" onclick="reset()">CE</td>
+                            <td id="div" onclick="jouer('/')">/</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4" id="egal" onclick="calculer()">=</td>
+                        </tr>
+                    </table>
+                    <p id="resultat"></p>
+                </div>
+                <!-- To Do List -->
+                <div id="ajoutItem" class="ToDoList outil">
+                    <form>
+                        <table class="formToDoList">
+                            <tr class="item">
+                                <td class="tdForm"><Label>Type</Label></td> 
+                                <td class="tdForm">
+                                    <div>
+                                        <select name="typeItem" id="typeItem">
+                                            <option value="maison" selected>Maison</option>
+                                            <option value="alimentaire">Alimenaire</option>
+                                            <option value="bricolage">Bricolage</option>
+                                            <option value="voiture">Voiture</option>
+                                            <option value="travail">Travail</option>
+                                            <option value="vieSocial">Vie sociale</option>
+                                            <option value="autres">Autres</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="item">
+                                <td class="tdForm"><label>Titre de la tache</label></td>
+                                <td class="tdForm">
+                                    <input type="text" id="titre">
+                                </td>
+                            </tr>
+                            <tr class="item">
+                                <td class="tdForm"><Label>Priorité</Label></td> 
+                                <td class="tdForm">
+                                    <div>
+                                        <select name="priorite" id="prioriteItem">
+                                            <option value="red">Très Forte</option>
+                                            <option value="orange">Forte</option>
+                                            <option value="yellow" selected>Moyenne</option>
+                                            <option value="green">Faible</option>
+                                            <option value="blue">Très faible</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr iclass="item">
+                                <td class="tdForm"><Label>Statut</Label></td> 
+                                <td class="tdForm">
+                                    <div>
+                                        <select name="statut" id="statutItem">
+                                            <option value="A faire" selected>A faire</option>
+                                            <option value="En cours">En cours</option>
+                                            <option value="En suspend">En suspens</option>
+                                            <option value="Fait">Fini</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4" id="ajouter" class="tdForm">Ajouter</td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div id="toDoList">
+                </div>
+                <!-- API meteo -->
+                <div class="meteo outil">
+                    <div class="table">
+                        <h4 id="titre">Open Weather</h4>
+                        <label>Entrez le nom de votre ville</label>
+                        <input type="text" name="city" placeholder="nom de la ville" id="city">
+                        <span id="error"></span>
+                    </div>
+                    <div class="table">
+                        <span id="temperature"></span>
+                        <span id="hydrometrie"></span>
+                        <span id="meteo"></span>
+                    </div>
+                </div>
+                <!-- Cinema et film -->
+                <div class="film outil">
+                    <div class='table'>
+                        <h4 id="titre">Cinema à la demande</h4>
+                        <label>Entrez le titre du film</label>
+                        <input type="text" name="film" placeholder="titre du film" id="film">
+                        <span id="error"></span>
+                    </div>
+                    <div class="table">
+                        <span id="Titre"></span>
+                        <span id="Year"></span>
+                        <span id="Released"></span>
+                        <span id="Duree"></span>
+                        <span id="Genre"></span>
+                        <span id="Director"></span>
+                    </div>
+                </div>
+                <!-- TAux de change -->
+                <div class="rates outil">
+                    <div id="box">
+                        <h4>Taux de change</h4>
+                        <table>
+                            <tr>
+                                <td><input id="fromAmount" type="text" size="15" onkeyup="recupererValeur()"/></td>
+                                <td>
+                                    <select id="from" onchange="recupererValeur()">
+                                        <option value="EUR">Europe (EUR)</option>
+                                        <option value="USD">Dollars US (USD)</option>
+                                        <option value="JPY">Japanese Yen (JPY)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><input id="toAmount" type="text" size="15" disabled/></td>
+                                <td>
+                                    <select id="to" onchange="recupererValeur()">
+                                        <option value="GBP">Livres(GBP)</option>
+                                        <option value="JPY">Japanese Yen (JPY)</option>
+                                        <option value="USD">Dollars US (USD)</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </header>
@@ -66,7 +235,7 @@
                 </div>
             </div>
             <div class="dash-cours w3-animate-zoom">
-                 <div class="container perf">
+                <div class="container perf">
                     <div class="col-8">
                         <h3> Vos cours suivis</h3>
                     </div>
@@ -124,8 +293,8 @@
             </div>
             <div class="container">
                 <div class="col-4">
-                     <div class="dash-implication">
-                         <div class="container perf">
+                    <div class="dash-implication">
+                        <div class="container perf">
                             <div class="col-8">
                                 <h3> Votre implication par cours</h3>
                             </div>
@@ -137,44 +306,50 @@
                 </div>
                 <div class="col-4">
                     <div class="dash-moyenne">
-                         <div class="container perf">
+                        <div class="container perf">
                             <div class="col-8">
                                 <h3>Votre temps passé par cours</h3>
                             </div>
                         </div>
                         <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
-                                <canvas id="myPie"></canvas>
+                            <canvas id="myPie"></canvas>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="dash-etude">
-                         <div class="container perf">
+                        <div class="container perf">
                             <div class="col-8">
                                 <h3>Votre journée</h3>
                             </div>
                         </div>
                         <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
-                                <canvas id="myRadar"></canvas>
+                            <canvas id="myRadar"></canvas>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
                     <div class="dash-etude">
-                         <div class="container perf">
+                        <div class="container perf">
                             <div class="col-8">
                                 <h3>Votre Semaine</h3>
                             </div>
                         </div>
                         <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
-                                <canvas id="myPolar"></canvas>
+                            <canvas id="myPolar"></canvas>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="../js/dash.js"></script>
+        <script src="../js/calulatrice.js"></script>
+        <script src="../js/clock.js"></script>
+        <script src="../js/kino.js"></script>
+        <script src="../js/rates.js"></script>
+        <script src="../js/toDoList.js"></script>
+        <script src="../js/weather.js"></script>
     </body>
 </html>
