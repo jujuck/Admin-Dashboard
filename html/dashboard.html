@@ -58,17 +58,18 @@
                 </div>
             </div>
             <!-- Boite à outil -->
-            <div class="dash-header ">
+            <div class="dash-header">
                 <!--horloge -->
                 <div class="horloge outil">
                     <div class="table">
-                        <div id="banner" class="td"><span>Your local time</span></div>
-                        <div id="clock" class="td"></div>
+                        <div id="banner" ><h5>Your local time</h5></div>
+                        <div id="clock"></div>
                     </div>
                 </div>
                 <!--Calculatrice -->
                 <div class="calculatrice outil">
-                    <table>
+                    <h5>Calculatrice</h5>
+                    <table class="table">
                         <tr>
                             <td colspan="4" id="affichage"></td>
                         </tr>
@@ -104,72 +105,75 @@
                     <p id="resultat"></p>
                 </div>
                 <!-- To Do List -->
-                <div id="ajoutItem" class="ToDoList outil">
-                    <form>
-                        <table class="formToDoList">
-                            <tr class="item">
-                                <td class="tdForm"><Label>Type</Label></td> 
-                                <td class="tdForm">
-                                    <div>
-                                        <select name="typeItem" id="typeItem">
-                                            <option value="maison" selected>Maison</option>
-                                            <option value="alimentaire">Alimenaire</option>
-                                            <option value="bricolage">Bricolage</option>
-                                            <option value="voiture">Voiture</option>
-                                            <option value="travail">Travail</option>
-                                            <option value="vieSocial">Vie sociale</option>
-                                            <option value="autres">Autres</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="item">
-                                <td class="tdForm"><label>Titre de la tache</label></td>
-                                <td class="tdForm">
-                                    <input type="text" id="titre">
-                                </td>
-                            </tr>
-                            <tr class="item">
-                                <td class="tdForm"><Label>Priorité</Label></td> 
-                                <td class="tdForm">
-                                    <div>
-                                        <select name="priorite" id="prioriteItem">
-                                            <option value="red">Très Forte</option>
-                                            <option value="orange">Forte</option>
-                                            <option value="yellow" selected>Moyenne</option>
-                                            <option value="green">Faible</option>
-                                            <option value="blue">Très faible</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr iclass="item">
-                                <td class="tdForm"><Label>Statut</Label></td> 
-                                <td class="tdForm">
-                                    <div>
-                                        <select name="statut" id="statutItem">
-                                            <option value="A faire" selected>A faire</option>
-                                            <option value="En cours">En cours</option>
-                                            <option value="En suspend">En suspens</option>
-                                            <option value="Fait">Fini</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="4" id="ajouter" class="tdForm">Ajouter</td>
-                            </tr>
-                        </table>
-                    </form>
-                </div>
-                <div id="toDoList">
+                <div class="outil">
+                    <h5>My To Do List</h5>
+                    <div id="ajoutItem" class="ToDoList">
+                        <form>
+                            <table class="formToDoList">
+                                <tr class="item">
+                                    <td class="tdForm"><Label>Type</Label></td> 
+                                    <td class="tdForm">
+                                        <div>
+                                            <select name="typeItem" id="typeItem">
+                                                <option value="maison" selected>Maison</option>
+                                                <option value="alimentaire">Alimenaire</option>
+                                                <option value="bricolage">Bricolage</option>
+                                                <option value="voiture">Voiture</option>
+                                                <option value="travail">Travail</option>
+                                                <option value="vieSocial">Vie sociale</option>
+                                                <option value="autres">Autres</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td class="tdForm"><label>Titre de la tache</label></td>
+                                    <td class="tdForm">
+                                        <input type="text" id="titre" class="input">
+                                    </td>
+                                </tr>
+                                <tr class="item">
+                                    <td class="tdForm"><Label>Priorité</Label></td> 
+                                    <td class="tdForm">
+                                        <div>
+                                            <select name="priorite" id="prioriteItem">
+                                                <option value="red">Très Forte</option>
+                                                <option value="orange">Forte</option>
+                                                <option value="yellow" selected>Moyenne</option>
+                                                <option value="green">Faible</option>
+                                                <option value="blue">Très faible</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr iclass="item">
+                                    <td class="tdForm"><Label>Statut</Label></td> 
+                                    <td class="tdForm">
+                                        <div>
+                                            <select name="statut" id="statutItem">
+                                                <option value="A faire" selected>A faire</option>
+                                                <option value="En cours">En cours</option>
+                                                <option value="En suspend">En suspens</option>
+                                                <option value="Fait">Fini</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" id="ajouter" class="tdForm">Ajouter</td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                    <div id="toDoList">
+                    </div>
                 </div>
                 <!-- API meteo -->
                 <div class="meteo outil">
                     <div class="table">
-                        <h4 id="titre">Open Weather</h4>
+                        <h5 id="titre">Open Weather</h5>
                         <label>Entrez le nom de votre ville</label>
-                        <input type="text" name="city" placeholder="nom de la ville" id="city">
+                        <input type="text" class="input" name="city" placeholder="nom de la ville" id="city">
                         <span id="error"></span>
                     </div>
                     <div class="table">
@@ -181,9 +185,9 @@
                 <!-- Cinema et film -->
                 <div class="film outil">
                     <div class='table'>
-                        <h4 id="titre">Cinema à la demande</h4>
+                        <h5 id="titre">Cinema à la demande</h5>
                         <label>Entrez le titre du film</label>
-                        <input type="text" name="film" placeholder="titre du film" id="film">
+                        <input type="text" name="film" placeholder="titre du film" id="film" class="input">
                         <span id="error"></span>
                     </div>
                     <div class="table">
@@ -195,32 +199,28 @@
                         <span id="Director"></span>
                     </div>
                 </div>
-                <!-- TAux de change -->
+                <!-- Taux de change -->
                 <div class="rates outil">
                     <div id="box">
-                        <h4>Taux de change</h4>
-                        <table>
-                            <tr>
-                                <td><input id="fromAmount" type="text" size="15" onkeyup="recupererValeur()"/></td>
-                                <td>
-                                    <select id="from" onchange="recupererValeur()">
-                                        <option value="EUR">Europe (EUR)</option>
-                                        <option value="USD">Dollars US (USD)</option>
-                                        <option value="JPY">Japanese Yen (JPY)</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><input id="toAmount" type="text" size="15" disabled/></td>
-                                <td>
-                                    <select id="to" onchange="recupererValeur()">
-                                        <option value="GBP">Livres(GBP)</option>
-                                        <option value="JPY">Japanese Yen (JPY)</option>
-                                        <option value="USD">Dollars US (USD)</option>
-                                    </select>
-                                </td>
-                            </tr>
-                        </table>
+                        <h5>Taux de change</h5>
+                        <div>
+                            <div><input id="fromAmount" type="text" size="15" onkeyup="recupererValeur()" class="input"/></div>
+                            <div>
+                                <select id="from" onchange="recupererValeur()">
+                                    <option value="EUR">Europe (EUR)</option>
+                                    <option value="USD">Dollars US (USD)</option>
+                                    <option value="JPY">Japanese Yen (JPY)</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select id="to" onchange="recupererValeur()">
+                                    <option value="GBP">Livres(GBP)</option>
+                                    <option value="JPY">Japanese Yen (JPY)</option>
+                                    <option value="USD">Dollars US (USD)</option>
+                                </select>
+                            </div>
+                            <div><input id="toAmount" type="text" size="15" disabled class="input"/></div>
+                        </div>
                     </div>
                 </div>
             </div>
