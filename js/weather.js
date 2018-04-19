@@ -22,13 +22,13 @@ function findWeather() {
                 var hydroValue = request.response.main.humidity
                 var meteoValue = request.response.weather[0].description
 
-                var tempParagraphe = '<p>Temperature extérieure :' + tempValue + '°C</p>'
+                var tempParagraphe = `<p>Temperature extérieure : ${tempValue} °C</p>`
                 temperature.innerHTML = tempParagraphe;
 
-                var humidityParagraphe = '<p>Hydrometrie : ' + hydroValue + '%</p>'
+                var humidityParagraphe = `<p>Hydrometrie : ${hydroValue} %</p>`
                 hydrometrie.innerHTML = humidityParagraphe
 
-                var meteoParagraphe = '<p>Temps :' + meteoValue + '</p>'
+                var meteoParagraphe = `<p>Temps : ${meteoValue} </p>`
                 meteoReel.innerHTML = meteoParagraphe
             }
             console.log(request.response)

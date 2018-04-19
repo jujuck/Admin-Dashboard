@@ -1,4 +1,5 @@
 //Définition des utilisateurs
+
 var users = [
     {
         "username": "Richard",
@@ -62,6 +63,7 @@ var users = [
     }
 ]
 
+
 //PArtie 3 vérification de la connexion
 //Vérification du formulaire de connexion
 var validID = false;
@@ -70,26 +72,22 @@ var passwordConnexion = document.getElementById("passConnexion");
 
 //Chargement du fichier JSon et vérification utilisateur
 function login(utilisateur, motDePasse) {
-    /*var myRequestUser = new XMLHttpRequest();
-    myRequestUser.open('GET', '../data/users.json', true);
+    /*var requestURL = 'https://github.com/jujuck/Admin-Dashboard/blob/master/data/users.json'
+    var myRequestUser = new XMLHttpRequest();
+    myRequestUser.open('GET', requestURL);
     myRequestUser.responseType = 'json'
     myRequestUser.send();
-    var users;
     
-    myRequestUser.onreadystatechange = function () {
-        if(myRequestUser.readyState === 4) {
-            console.log(myRequestUser)
-            users = JSON.parse(myRequestUser.responsetext);   
-            }
-        }
-        */
-    
-    for (i = 0; i < users.length; i++) {
-        if(utilisateur === users[i].username && motDePasse === users[i].password) {
-            validID = true;
-            return true;
-        } 
-    } return false;
+    myRequestUser.onload= function () {
+        //if(myRequestUser.readyState === 4) {
+            var users = rmyRequestUSer.response//JSON.parse(myRequestUser.responsetext);*/  
+            for (let user of users)/*(i = 0; i < users.length; i++)*/ {
+                if(utilisateur === user/*s[i]*/.username && motDePasse === user/*s[i]*/.password) {
+                    return true;
+                } 
+            } return false;
+        //}
+    //}  
 }
 
 //Lancement de la fonction
@@ -148,6 +146,6 @@ document.getElementById("passwordInscription").addEventListener("input", functio
 	}
 
 	var passwordHelpElement = document.getElementById("passwordHelp");
-	passwordHelpElement.textContent = "Strength: " + passwordLength + ", " + Letter + ", " + Nombre;
+	passwordHelpElement.textContent = `Strength: ${passwordLength} , ${Letter} , ${Nombre}`;
 	passwordHelpElement.style.color = messageColor;
 });

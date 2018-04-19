@@ -33,7 +33,7 @@ function createListeElement() {
     //création des éléments
     var listItem = document.createElement("div")
     listItem.classList.add('elementGlobal')
-    listItem.setAttribute('id', 'elementGlobal' + index)
+    listItem.setAttribute('id', `elementGlobal ${index}`)/*'elementGlobal' + index*/
     
     var titreItem = document.createElement("div")
     titreItem.classList.add('titreItem')
@@ -57,38 +57,38 @@ function createListeElement() {
     var columnPriorite = document.createElement("td")
     columnPriorite.classList.add(priotiteItem)
     columnPriorite.classList.add('columnPriorite')
-    columnPriorite.setAttribute('onClick', 'modifPriorite(' + index + ')')
+    columnPriorite.setAttribute('onClick', `modifPriorite ${index}`) /*'modifPriorite(' + index + ')'*/
     columnPriorite.setAttribute('id', 'item' + index)
     
     var columnStatut = document.createElement("td")
     columnStatut.textContent = statutItem
     columnStatut.classList.add('columnStatut')
-    columnStatut.setAttribute('onClick', 'modifStatut(' + index + ')')
-    columnStatut.setAttribute('id', 'statut' + index)
+    columnStatut.setAttribute('onClick', `modifStatut ${index}`) /*'modifStatut(' + index + ')')*/
+    columnStatut.setAttribute('id', `statut ${index}`)/*'statut' + index)*/
 
     var columnAjoutItem = document.createElement("td")
     columnAjoutItem.classList.add('columnAjoutItem')
-    columnAjoutItem.setAttribute('onClick', 'ajoutItem(' + index + ')')
+    columnAjoutItem.setAttribute('onClick', `ajoutItem ${index}`)/*'ajoutItem(' + index + ')')*/
     
     var columnTrash = document.createElement("td")
     columnTrash.classList.add('columnTrash')
-    columnTrash.setAttribute('onClick', 'supprimerItem(' + index + ')')
+    columnTrash.setAttribute('onClick', `supprimerItem ${index}`)/*'supprimerItem(' + index + ')')*/
     
     //Mise en place de l'ajout d'element secondaire
     var row2 = document.createElement("tr")
     row2.classList.add('rowItem')
-    row2.setAttribute('id', 'row2Item' + index)
+    row2.setAttribute('id', `row2Item ${index}`)/* 'row2Item' + index)*/
     
     var columnAjoutItem = document.createElement("td")
     columnAjoutItem.textContent = "+ ajout d'élément secondaire..."
     columnAjoutItem.classList.add('columnAjoutItem')
-    columnAjoutItem.setAttribute('onClick', 'affichageAjoutItem(' + index + ')')
+    columnAjoutItem.setAttribute('onClick', `affichageAjoutItem ${index}`)/*'affichageAjoutItem(' + index + ')')*/
     columnAjoutItem.colSpan = "5"
     
     var row3 = document.createElement("tr")
     row3.classList.add('rowItem')
     row3.classList.add('hidden')
-    row3.setAttribute('id', 'row3Item' + index)
+    row3.setAttribute('id', `row3Item ${index}`)/*'row3Item' + index)*/
     
     var columnAjoutItemInputText = document.createElement("td")
     columnAjoutItemInputText.colSpan = "2"
@@ -101,13 +101,13 @@ function createListeElement() {
     
     var columnInput = document.createElement('input')
     columnInput.classList.add('columnAjoutItemInput')
-    columnInput.setAttribute('id', 'valueItem' + index)
+    columnInput.setAttribute('id', `valueItem ${index}`)/*'valueItem' + index)*/
     
     var columnAjoutItemInputOk = document.createElement("td")
     columnAjoutItemInputOk.colSpan = "1"
     columnAjoutItemInputOk.textContent = "Ok"
     columnAjoutItemInputOk.classList.add('columnAjoutItem')
-    columnAjoutItemInputOk.setAttribute('onClick', 'ajoutItemOk(' + index + ')')
+    columnAjoutItemInputOk.setAttribute('onClick', `ajoutItemOk ${index}`)/*'ajoutItemOk(' + index + ')')*/
     
     //Distribution des enfants en HTML
     row1.appendChild(columnIcon)
@@ -178,7 +178,7 @@ function ajoutItemOk(reference) {
     var columnItemSecondValid = document.createElement("td")
     columnItemSecondValid.textContent = "fait"
     columnItemSecondValid.classList.add('columnItemSecond')
-    columnItemSecondValid.setAttribute('onClick', 'itemDone(' + sousItemIndex + ')')
+    columnItemSecondValid.setAttribute('onClick', `itemDone ${sousItemIndex}`)/*'itemDone(' + sousItemIndex + ')')*/
     columnItemSecondValid.colSpan = "1"
     
     row4.appendChild(columnItemSecond)

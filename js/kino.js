@@ -27,22 +27,22 @@ function findFilm() {
                 var genreValue = request.response.Genre
                 var directorValue = request.response.Director
 
-                var titreParagraphe = '<p>Titre : ' + titreValue + '</p>'
+                var titreParagraphe = `<p>Titre : ${titreValue} </p>`
                 titre.innerHTML = titreParagraphe;
 
-                var yearParagraphe = '<p>Année de production : ' + yearValue + '</p>'
+                var yearParagraphe = `<p>Année de production : ${yearValue} </p>`
                 year.innerHTML = yearParagraphe
 
-                var releasedParagraphe = '<p>Année de parution :' + releasedValue + '</p>'
+                var releasedParagraphe = `<p>Année de parution : ${releasedValue} </p>`
                 released.innerHTML = releasedParagraphe
 
-                var dureeParagraphe = '<p>Durée du film : ' + dureeValue + '</p>'
+                var dureeParagraphe = `<p>Durée du film : ${dureeValue} </p>`
                 duree.innerHTML = dureeParagraphe;
 
-                var genreParagraphe = '<p>Genre : ' + genreValue + '</p>'
+                var genreParagraphe = `<p>Genre : ${genreValue} </p>`
                 genre.innerHTML = genreParagraphe
 
-                var directorParagraphe = '<p> Directeur : ' + directorValue + '</p>'
+                var directorParagraphe = `<p> Directeur : ${directorValue} </p>`
                 director.innerHTML = directorParagraphe
             }
         }

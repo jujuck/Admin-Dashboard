@@ -3,14 +3,14 @@ var Active = 'developpementWeb'
 
 //Fonction de création des objets Projet
 function createNewProduit(nom, image, text) {
-    produitListe += '<div class="col-2">';
-    produitListe += '<div class="item-produits"'
-    produitListe += '<h3>' + nom + '</h3>';
-    produitListe += '<img class="image-produit" src="../' + image + '">';
-    produitListe += '<p>' + text + '</p>';
-    produitListe += '<button class="btn">Let s go!</button>';
-    produitListe += '</div>';
-    produitListe += '</div>';
+    produitListe += `<div class="col-2">`;
+    produitListe += `<div class="item-produits">`
+    produitListe += `<h3>${nom}</h3>`;
+    produitListe += `<img class="image-produit" src="../${image}">`;
+    produitListe += `<p>${text}</p>`;
+    produitListe += `<button class="btn">Let s go!</button>`;
+    produitListe += `</div>`;
+    produitListe += `</div>`;
     
     return produitListe;
 }
@@ -18,10 +18,10 @@ function createNewProduit(nom, image, text) {
 
 //Fonction de mise à jour des onglets
 function onglet() {
-    var onglet = new Array(document.getElementsByClassName("onglet"))
-    for (var i = 0; i < onglet.length; i++) {
-       if (onglet[i].classList.contains("active")) {
-           onglet[i].classList.remove("active")
+    var onglets = new Array(document.getElementsByClassName("onglet"))
+    for (let onglet of onglets)/*(var i = 0; i < onglet.length; i++)*/ {
+       if (onglet/*[i]*/.classList.contains("active")) {
+           onglet/*[i]*/.classList.remove("active")
            }
     }
 }
@@ -35,11 +35,11 @@ function initProduit (id) {
     myRequestProduit.onreadystatechange = function () {
         if(myRequestProduit.readyState === 4) {
             var produits = JSON.parse(myRequestProduit.responseText);
-            produitListe = '<div class="container">';
+            produitListe = `<div class="container">`;
 
-            for (var i = 0; i < produits.length; i++) {
-                if(produits[i].menu === id) {
-                    createNewProduit(produits[i].name, produits[i].image, produits[i].text)
+            for (let produit of produits) /*(var i = 0; i < produits.length; i++)*/ {
+                if(produit/*s[i]*/.menu === id) {
+                    createNewProduit(produit/*s[i]*/.name, produit/*s[i]*/.image, produit/*s[i]*/.text)
                 }
             }
         }
