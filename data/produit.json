@@ -9,7 +9,7 @@
     {
         "name": "Loso individualisé",
          "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/html5.png",
+        "image": "img/css3.png",
         "text": "Personnalisation du projet Loso, en y ajoutant une touche de Js pour le formulaire et l'animation ",
         "menu": "developpementWeb"
     },
@@ -23,42 +23,42 @@
     {
         "name": "Memorize",
          "tag": ["Html", "Css", "Json", "JS"],
-        "image": "img/css3.jpg",
+        "image": "img/js.jpg",
         "text": "Un projet individuel pour perfectionner le DOM et les modifications en JS ",
         "menu": "developpementWeb"
     },
     {
         "name": "La découverte",
          "tag": ["Stage Découverte", "Kayak", "Canoe"],
-        "image": "img/bootstrap.jpeg",
+        "image": "img/.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "initiation"
     },
     {
         "name": "L'école de pagaie",
         "tag": ["Initiation", "Perfectionnement", "Stage en eau vive", "Canoe-kayak"],
-        "image": "img/jquery.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "initiation"
     },
     {
         "name": "La class III",
         "tag": ["Canoe-kayak", "Eau-vive", "Perfectionnement"],
-        "image": "img/sass.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "initiation"
     },
     {
         "name": "Les régates de L'espoir",
         "tag": ["Canoe-kayak", "Course en ligne", "Competition"],
-        "image": "img/js.png",
+        "image": "img/png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "initiation"
     }, 
      {
         "name": "La class IV",
          "tag": ["Canoe-kayak", "Eau-vive", "Sportif"],
-        "image": "img/bootstrap.jpeg",
+        "image": "img/.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "entrainement"
     },
@@ -72,98 +72,98 @@
     {
         "name": "Les sélections - 18ans",
         "tag": ["Canoe-kayak", "Competition", "Descente", "championnat du Monde", "championnat d'Europe"],
-        "image": "img/sass.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "entrainement"
     },
     {
         "name": "L'équipe régionale",
         "tag": ["Canoe-kayak", "Competition", "Descente", "championnat du Monde", "championnat d'Europe"],
-        "image": "img/js.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "entrainement"
     }, 
          {
         "name": "Les relations Presse",
          "tag": ["communiqué", "Dossier Presse"],
-        "image": "img/bootstrap.jpeg",
+        "image": "img/.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "communication"
     },
     {
         "name": "La stratégie",
         "tag": ["Swat", "Positionnement", "media"],
-        "image": "img/jquery.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "communication"
     },
     {
         "name": "Le webmarketing",
         "tag": ["referencement", "reseaux sociaux", "google analytics", "fiche web"],
-        "image": "img/sass.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "communication"
     },
     {
         "name": "La PLV",
         "tag": ["affiche", "flyers", "amenagement", "affichage extérieure"],
-        "image": "img/js.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "communication"
     }, 
     {
         "name": "Ubuntu Server et Prestashop",
         "tag": ["Ubuntu Server", "SSH", "Lamp", "Prestashop"],
-        "image": "img/js.png",
+        "image": "img/.png",
         "text": "Une journée, une clé usb avec Ubuntu Server une tour et un objectif : installler Prestshop et y intégrer 2 novueaux modules",
         "menu": "serveur"
     },
     {
         "name": "A venir",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/js.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "serveur"
     },
     {
         "name": "A venir",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/js.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "serveur"
     },
     {
         "name": "A venir",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/mysql.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "serveur"
     },
     {
         "name": "Outil Google",
         "tag": ["Google Drive", "Google Calendar", "Google Form"],
-        "image": "img/php.jpeg",
+        "image": "img/.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratif"
     },
     {
         "name": "Doodle",
         "tag": ["Doodle", "sondage"],
-        "image": "img/php.jpeg",
+        "image": "img/.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratif"
     },
     {
         "name": "Trello", 
         "tag": ["Trello", "Projet"],
-        "image": "img/mysql.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratif"
     },
     {
         "name": "Slack",
         "tag": ["slack", "echange"],
-        "image": "img/jsnode.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "collaboratif"
     }
