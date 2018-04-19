@@ -9,7 +9,7 @@
     {
         "name": "Loso individualisé",
          "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/css3.png",
+        "image": "img/css3.jpg",
         "text": "Personnalisation du projet Loso, en y ajoutant une touche de Js pour le formulaire et l'animation ",
         "menu": "developpementWeb"
     },
@@ -23,8 +23,15 @@
     {
         "name": "Memorize",
          "tag": ["Html", "Css", "Json", "JS"],
-        "image": "img/js.jpg",
+        "image": "img/js.png",
         "text": "Un projet individuel pour perfectionner le DOM et les modifications en JS ",
+        "menu": "developpementWeb"
+    },
+    {
+        "name": "Parallax",
+         "tag": ["Html", "Css", "JS"],
+        "image": "img/js.png",
+        "text": "Un projet individuel pour tester le DOM et l'effet Parallax ",
         "menu": "developpementWeb"
     },
     {
@@ -65,7 +72,7 @@
     {
         "name": "Les championnats de France",
         "tag": ["Canoe-kayak", "Competition", "Cadet", "Junior", "Slalom", "Descente"],
-        "image": "img/jquery.png",
+        "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "entrainement"
     },

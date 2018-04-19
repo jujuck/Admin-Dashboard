@@ -65,7 +65,7 @@ var users = [
 //PArtie 3 vérification de la connexion
 //Vérification du formulaire de connexion
 var validID = false;
-var userConnexion = document.getElementById("usernameConnexion").value;
+var userConnexion = document.getElementById("usernameConnexion");
 var passwordConnexion = document.getElementById("passConnexion");
 
 //Chargement du fichier JSon et vérification utilisateur
@@ -94,9 +94,9 @@ function login(utilisateur, motDePasse) {
 
 //Lancement de la fonction
 function verificationUser() {
-    if (login(userConnexion, passConnexion.value)) {
-        validID = true;
-        validID = localStorage;
+    if (login(userConnexion.value, passConnexion.value)) {
+        userConnexion.value = "";
+        document.getElementById("connexion").classList.add('hidden');
         window.location.href = 'html/dashboard.html';
     } else {
         userConnexion.value = "";

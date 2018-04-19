@@ -1,6 +1,6 @@
 //définition des variables
 var typeItem = document.getElementById("typeItem").value
-,   titre = document.getElementById("titre").value
+,   titreDeLaTache = document.getElementById("titreDeLaTache").value
 ,   priotiteItem = document.getElementById("prioriteItem").value
 ,   statutItem = document.getElementById("statutItem").value
 ,   ajouter = document.getElementById("ajouter")
@@ -11,13 +11,13 @@ var typeItem = document.getElementById("typeItem").value
 
 //vérification de l'entree d'une valeur
 var titreLength = function() {
-    return titre.length;
+    return titreDeLaTache.length;
 }
 
 //Initialisation des valeurs pour une nouvelle entrée
 function initNewValue() {
     typeItem = document.getElementById("typeItem").value
-    titre = document.getElementById("titre").value
+    titreDeLaTache = document.getElementById("titreDeLaTache").value
     priotiteItem = document.getElementById("prioriteItem").value
     statutItem = document.getElementById("statutItem").value
     ajouter = document.getElementById("ajouter")
@@ -51,7 +51,7 @@ function createListeElement() {
     columnIcon.classList.add(typeItem)
     
     var columnTitre = document.createElement("td")
-    columnTitre.textContent = titre
+    columnTitre.textContent = titreDeLaTache
     columnTitre.classList.add('columnTitre')
     
     var columnPriorite = document.createElement("td")
@@ -136,13 +136,14 @@ function createListeElement() {
 //Lancement de la fonction de création par Event
 document.getElementById("ajouter").addEventListener('click', function() {
     if(titreLength() > 0) {
-        console.log("ok")
+        initNewValue()
         createListeElement();
     }
 })
     
 ajouter.addEventListener('keypress', function(event) {
     if(titreLength() > 0 && event.keycode === 13) {
+        initNewValue()
         createListeElement();
     }
 })
