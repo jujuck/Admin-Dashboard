@@ -38,7 +38,7 @@
                 </div>
 
                 <!-- Espace personnel grand ecran -->
-                <div class="dash-header hidden">
+                <div class="dash-header">
                     <div class="dash-presentation">
                         <img class="img-profil" src="../img/avatar.png">
                         <h2>RICHARD</h2>
@@ -56,19 +56,38 @@
                             <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
                         </ul>
                     </div>
+                    <div class="mesOutils" id="mesOutils">
+                        <h5>Mes Outils</h5>
+                        <!--horloge -->
+                        <div class="clock">
+                            <div class="table">
+                                <div id="banner" ><h5>Your local time</h5></div>
+                                <div id="clock"></div>
+                            </div>
+                        </div>
+                        <!-- Icon outils -->
+                        <img src="../img/iconToDoList/001-verification-of-delivery-list-clipboard-symbol.png" onclick="affichageOutil('ToDo')">
+                        <img src="../img/iconToDoList/002-coins.png" onclick="affichageOutil('rates')">
+                        <img src="../img/iconToDoList/003-video-camera.png" onclick="affichageOutil('film')">
+                        <img src="../img/iconToDoList/005-calculator.png" onclick="affichageOutil('calcul')">
+                        <img src="../img/iconToDoList/004-thermometer.png" onclick="affichageOutil('meteo')">
+                        <p onclick="boiteAOutils(false)">Quitter</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="dash-main-content">
+            <div class="dash-presentation">
+                <div class="container perf">
+                    <div class="col-8">
+                        <h3> Bienvenue sur votre espace personnel</h3>
+                        <p>Cum saepe multa, tum memini domi in hemicyclio sedentem, ut solebat, cum et ego essem una et pauci admodum familiares, in eum sermonem illum incidere qui tum forte multis erat in ore.</p>
+                    </div>
                 </div>
             </div>
             <!-- Boite à outil -->
-            <div class="dash-header">
-                <!--horloge -->
-                <div class="horloge outil">
-                    <div class="table">
-                        <div id="banner" ><h5>Your local time</h5></div>
-                        <div id="clock"></div>
-                    </div>
-                </div>
                 <!--Calculatrice -->
-                <div class="calculatrice outil">
+                <div class="outil hidden" id="calcul">
                     <h5>Calculatrice</h5>
                     <table class="table">
                         <tr>
@@ -106,14 +125,14 @@
                     <p id="resultat"></p>
                 </div>
                 <!-- To Do List -->
-                <div class="outil">
+                <div class="outil hidden" id="ToDo">
                     <h5>My To Do List</h5>
                     <div id="ajoutItem" class="ToDoList">
                         <form>
                             <table class="formToDoList">
                                 <tr class="item">
-                                    <td class="tdForm"><Label>Type</Label></td> 
-                                    <td class="tdForm">
+                                    <td>Type</td> 
+                                    <td>
                                         <div>
                                             <select name="typeItem" id="typeItem">
                                                 <option value="maison" selected>Maison</option>
@@ -128,14 +147,14 @@
                                     </td>
                                 </tr>
                                 <tr class="item">
-                                    <td class="tdForm"><label>Titre de la tache</label></td>
-                                    <td class="tdForm">
+                                    <td><label>Titre de la tache</label></td>
+                                    <td>
                                         <input type="text" id="titre" class="input">
                                     </td>
                                 </tr>
                                 <tr class="item">
-                                    <td class="tdForm"><Label>Priorité</Label></td> 
-                                    <td class="tdForm">
+                                    <td><Label>Priorité</Label></td> 
+                                    <td>
                                         <div>
                                             <select name="priorite" id="prioriteItem">
                                                 <option value="red">Très Forte</option>
@@ -148,8 +167,8 @@
                                     </td>
                                 </tr>
                                 <tr iclass="item">
-                                    <td class="tdForm"><Label>Statut</Label></td> 
-                                    <td class="tdForm">
+                                    <td><Label>Statut</Label></td> 
+                                    <td>
                                         <div>
                                             <select name="statut" id="statutItem">
                                                 <option value="A faire" selected>A faire</option>
@@ -161,7 +180,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="4" id="ajouter" class="tdForm">Ajouter</td>
+                                    <td colspan="4" id="ajouter" class="btn-outil">Ajouter</td>
                                 </tr>
                             </table>
                         </form>
@@ -170,26 +189,26 @@
                     </div>
                 </div>
                 <!-- API meteo -->
-                <div class="meteo outil">
+                <div class="outil hidden" id="meteo">
                     <div class="table">
-                        <h5 id="titre">Open Weather</h5>
+                        <h5>Open Weather</h5>
                         <label>Entrez le nom de votre ville</label>
                         <input type="text" class="input" name="city" placeholder="nom de la ville" id="city">
-                        <span id="error"></span>
+                        <p id="weather" class="btn-outil">GO</p>
                     </div>
                     <div class="table">
                         <span id="temperature"></span>
                         <span id="hydrometrie"></span>
-                        <span id="meteo"></span>
+                        <span id="meteoReel"></span>
                     </div>
                 </div>
                 <!-- Cinema et film -->
-                <div class="film outil">
+                <div class="outil hidden" id="film">
                     <div class='table'>
-                        <h5 id="titre">Cinema à la demande</h5>
+                        <h5>Film à la demande</h5>
                         <label>Entrez le titre du film</label>
-                        <input type="text" name="film" placeholder="titre du film" id="film" class="input">
-                        <span id="error"></span>
+                        <input type="text" name="film" placeholder="titre du film" id="movie" class="input">
+                        <p id="cinema" class="btn-outil">GO</p>
                     </div>
                     <div class="table">
                         <span id="Titre"></span>
@@ -201,7 +220,7 @@
                     </div>
                 </div>
                 <!-- Taux de change -->
-                <div class="rates outil">
+                <div class="outil hidden" id="rates">
                     <div id="box">
                         <h5>Taux de change</h5>
                         <div>
@@ -224,17 +243,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </header>
-        <section class="dash-main-content">
-            <div class="dash-presentation">
-                <div class="container perf">
-                    <div class="col-8">
-                        <h3> Bienvenue sur votre espace personnel</h3>
-                        <p>Cum saepe multa, tum memini domi in hemicyclio sedentem, ut solebat, cum et ego essem una et pauci admodum familiares, in eum sermonem illum incidere qui tum forte multis erat in ore.</p>
-                    </div>
-                </div>
-            </div>
             <div class="dash-cours w3-animate-zoom">
                 <div class="container perf">
                     <div class="col-8">

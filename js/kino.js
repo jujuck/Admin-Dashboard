@@ -1,8 +1,8 @@
-function findWeather() {
+function findFilm() {
     
-    var film = document.getElementById('film').value
-    if(film.length > 0) {
-        var requestUrl = 'http://www.omdbapi.com/?t=' + film + '&apikey=dfbb3f29'
+    var movie = document.getElementById('movie').value
+    if(movie.length > 0) {
+        var requestUrl = 'http://www.omdbapi.com/?t=' + movie + '&apikey=dfbb3f29'
         var request = new XMLHttpRequest();
         request.open('GET', requestUrl);
         request.responseType = 'json';
@@ -27,22 +27,22 @@ function findWeather() {
                 var genreValue = request.response.Genre
                 var directorValue = request.response.Director
 
-                var titreParagraphe = '<p>' + titreValue + '°C</p>'
+                var titreParagraphe = '<p>Titre : ' + titreValue + '</p>'
                 titre.innerHTML = titreParagraphe;
 
-                var yearParagraphe = '<p>' + yearValue + '%</p>'
+                var yearParagraphe = '<p>Année de production : ' + yearValue + '</p>'
                 year.innerHTML = yearParagraphe
 
-                var releasedParagraphe = '<p>' + releasedValue + '</p>'
+                var releasedParagraphe = '<p>Année de parution :' + releasedValue + '</p>'
                 released.innerHTML = releasedParagraphe
 
-                var dureeParagraphe = '<p>' + dureeValue + '°C</p>'
+                var dureeParagraphe = '<p>Durée du film : ' + dureeValue + '</p>'
                 duree.innerHTML = dureeParagraphe;
 
-                var genreParagraphe = '<p>' + genreValue + '%</p>'
+                var genreParagraphe = '<p>Genre : ' + genreValue + '</p>'
                 genre.innerHTML = genreParagraphe
 
-                var directorParagraphe = '<p>' + directorValue + '</p>'
+                var directorParagraphe = '<p> Directeur : ' + directorValue + '</p>'
                 director.innerHTML = directorParagraphe
             }
         }
@@ -50,8 +50,8 @@ function findWeather() {
     
 }
 
-document.getElementById('titre').addEventListener('click', function() {
-        findWeather();
+document.getElementById('cinema').addEventListener('click', function() {
+        findFilm();
 })
 
 

@@ -1,7 +1,7 @@
 //https://openweathermap.org/api
 
 function findWeather() {
-    console.log("ok")
+
     var city = document.getElementById('city').value
     if(city.length > 0) {
         var requestUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&APPID=1ae0e05d29e5676b5e6ae70a74f6fef2'
@@ -17,19 +17,19 @@ function findWeather() {
             } else {
                 var temperature = document.getElementById('temperature')
                 var hydrometrie = document.getElementById('hydrometrie')
-                var meteo = document.getElementById('meteo')
+                var meteoReel = document.getElementById('meteoReel')
                 var tempValue = request.response.main.temp
                 var hydroValue = request.response.main.humidity
                 var meteoValue = request.response.weather[0].description
 
-                var tempParagraphe = '<p>' + tempValue + '°C</p>'
+                var tempParagraphe = '<p>Temperature extérieure :' + tempValue + '°C</p>'
                 temperature.innerHTML = tempParagraphe;
 
-                var humidityParagraphe = '<p>' + hydroValue + '%</p>'
+                var humidityParagraphe = '<p>Hydrometrie : ' + hydroValue + '%</p>'
                 hydrometrie.innerHTML = humidityParagraphe
 
-                var meteoParagraphe = '<p>' + meteoValue + '</p>'
-                meteo.innerHTML = meteoParagraphe
+                var meteoParagraphe = '<p>Temps :' + meteoValue + '</p>'
+                meteoReel.innerHTML = meteoParagraphe
             }
             console.log(request.response)
         }
@@ -37,7 +37,7 @@ function findWeather() {
     }
 }
 
-document.getElementById('titre').addEventListener('click', function() {
+document.getElementById('weather').addEventListener('click', function() {
         findWeather();
 })
 

@@ -14,9 +14,10 @@
     border: 2px solid $font-bckgd;
 }
 
-.hidden {
-    display: none;
-}
+
+
+
+
 //Mise en place du tableau cours
 .cours-table {
     vertical-align: middle;
@@ -60,17 +61,33 @@
     margin-left: 15px;
 }
 
-.outil{
+.clock {
     background-color: white;
     box-shadow: 3px 3px black;
     text-align: center;
-    display: block;
     border-radius: 10px;
-    font-size: 10px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow-behavior-y: auto;
+}
+.outil{
+    background-color: white;
+    box-shadow: 3px 3px black;
+    border: 2px solid black;
+    text-align: center;
+    width: 450px;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    overflow-behavior-y: auto;
 }
 
 .input {
     width: 75px;
+    text-align: right;
 }
 
 .table {
@@ -91,33 +108,219 @@
     margin-right: auto;
     margin-left: auto;
 }
+//Css de la TODOLLIST
+/* Mise en page de l'espace ListItem */
+.toDoList {
+    
+    
+}
+
+.elementGlobal {
+    
+    
+}
+
+.tableList {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    width : 350px;
+    border: 1px solid black;
+    box-shadow: 4px 4px black;
+    border-radius : 6px;
+}
+
+.rowItem {
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    border-left: 1px dashed black;
+    
+}
+
+.columnTrash {
+    background-image: url('img/iconToDoList/garbage.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+    width: 75px;
+}
+
+.columnIcon {
+    width: 50px;
+}
+
+.columnTitre {
+    width : 200px;
+    font-size: 14px;
+    text-align: left;
+}
+
+.columnPriorite {
+    width : 25px;
+    border-radius: 100%;
+    margin-right: 5px;
+}
+
+.columnStatut {
+    width :50px;
+    font-size: 14px;
+}
+
+.columnAjoutItem {
+    color : blue;
+    text-decoration: underline;
+    font-size: 14px;
+    
+}
+
+.columnAjoutItemInput {
+    border : 1px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+.barre {
+    text-decoration: line-through;
+}
+
+.columnItemSecond {
+    color : black;
+    font-size : 12px;
+    text-align : left;
+    padding-left: 10px;
+}
+
+/* définition des class couleurs pour les priorites */
+.red {
+    background-color : red;
+}
+
+.orange {
+    background-color : orange;
+}
+
+.yellow {
+    background-color : yellow;
+}
+
+.green {
+    background-color : green;
+    
+}
+
+.blue {
+    background-color : blue;
+    
+}
+
+/*Définition des icons de type de tache */
+.maison {
+    background-image: url('img/iconToDoList/maison.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+}
+
+.alimentaire {
+    background-image: url('img/iconToDoList/shopping.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+}
+
+.bricolage {
+    background-image: url('img/iconToDoList/bricolage.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+}
+
+.voiture {
+    background-image: url('img/iconToDoList/voiture.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+}
+
+.travail {
+    background-image: url('img/iconToDoList/travail.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+}
+
+.vieSocial {
+    background-image: url('img/iconToDoList/socialLife.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+}
+
+.autres{
+    background-image: url('img/iconToDoList/autres.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 50% 50%;
+}
+
 
 //définition des polices
 h5 {
-    font-size : 12px;
+    font-size : 14px;
     font-weight: bold;
     text-decoration: underline;
 }
 
 td {
-    font-size: 10px
+    font-size: 12px
 }
 
 select {
-    font-siez: 10px;
+    font-size: 12px;
 }
+
+.btn-outil {
+    margin-right: auto;
+    margin-left: auto;
+    width: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: $font-autres;
+    font-size: 12px;
+    color: $font-btn;
+    border: 1px solid $font-btn;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s; 
+    &:hover,
+    &:active {
+        background-color: $font-btn;
+        border: $font-bckgd;
+        color: $font-bckgd;
+    }
+}
+
 
 /*Description pour les grands ecrans*/
 @media all {
     //Mise en page de l'espace header
     .dash-header {
         position: fixed;
-        top: 75px;
+        top: 50px;
         left:15px;
         width: 15%;
         text-align: center;
         margin: 45px auto;
-        
+        overflow-y: auto;
         h2 {
             @include font-H2();
             color: white;

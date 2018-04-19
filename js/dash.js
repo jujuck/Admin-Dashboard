@@ -137,4 +137,60 @@ document.getElementById("img-menu").addEventListener("mouseover", function (e) {
     setTimeout(function() {
     menu.style.display = "none";
     }, 4000);
-})
+});
+
+
+//Mise en place des outils en JS
+function resetOutil() {
+    var calcul = document.getElementById("calcul");
+     if (calcul.classList.contains('hidden') === false) {
+        calcul.classList.add('hidden')
+    }
+    var ToDo = document.getElementById("ToDo");
+     if (ToDo.classList.contains('hidden') === false) {
+        ToDo.classList.add('hidden')
+    }
+    var meteo = document.getElementById("meteo");
+     if (meteo.classList.contains('hidden') === false) {
+        meteo.classList.add('hidden')
+    }
+    var film = document.getElementById("film");
+     if (film.classList.contains('hidden') === false) {
+        film.classList.add('hidden')
+    }
+    var rates = document.getElementById("rates");
+     if (rates.classList.contains('hidden') === false) {
+        rates.classList.add('hidden')
+    }
+}
+
+var outilItem;
+// Drag'n'Drop
+var move = function (event) {
+   var posX = event.pageX;
+   var posY = event.pageY;
+   outilItem.style.position = "absolute";
+   outilItem.style.top = posY - (outilItem.offsetHeight / 2) + "px";
+   outilItem.style.left = posX - (outilItem.offsetWidth / 2) + "px";
+} 
+
+function affichageOutil(outil) {
+    resetOutil()
+    outilItem = document.getElementById(outil);
+    outilItem.classList.remove('hidden');
+    
+    //attente d'event
+    outilItem.addEventListener('mousedown', function() {
+        outilItem.addEventListener('mousemove', move);
+    });
+
+    outilItem.addEventListener('mouseup', function () {
+       outilItem.removeEventListener('mousemove', move);
+    });
+    
+}
+
+
+
+
+

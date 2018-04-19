@@ -134,8 +134,9 @@ function createListeElement() {
 }
 
 //Lancement de la fonction de création par Event
-ajouter.addEventListener('click', function() {
+document.getElementById("ajouter").addEventListener('click', function() {
     if(titreLength() > 0) {
+        console.log("ok")
         createListeElement();
     }
 })
@@ -150,7 +151,6 @@ ajouter.addEventListener('keypress', function(event) {
 //Fonction de suppression d'un élément
 function supprimerItem(reference) {
     var supprimElement = document.getElementById("elementGlobal" + reference)
-    console.log(supprimElement)
     supprimElement.remove()
 }
 
@@ -199,6 +199,13 @@ function itemDone(indexItem) {
 }
 
 //Modification des priorité
+function miseAJourPriorite(classPriorite) {
+    //mise à jour de la couleur
+    itemCouleur.removeAttribute("class")
+    itemCouleur.classList.add(classPriorite)
+    itemCouleur.classList.add('columnPriorite')
+}
+
 function modifPriorite(reference) {
     var itemCouleur = document.getElementById("item" + reference)
     var couleur = prompt("Quel priorité voulez vous : Très Forte, Forte, Moyenne, Faible ou très Faible?")
@@ -209,33 +216,37 @@ function modifPriorite(reference) {
     //Définition de la class couleur
     switch (couleur) {
         case 'tres forte' :
-            classPriorite = 'red'
+            classPriorite = 'red';
+            miseAJourPriorite(classPriorite);
             break;
         case 'forte' :
-            classPriorite = 'orange'
+            classPriorite = 'orange';
+            miseAJourPriorite(classPriorite);
             break;
         case 'moyenne' :
-            classPriorite = 'yellow'
+            classPriorite = 'yellow';
+            miseAJourPriorite(classPriorite);
             break;
         case 'faible' :
-            classPriorite = 'green'
+            classPriorite = 'green';
+            miseAJourPriorite(classPriorite);
             break;
         case 'tres faible' :
             classPriorite = 'blue'
+            miseAJourPriorite(classPriorite);
             break;
         default :
             alert('La valeur n est pas reconnue')
             break;
-    }
-    
-    
-    //mise à jour de la couleur
-    itemCouleur.removeAttribute("class")
-    itemCouleur.classList.add(classPriorite)
-    itemCouleur.classList.add('columnPriorite')
+    } 
 }
 
-//Modification des priorité
+//Modification des Statuts
+function initStatut(statut) {
+    //mise à jour de Statut
+    itemStatut.textContent = statut
+}
+
 function modifStatut(reference) {
     var itemStatut = document.getElementById("statut" + reference)
     var statut = prompt("Quel statut voulez vous : A faire, En cours, En Suspend, Fait?")
@@ -244,24 +255,23 @@ function modifStatut(reference) {
     //Définition de la class couleur
     switch (statut) {
         case 'a faire' :
-            statut = 'A faire'
+            statut = 'A faire';
+            initStatut(statut);
             break;
         case 'en cours' :
-            statut = 'En cours'
+            statut = 'En cours';
+            initStatut(statut);
             break;
         case 'en suspend' :
-            statut = 'En suspend'
+            statut = 'En suspend';
+            initStatut(statut);
             break;
         case 'fait' :
-            statut = 'Fait'
-            console.log(statut)
+            statut = 'Fait';
+            initStatut(statut);
             break;
         default :
             alert('La valeur n est pas reconnue')
             break;
     }
-    
-    
-    //mise à jour de la couleur
-    itemStatut.textContent = statut
 }
