@@ -13,9 +13,8 @@
         "study" : "STAPS, Communication, Web-developpement",
         "hobbies" : "Sport Nature, guitare et lecture",
         "dashboardValid": true
-    }
-]
-    /*{
+    },
+    {
         "username": "User1",
         "firstName": "David",
         "pseudo": "dada ",
@@ -61,4 +60,3 @@
         "dashboardValid": false
     }
 ]
-*/
