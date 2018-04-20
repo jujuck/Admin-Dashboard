@@ -2,7 +2,7 @@
     {
         "name": "Entretien Arinfo",
         "tag": ["Html", "Css", "JS", "Json"],
-        "image": "img/css3.jpg",
+        "image": "img/html5.png",
         "text": "Un projet de présentation pour l'entretien de recrutement à Arinfo",
         "url": "https://jujuck.github.io/projetArinfo/index.html",
         "menu": "developpementWeb"
@@ -10,7 +10,7 @@
     {
         "name": "Loso",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/html5.png",
+        "image": "img/bootstrap.jpeg",
         "text": "Approfondir ses connaissances en HTML, CSS, Animation via jQuery, Bootstrap",
         "url": "https://jujuck.github.io/Loso/index.html",
         "menu": "developpementWeb"
@@ -26,7 +26,7 @@
     {
         "name": "Jekyll Découverte",
          "tag": ["Jekyll", "Sass"],
-        "image": "img/css3.jpg",
+        "image": "img/jekyll.png",
         "text": "Découvrir un site Jekyll et y insérer quelques blogs ",
         "url" : "https://jujuck.github.io/myBlog-Jekyll/index.html",
         "menu": "developpementWeb"
@@ -34,7 +34,7 @@
      {
         "name": "Jekyll My Sport Blog",
          "tag": ["Jekyll", "Sass"],
-        "image": "img/css3.jpg",
+        "image": "img/sass.png",
         "text": "Costumiser un site Jekyll et y inclure une admin extérieure ",
         "url" : "https://jujuck.github.io/mySportBlog/index.html",
         "menu": "developpementWeb"
@@ -42,7 +42,7 @@
     {
         "name": "Memorize",
          "tag": ["Html", "Css", "Json", "JS"],
-        "image": "img/js.png",
+        "image": "img/json.jpeg",
         "text": "Un projet individuel pour perfectionner le DOM et les modifications en JS. Une animation pour les enfants ",
         "url": "https://jujuck.github.io/Memorize/index.html",
         "menu": "developpementWeb"
@@ -58,7 +58,7 @@
     {
         "name": "La découverte",
          "tag": ["Stage Découverte", "Kayak", "Canoe"],
-        "image": "img/.jpeg",
+        "image": "img/decouverte.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "initiation"
@@ -66,7 +66,7 @@
     {
         "name": "L'école de pagaie",
         "tag": ["Initiation", "Perfectionnement", "Stage en eau vive", "Canoe-kayak"],
-        "image": "img/.png",
+        "image": "img/ecolepagaie.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "initiation"
@@ -74,7 +74,7 @@
     {
         "name": "La class III",
         "tag": ["Canoe-kayak", "Eau-vive", "Perfectionnement"],
-        "image": "img/.png",
+        "image": "img/eauvive.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "initiation"
@@ -82,7 +82,7 @@
     {
         "name": "Les régates de l'espoir",
         "tag": ["Canoe-kayak", "Course en ligne", "Competition"],
-        "image": "img/png",
+        "image": "img/regates.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "initiation"
@@ -90,7 +90,7 @@
      {
         "name": "La class IV",
          "tag": ["Canoe-kayak", "Eau-vive", "Sportif"],
-        "image": "img/.jpeg",
+        "image": "img/eauvive.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
          "url" : "",
         "menu": "entrainement"
@@ -98,7 +98,7 @@
     {
         "name": "Les championnats de France",
         "tag": ["Canoe-kayak", "Competition", "Cadet", "Junior", "Slalom", "Descente"],
-        "image": "img/.png",
+        "image": "img/equipefrance.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "entrainement"
@@ -106,7 +106,7 @@
     {
         "name": "Les sélections - 18ans",
         "tag": ["Canoe-kayak", "Competition", "Descente", "championnat du Monde", "championnat d'Europe"],
-        "image": "img/.png",
+        "image": "img/equipefrance.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "entrainement"
@@ -114,7 +114,7 @@
     {
         "name": "L'équipe régionale",
         "tag": ["Canoe-kayak", "Competition", "Descente", "championnat du Monde", "championnat d'Europe"],
-        "image": "img/.png",
+        "image": "img/eauvive.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "entrainement"
@@ -122,7 +122,7 @@
          {
         "name": "Les relations Presse",
         "tag": ["communiqué", "Dossier Presse"],
-        "image": "img/.jpeg",
+        "image": "img/presse.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "communication"
@@ -130,14 +130,14 @@
     {
         "name": "La stratégie",
         "tag": ["Swat", "Positionnement", "media"],
-        "image": "img/.png",
+        "image": "img/communication.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "menu": "communication"
     },
     {
         "name": "Le webmarketing",
         "tag": ["referencement", "reseaux sociaux", "google analytics", "fiche web"],
-        "image": "img/.png",
+        "image": "img/webmarketing.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "communication"
@@ -145,7 +145,7 @@
     {
         "name": "La PLV",
         "tag": ["affiche", "flyers", "amenagement", "affichage extérieure"],
-        "image": "img/.png",
+        "image": "img/plv.jpeg",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "communication"
@@ -153,7 +153,7 @@
     {
         "name": "Ubuntu Server et Prestashop",
         "tag": ["Ubuntu Server", "SSH", "Lamp", "Prestashop"],
-        "image": "img/.png",
+        "image": "img/ubuntu.jpeg",
         "text": "Une journée, une clé usb avec Ubuntu Server une tour et un objectif : installler Prestshop et y intégrer 2 novueaux modules",
         "url" : "",
         "menu": "serveur"
@@ -161,23 +161,7 @@
     {
         "name": "WordPress avec Bitnami: le backup et la restauration",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/.png",
-        "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "url" : "",
-        "menu": "serveur"
-    },
-    {
-        "name": "A venir",
-        "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/.png",
-        "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "url" : "",
-        "menu": "serveur"
-    },
-    {
-        "name": "A venir",
-        "tag": ["Html", "Css", "Bootstrap", "Jquery"],
-        "image": "img/.png",
+        "image": "img/backup.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
         "url" : "",
         "menu": "serveur"
@@ -185,41 +169,33 @@
     {
         "name": "Outils Google",
         "tag": ["Google Drive", "Google Calendar", "Google Form"],
-        "image": "img/.jpeg",
+        "image": "img/google.jpeg",
         "text": "Google forms, Google Agenda, Google drive, Google Site ",
-        "url" : "",
+        "url" : "https://www.google.fr/",
         "menu": "collaboratif"
     },
     {
         "name": "Doodle",
         "tag": ["Doodle", "sondage"],
-        "image": "img/.jpeg",
+        "image": "img/doodle.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "url" : "",
-        "menu": "collaboratif"
-    },
-    {
-        "name": "Trello", 
-        "tag": ["Trello", "Projet"],
-        "image": "img/.png",
-        "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "url" : "",
+        "url" : "https://doodle.com/fr/",
         "menu": "collaboratif"
     },
     {
         "name": "Slack",
         "tag": ["slack", "echange"],
-        "image": "img/.png",
+        "image": "img/slack.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
-        "url" : "",
+        "url" : "https://slack.com/intl/fr-fr",
         "menu": "collaboratif"
     },
     {
         "name": "Trello",
         "tag": ["slack", "echange"],
-        "image": "img/.png",
+        "image": "img/trello.png",
         "text": "Un outil d'aide à l'organisation individuelle ou en équipe, une mise en sauvegarde des prodédure. ",
-        "url" : "",
+        "url" : "https://trello.com/",
         "menu": "collaboratif"
     }
 ]
