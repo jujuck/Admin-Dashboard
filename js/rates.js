@@ -2,6 +2,7 @@
 
 // set endpoint and your API key
 var url = 'http://data.fixer.io/api/latest?access_key=37447497a073e7ec16a280d417041595&base=EUR&symbols=USD,JPY,GBP,EUR'
+var proxy = "https://cors-anywhere.herokuapp.com/";
 
 // define from currency, to currency, and amount
 /*from = 'EUR';
@@ -17,7 +18,7 @@ amount = '10';
         success: function(res) {
 */            
 var recupererValeur = () => {
-    var requestUrl = 'http://data.fixer.io/api/latest?access_key=37447497a073e7ec16a280d417041595&base=EUR&symbols=USD,JPY,GBP,EUR'
+    var requestUrl = proxy + 'http://data.fixer.io/api/latest?access_key=37447497a073e7ec16a280d417041595&base=EUR&symbols=USD,JPY,GBP,EUR' 
     var request = new XMLHttpRequest();
     request.open('GET', requestUrl);
     request.responseType = 'json';
@@ -35,5 +36,6 @@ var recupererValeur = () => {
 
     }
 }
+
 
 
