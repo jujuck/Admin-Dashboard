@@ -24,18 +24,26 @@
         "menu": "developpementWeb"
     },
     {
-        "name": "Jekyll",
+        "name": "Jekyll Découverte",
          "tag": ["Jekyll", "Sass"],
         "image": "img/css3.jpg",
-        "text": "Costumisé un sit Jekyll et y inclure une admin extérieure ",
+        "text": "Découvrir un site Jekyll et y insérer quelques blogs ",
         "url" : "https://jujuck.github.io/myBlog-Jekyll/index.html",
+        "menu": "developpementWeb"
+    },
+     {
+        "name": "Jekyll My Sport Blog",
+         "tag": ["Jekyll", "Sass"],
+        "image": "img/css3.jpg",
+        "text": "Costumiser un site Jekyll et y inclure une admin extérieure ",
+        "url" : "https://jujuck.github.io/mySportBlog/index.html",
         "menu": "developpementWeb"
     },
     {
         "name": "Memorize",
          "tag": ["Html", "Css", "Json", "JS"],
         "image": "img/js.png",
-        "text": "Un projet individuel pour perfectionner le DOM et les modifications en JS ",
+        "text": "Un projet individuel pour perfectionner le DOM et les modifications en JS. Une animation pour les enfants ",
         "url": "https://jujuck.github.io/Memorize/index.html",
         "menu": "developpementWeb"
     },
@@ -72,7 +80,7 @@
         "menu": "initiation"
     },
     {
-        "name": "Les régates de L'espoir",
+        "name": "Les régates de l'espoir",
         "tag": ["Canoe-kayak", "Course en ligne", "Competition"],
         "image": "img/png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
@@ -151,7 +159,7 @@
         "menu": "serveur"
     },
     {
-        "name": "A venir",
+        "name": "WordPress avec Bitnami: le backup et la restauration",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
         "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
@@ -175,10 +183,10 @@
         "menu": "serveur"
     },
     {
-        "name": "Outil Google",
+        "name": "Outils Google",
         "tag": ["Google Drive", "Google Calendar", "Google Form"],
         "image": "img/.jpeg",
-        "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
+        "text": "Google forms, Google Agenda, Google drive, Google Site ",
         "url" : "",
         "menu": "collaboratif"
     },
@@ -203,6 +211,14 @@
         "tag": ["slack", "echange"],
         "image": "img/.png",
         "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
+        "url" : "",
+        "menu": "collaboratif"
+    },
+    {
+        "name": "Trello",
+        "tag": ["slack", "echange"],
+        "image": "img/.png",
+        "text": "Un outil d'aide à l'organisation individuelle ou en équipe, une mise en sauvegarde des prodédure. ",
         "url" : "",
         "menu": "collaboratif"
     }
