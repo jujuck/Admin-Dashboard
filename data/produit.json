@@ -1,9 +1,18 @@
 [
     {
+        "name": "Entretien Arinfo",
+        "tag": ["Html", "Css", "JS", "Json"],
+        "image": "img/Css3.png",
+        "text": "Un projet de présentation pour l'entretien de recrutement à Arinfo",
+        "url": "https://jujuck.github.io/projetArinfo/index.html",
+        "menu": "developpementWeb"
+    },
+    {
         "name": "Loso",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
         "image": "img/html5.png",
         "text": "Approfondir ses connaissances en HTML, CSS, Animation via jQuery, Bootstrap",
+        "url": "https://jujuck.github.io/Loso/index.html",
         "menu": "developpementWeb"
     },
     {
@@ -11,6 +20,7 @@
          "tag": ["Html", "Css", "Bootstrap", "Jquery"],
         "image": "img/css3.jpg",
         "text": "Personnalisation du projet Loso, en y ajoutant une touche de Js pour le formulaire et l'animation ",
+        "url" : "https://jujuck.github.io/Html-Css-Advanced/index.html",
         "menu": "developpementWeb"
     },
     {
@@ -18,6 +28,7 @@
          "tag": ["Jekyll", "Sass"],
         "image": "img/css3.jpg",
         "text": "Costumisé un sit Jekyll et y inclure une admin extérieure ",
+        "url" : "https://jujuck.github.io/myBlog-Jekyll/index.html",
         "menu": "developpementWeb"
     },
     {
@@ -25,6 +36,7 @@
          "tag": ["Html", "Css", "Json", "JS"],
         "image": "img/js.png",
         "text": "Un projet individuel pour perfectionner le DOM et les modifications en JS ",
+        "url": "https://jujuck.github.io/Memorize/index.html",
         "menu": "developpementWeb"
     },
     {
@@ -32,6 +44,7 @@
          "tag": ["Html", "Css", "JS"],
         "image": "img/js.png",
         "text": "Un projet individuel pour tester le DOM et l'effet Parallax ",
+        "url" : "https://jujuck.github.io/parallax/index.html",
         "menu": "developpementWeb"
     },
     {
