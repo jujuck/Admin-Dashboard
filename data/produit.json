@@ -154,7 +154,7 @@
         "name": "Ubuntu Server et Prestashop",
         "tag": ["Ubuntu Server", "SSH", "Lamp", "Prestashop"],
         "image": "img/ubuntu.jpeg",
-        "text": "Une journée, une clé usb avec Ubuntu Server une tour et un objectif : installler Prestshop et y intégrer 2 novueaux modules",
+        "text": "Une journée, une clé usb avec Ubuntu Server et une tour.Un objectif : installler Prestshop et y intégrer 2 novueaux modules",
         "url" : "",
         "menu": "serveur"
     },
@@ -162,7 +162,7 @@
         "name": "WordPress avec Bitnami: le backup et la restauration",
         "tag": ["Html", "Css", "Bootstrap", "Jquery"],
         "image": "img/backup.png",
-        "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
+        "text": "Installer WordPress avec Bitnami, le modifier. Puis à partir d'un backup, le restaurer sur un serveur à distance en SSH",
         "url" : "",
         "menu": "serveur"
     },
@@ -178,7 +178,7 @@
         "name": "Doodle",
         "tag": ["Doodle", "sondage"],
         "image": "img/doodle.png",
-        "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
+        "text": "Un outil de sondage pratique ",
         "url" : "https://doodle.com/fr/",
         "menu": "collaboratif"
     },
@@ -186,7 +186,7 @@
         "name": "Slack",
         "tag": ["slack", "echange"],
         "image": "img/slack.png",
-        "text": "Quibus ita sceleste patratis Paulus cruore perfusus reversusque ad principis castra multos coopertos paene catenis adduxit in squalorem deiectos atque maestitiam, ",
+        "text": "Un reseaux d'échange au sein de notre formation ",
         "url" : "https://slack.com/intl/fr-fr",
         "menu": "collaboratif"
     },
