@@ -10,12 +10,12 @@ var typeItem = document.getElementById("typeItem").value
 ,   sousItemIndex = 1
 
 //vérification de l'entree d'une valeur
-var titreLength = function() {
+var titreLength = () => {
     return titreDeLaTache.length;
 }
 
 //Initialisation des valeurs pour une nouvelle entrée
-function initNewValue() {
+var initNewValue = () => {
     typeItem = document.getElementById("typeItem").value
     titreDeLaTache = document.getElementById("titreDeLaTache").value
     priotiteItem = document.getElementById("prioriteItem").value
@@ -26,14 +26,14 @@ function initNewValue() {
 
 
 //Fonction de création du HTML
-function createListeElement() {
+var createListeElement = () => {
     //initialisation des valeurs
-    initNewValue()
+    initNewValue();
     
     //création des éléments
     var listItem = document.createElement("div")
     listItem.classList.add('elementGlobal')
-    listItem.setAttribute('id', `elementGlobal ${index}`)/*'elementGlobal' + index*/
+    listItem.setAttribute('id', `elementGlobal${index}`)/*'elementGlobal' + index*/
     
     var titreItem = document.createElement("div")
     titreItem.classList.add('titreItem')
@@ -57,42 +57,42 @@ function createListeElement() {
     var columnPriorite = document.createElement("td")
     columnPriorite.classList.add(priotiteItem)
     columnPriorite.classList.add('columnPriorite')
-    columnPriorite.setAttribute('onClick', `modifPriorite ${index}`) /*'modifPriorite(' + index + ')'*/
-    columnPriorite.setAttribute('id', 'item' + index)
+    columnPriorite.setAttribute('onClick', `modifPriorite(${index})`) /*'modifPriorite(' + index + ')'*/
+    columnPriorite.setAttribute('id', `item${index}` )
     
     var columnStatut = document.createElement("td")
     columnStatut.textContent = statutItem
     columnStatut.classList.add('columnStatut')
-    columnStatut.setAttribute('onClick', `modifStatut ${index}`) /*'modifStatut(' + index + ')')*/
-    columnStatut.setAttribute('id', `statut ${index}`)/*'statut' + index)*/
+    columnStatut.setAttribute('onClick', `modifStatut(${index})`) /*'modifStatut(' + index + ')')*/
+    columnStatut.setAttribute('id', `statut${index}`)/*'statut' + index)*/
 
     var columnAjoutItem = document.createElement("td")
     columnAjoutItem.classList.add('columnAjoutItem')
-    columnAjoutItem.setAttribute('onClick', `ajoutItem ${index}`)/*'ajoutItem(' + index + ')')*/
+    columnAjoutItem.setAttribute('onClick', `ajoutItem(${index})`)/*'ajoutItem(' + index + ')')*/
     
     var columnTrash = document.createElement("td")
     columnTrash.classList.add('columnTrash')
-    columnTrash.setAttribute('onClick', `supprimerItem ${index}`)/*'supprimerItem(' + index + ')')*/
+    columnTrash.setAttribute('onClick', `supprimerItem(${index})`)/*'supprimerItem(' + index + ')')*/
     
     //Mise en place de l'ajout d'element secondaire
     var row2 = document.createElement("tr")
     row2.classList.add('rowItem')
-    row2.setAttribute('id', `row2Item ${index}`)/* 'row2Item' + index)*/
+    row2.setAttribute('id', `row2Item${index}`)/* 'row2Item' + index)*/
     
     var columnAjoutItem = document.createElement("td")
-    columnAjoutItem.textContent = "+ ajout d'élément secondaire..."
+    columnAjoutItem.textContent = "+ ajout d'un élément secondaire..."
     columnAjoutItem.classList.add('columnAjoutItem')
-    columnAjoutItem.setAttribute('onClick', `affichageAjoutItem ${index}`)/*'affichageAjoutItem(' + index + ')')*/
+    columnAjoutItem.setAttribute('onClick', `affichageAjoutItem(${index})`)/*'affichageAjoutItem(' + index + ')')*/
     columnAjoutItem.colSpan = "5"
     
     var row3 = document.createElement("tr")
     row3.classList.add('rowItem')
     row3.classList.add('hidden')
-    row3.setAttribute('id', `row3Item ${index}`)/*'row3Item' + index)*/
+    row3.setAttribute('id', `row3Item${index}`)/*'row3Item' + index)*/
     
     var columnAjoutItemInputText = document.createElement("td")
     columnAjoutItemInputText.colSpan = "2"
-    columnAjoutItemInputText.textContent = "Element à ajouter"
+    columnAjoutItemInputText.textContent = "Elément à ajouter"
     columnAjoutItemInputText.classList.add('columnAjoutItem')
     
     var columnAjoutItemInputValue = document.createElement("td")
@@ -101,13 +101,13 @@ function createListeElement() {
     
     var columnInput = document.createElement('input')
     columnInput.classList.add('columnAjoutItemInput')
-    columnInput.setAttribute('id', `valueItem ${index}`)/*'valueItem' + index)*/
+    columnInput.setAttribute('id', `valueItem${index}`)/*'valueItem' + index)*/
     
     var columnAjoutItemInputOk = document.createElement("td")
     columnAjoutItemInputOk.colSpan = "1"
     columnAjoutItemInputOk.textContent = "Ok"
     columnAjoutItemInputOk.classList.add('columnAjoutItem')
-    columnAjoutItemInputOk.setAttribute('onClick', `ajoutItemOk ${index}`)/*'ajoutItemOk(' + index + ')')*/
+    columnAjoutItemInputOk.setAttribute('onClick', `ajoutItemOk(${index})`)/*'ajoutItemOk(' + index + ')')*/
     
     //Distribution des enfants en HTML
     row1.appendChild(columnIcon)
@@ -136,39 +136,39 @@ function createListeElement() {
 //Lancement de la fonction de création par Event
 document.getElementById("ajouter").addEventListener('click', function() {
     if(titreLength() > 0) {
-        initNewValue()
+        initNewValue();
         createListeElement();
     }
 })
     
 ajouter.addEventListener('keypress', function(event) {
     if(titreLength() > 0 && event.keycode === 13) {
-        initNewValue()
+        initNewValue();
         createListeElement();
     }
 })
 
 
 //Fonction de suppression d'un élément
-function supprimerItem(reference) {
-    var supprimElement = document.getElementById("elementGlobal" + reference)
+var supprimerItem = reference => {
+    var supprimElement = document.getElementById(`elementGlobal${reference}`)
     supprimElement.remove()
 }
 
 //Fonction d'ajout d'élements secondaires
-function affichageAjoutItem(reference) {
-    document.getElementById("row2Item" + reference).classList.add('hidden')
-    document.getElementById("row3Item" + reference).classList.remove('hidden')
+var affichageAjoutItem = reference => {
+    document.getElementById(`row2Item${reference}`).classList.add('hidden')
+    document.getElementById(`row3Item${reference}`).classList.remove('hidden')
 }
 
-function ajoutItemOk(reference) {
+var ajoutItemOk = reference => {
     
-    var element = document.getElementById("valueItem" + reference).value
+    var element = document.getElementById(`valueItem${reference}`).value
     
     //création de l'element
     var row4 = document.createElement("tr")
     row4.classList.add('rowItem')
-    row4.setAttribute('id', 'row4Item' + sousItemIndex)
+    row4.setAttribute('id', `row4Item${sousItemIndex}`)
     
     var columnItemSecond = document.createElement("td")
     columnItemSecond.textContent = element
@@ -178,7 +178,7 @@ function ajoutItemOk(reference) {
     var columnItemSecondValid = document.createElement("td")
     columnItemSecondValid.textContent = "fait"
     columnItemSecondValid.classList.add('columnItemSecond')
-    columnItemSecondValid.setAttribute('onClick', `itemDone ${sousItemIndex}`)/*'itemDone(' + sousItemIndex + ')')*/
+    columnItemSecondValid.setAttribute('onClick', `itemDone(${sousItemIndex})`)/*'itemDone(' + sousItemIndex + ')')*/
     columnItemSecondValid.colSpan = "1"
     
     row4.appendChild(columnItemSecond)
@@ -186,55 +186,54 @@ function ajoutItemOk(reference) {
     tableau.appendChild(row4)
     
     //Reinitialisation de l'affichage
-    document.getElementById("row3Item" + reference).classList.add('hidden')
-    document.getElementById("row2Item" + reference).classList.remove('hidden')
+    document.getElementById(`row3Item${reference}`).classList.add('hidden')
+    document.getElementById(`row2Item${reference}`).classList.remove('hidden')
     
     //Incrémentation des sous items
     sousItemIndex++
 }
 
 //BArré les sous elements fait
-function itemDone(indexItem) {
-    var sousItem = document.getElementById("row4Item" + indexItem)
+var itemDone = indexItem => {
+    var sousItem = document.getElementById(`row4Item${indexItem}`)
     sousItem.classList.add('barre')
 }
 
 //Modification des priorité
-function miseAJourPriorite(classPriorite) {
+var miseAJourPriorite = (itemCouleur, classPriorite) => {
     //mise à jour de la couleur
     itemCouleur.removeAttribute("class")
     itemCouleur.classList.add(classPriorite)
     itemCouleur.classList.add('columnPriorite')
 }
 
-function modifPriorite(reference) {
-    var itemCouleur = document.getElementById("item" + reference)
-    var couleur = prompt("Quel priorité voulez vous : Très Forte, Forte, Moyenne, Faible ou très Faible?")
-    couleur = couleur.toLowerCase()
+var modifPriorite = reference => {
+    var itemCouleur = document.getElementById(`item${reference}`);
+    var couleur = prompt("Quel priorité voulez vous : Très Forte, Forte, Moyenne, Faible ou très Faible?");
+    couleur = couleur.toLowerCase();
     var classPriorite = ""
-    console.log('Item')
     
     //Définition de la class couleur
     switch (couleur) {
         case 'tres forte' :
             classPriorite = 'red';
-            miseAJourPriorite(classPriorite);
+            miseAJourPriorite(itemCouleur, classPriorite);
             break;
         case 'forte' :
             classPriorite = 'orange';
-            miseAJourPriorite(classPriorite);
+            miseAJourPriorite(itemCouleur, classPriorite);
             break;
         case 'moyenne' :
             classPriorite = 'yellow';
-            miseAJourPriorite(classPriorite);
+            miseAJourPriorite(itemCouleur, classPriorite);
             break;
         case 'faible' :
             classPriorite = 'green';
-            miseAJourPriorite(classPriorite);
+            miseAJourPriorite(itemCouleur, classPriorite);
             break;
         case 'tres faible' :
             classPriorite = 'blue'
-            miseAJourPriorite(classPriorite);
+            miseAJourPriorite(itemCouleur, classPriorite);
             break;
         default :
             alert('La valeur n est pas reconnue')
@@ -243,13 +242,13 @@ function modifPriorite(reference) {
 }
 
 //Modification des Statuts
-function initStatut(statut) {
+var initStatut = (itemStatut, statut) => {
     //mise à jour de Statut
     itemStatut.textContent = statut
 }
 
-function modifStatut(reference) {
-    var itemStatut = document.getElementById("statut" + reference)
+var modifStatut = reference => {
+    var itemStatut = document.getElementById(`statut${reference}`);
     var statut = prompt("Quel statut voulez vous : A faire, En cours, En Suspend, Fait?")
     statut = statut.toLowerCase()
     
@@ -257,19 +256,19 @@ function modifStatut(reference) {
     switch (statut) {
         case 'a faire' :
             statut = 'A faire';
-            initStatut(statut);
+            initStatut(itemStatut, statut);
             break;
         case 'en cours' :
             statut = 'En cours';
-            initStatut(statut);
+            initStatut(itemStatut, statut);
             break;
         case 'en suspend' :
             statut = 'En suspend';
-            initStatut(statut);
+            initStatut(itemStatut, statut);
             break;
         case 'fait' :
             statut = 'Fait';
-            initStatut(statut);
+            initStatut(itemStatut, statut);
             break;
         default :
             alert('La valeur n est pas reconnue')

@@ -72,12 +72,28 @@
     margin-bottom: 15px;
     overflow-behavior-y: auto;
 }
+
+.mesOutils {
+    img{
+        margin: 5px;
+        padding: 3px;
+        background-color : white;
+        border-radius : 6px;
+        &:hover {
+            border: 1px solid black;
+        }
+    }
+    p {
+        color: white;
+    }
+}
+
 .outil{
     background-color: white;
     box-shadow: 3px 3px black;
     border: 2px solid black;
     text-align: center;
-    width: 450px;
+    width: 400px;
     position: absolute;
     border-radius: 10px;
     font-size: 12px;
@@ -98,7 +114,7 @@
 
 .table td {
     width: 25px;
-    height: 15px;
+    height: 25px;
     border: 1px solid black;
     margin: 2px;
     text-align: center;
@@ -117,7 +133,7 @@
 }
 
 .elementGlobal {
-    
+    margin-bottom : 10px;
     
 }
 
@@ -363,8 +379,8 @@ select {
     .dash-main-content {
         width: 80%;
         float: right;
-        background-color: white;
-        opacity: 0.7;  
+        background-color: rgba(255, 255, 255, 0.7);
+      
     }
     
     //suppression des elements inutiles

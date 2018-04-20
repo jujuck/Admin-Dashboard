@@ -1,4 +1,4 @@
-function findFilm() {
+var findFilm = () => {
     
     var movie = document.getElementById('movie').value
     if(movie.length > 0) {

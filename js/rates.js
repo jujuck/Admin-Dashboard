@@ -16,7 +16,7 @@ amount = '10';
         dataType: 'jsonp',
         success: function(res) {
 */            
-function recupererValeur() {
+var recupererValeur = () => {
     var requestUrl = 'http://data.fixer.io/api/latest?access_key=37447497a073e7ec16a280d417041595&base=EUR&symbols=USD,JPY,GBP,EUR'
     var request = new XMLHttpRequest();
     request.open('GET', requestUrl);

@@ -141,7 +141,7 @@ document.getElementById("img-menu").addEventListener("mouseover", function (e) {
 
 
 //Mise en place des outils en JS
-function resetOutil() {
+var resetOutil = () => {
     var calcul = document.getElementById("calcul");
      if (calcul.classList.contains('hidden') === false) {
         calcul.classList.add('hidden')
@@ -166,27 +166,28 @@ function resetOutil() {
 
 var outilItem;
 // Drag'n'Drop
-var move = function (event) {
+var move = (event) => {
    var posX = event.pageX;
    var posY = event.pageY;
    outilItem.style.position = "absolute";
    outilItem.style.top = posY - (outilItem.offsetHeight / 2) + "px";
    outilItem.style.left = posX - (outilItem.offsetWidth / 2) + "px";
 } 
-
-function affichageOutil(outil) {
+var affichageOutil = (outil) => {
     resetOutil()
     outilItem = document.getElementById(outil);
     outilItem.classList.remove('hidden');
     
-    //attente d'event
-    outilItem.addEventListener('mousedown', function() {
-        outilItem.addEventListener('mousemove', move);
-    });
+    
+        //attente d'event
+        outilItem.addEventListener('mousedown', function() {
+            outilItem.addEventListener('mousemove', move);
+        });
 
-    outilItem.addEventListener('mouseup', function () {
-       outilItem.removeEventListener('mousemove', move);
-    });
+        outilItem.addEventListener('mouseup', function () {
+           outilItem.removeEventListener('mousemove', move);
+        });
+    
     
 }
 

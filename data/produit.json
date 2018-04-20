@@ -35,7 +35,7 @@
         "name": "Jekyll My Sport Blog",
          "tag": ["Jekyll", "Sass"],
         "image": "img/sass.png",
-        "text": "Costumiser un site Jekyll et y inclure une admin extérieure ",
+        "text": "Customiser un site Jekyll et y inclure une admin extérieure ",
         "url" : "https://jujuck.github.io/mySportBlog/index.html",
         "menu": "developpementWeb"
     },
@@ -154,7 +154,7 @@
         "name": "Ubuntu Server et Prestashop",
         "tag": ["Ubuntu Server", "SSH", "Lamp", "Prestashop"],
         "image": "img/ubuntu.jpeg",
-        "text": "Une journée, une clé usb avec Ubuntu Server et une tour.Un objectif : installler Prestshop et y intégrer 2 novueaux modules",
+        "text": "Une journée, une clé usb avec Ubuntu Server et une tour. Un objectif : installer Prestshop et y intégrer 2 nouveaux modules",
         "url" : "",
         "menu": "serveur"
     },
@@ -194,7 +194,7 @@
         "name": "Trello",
         "tag": ["slack", "echange"],
         "image": "img/trello.png",
-        "text": "Un outil d'aide à l'organisation individuelle ou en équipe, une mise en sauvegarde des prodédure. ",
+        "text": "Un outil d'aide à l'organisation individuelle ou en équipe, une mise en sauvegarde des prodédures. ",
         "url" : "https://trello.com/",
         "menu": "collaboratif"
     }
