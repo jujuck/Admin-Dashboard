@@ -2,13 +2,15 @@ var produitListe;
 var Active = 'developpementWeb'
 
 //Fonction de création des objets Projet
-function createNewProduit(nom, image, text) {
+function createNewProduit(nom, image, text, url="") {
     produitListe += `<div class="col-2">`;
     produitListe += `<div class="item-produits">`
     produitListe += `<h3>${nom}</h3>`;
     produitListe += `<img class="image-produit" src="../${image}">`;
     produitListe += `<p>${text}</p>`;
-    produitListe += `<button class="btn">Let s go!</button>`;
+    if (url.length > 0) {
+        produitListe += `<button class="btn" onclick="window.open('${url}')">Let s go!</button>`;
+    }
     produitListe += `</div>`;
     produitListe += `</div>`;
     
@@ -39,7 +41,8 @@ function initProduit (id) {
 
             for (let produit of produits) /*(var i = 0; i < produits.length; i++)*/ {
                 if(produit/*s[i]*/.menu === id) {
-                    createNewProduit(produit/*s[i]*/.name, produit/*s[i]*/.image, produit/*s[i]*/.text)
+                    
+                    createNewProduit(produit/*s[i]*/.name, produit/*s[i]*/.image, produit/*s[i]*/.text, produit.url)
                 }
             }
         }
