@@ -9,7 +9,7 @@ var createNewProduit = (nom, image, text, url="") => {
     produitListe += `<img class="image-produit" src="../${image}">`;
     produitListe += `<p>${text}</p>`;
     if (url.length > 0) {
-        produitListe += `<button class="btn" onclick="window.open('${url})">Let s go!</button>`;
+        produitListe += `<button class="btn" onclick="window.open('${url}')">Let s go!</button>`;
     }
     produitListe += `</div>`;
     produitListe += `</div>`;
