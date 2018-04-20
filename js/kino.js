@@ -2,7 +2,7 @@ var findFilm = () => {
     
     var movie = document.getElementById('movie').value
     if(movie.length > 0) {
-        var requestUrl = 'http://www.omdbapi.com/?t=' + movie + '&apikey=dfbb3f29'
+        var requestUrl = 'https://www.omdbapi.com/?t=' + movie + '&apikey=dfbb3f29'
         var request = new XMLHttpRequest();
         request.open('GET', requestUrl);
         request.responseType = 'json';

@@ -4,7 +4,7 @@ var findWeather = () => {
 
     var city = document.getElementById('city').value
     if(city.length > 0) {
-        var requestUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&APPID=1ae0e05d29e5676b5e6ae70a74f6fef2'
+        var requestUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=metric&APPID=1ae0e05d29e5676b5e6ae70a74f6fef2'
         var request = new XMLHttpRequest();
         request.open('GET', requestUrl);
         request.responseType = 'json';
