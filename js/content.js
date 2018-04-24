@@ -68,4 +68,19 @@ document.getElementById("img-menu").addEventListener("mouseover", function (e) {
     }, 4000);
 })
 
+//script d'affichage de connexion
+var connexionJSON = sessionStorage.getItem("user");
+var connexion = JSON.parse(connexionJSON);
+// Affichage dans la console
 
+if(connexion.validID === true) {
+    document.getElementById("persoAvatar").classList.remove('hidden');
+    document.getElementById("menu-responsive").classList.remove('hidden');
+    document.getElementById("connectContent").classList.add('hidden');
+}
+
+const deconnexion = () => {
+    console.log("ok")
+    sessionStorage.removeItem("user")
+    window.location.href = "../index.html";
+}

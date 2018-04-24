@@ -187,11 +187,24 @@ var affichageOutil = (outil) => {
         outilItem.addEventListener('mouseup', function () {
            outilItem.removeEventListener('mousemove', move);
         });
-    
-    
 }
 
 
+//Connexion utilisateurs
+var connexionJSON = sessionStorage.getItem("user");
+var connexion = JSON.parse(connexionJSON);
+// Affichage dans la console
+console.log(connexionJSON);
 
+/*document.getElementById("deconnexion").addEventListener('click', function(e) {
+    console.log("ok")
+    window.location.href = "../index.html";
+    storage.removeItem("user")
+})*/
 
-
+const deconnexion = () => {
+    console.log("ok")
+    sessionStorage.removeItem("user")
+    window.location.href = "../index.html";
+    
+}

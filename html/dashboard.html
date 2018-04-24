@@ -30,9 +30,9 @@
                         <ul>
                             <li><a href="content.html">Espace cours</a></li>
                             <li><a href="#">Vos statistiques</a></li>
-                            <li><a href="#">Vos informations</a></li>
+                            <li><a onclick="infoPerso()">Vos informations</a></li>
                             <li><a href="#">Vos ressources</a></li>
-                            <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
+                            <li><a onclick="deconnexion()">Déconnexion</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -53,7 +53,7 @@
                             <li><a href="#">Vos statistiques</a></li>
                             <li><a href="#">Vos informations</a></li>
                             <li><a href="#">Vos ressources</a></li>
-                            <li><a href="../index.html" id="deconnexion">Déconnexion</a></li>
+                            <li><a onclick="deconnexion()">Déconnexion</a></li>
                         </ul>
                     </div>
                     <div class="mesOutils" id="mesOutils">
@@ -243,109 +243,112 @@
                         </div>
                     </div>
                 </div>
-            <div class="dash-cours w3-animate-zoom">
-                <div class="container perf">
-                    <div class="col-8">
-                        <h3> Vos cours suivis</h3>
+            <div id="pageHTML"></div>
+            <div id="contenu">
+                <div class="dash-cours w3-animate-zoom">
+                    <div class="container perf">
+                        <div class="col-8">
+                            <h3> Vos cours suivis</h3>
+                        </div>
+                    </div>
+                    <div class="container perf">
+                        <div class="col-8">
+                            <table class="cours-table">
+                                <tr class="cours-ligne">
+                                    <td class="cours-nom">Html debutant</td>
+                                    <td class="cours-img"><img src="../img/html5.png"</td>
+                                    <td class="cours-avance">
+                                        <div class="w3-border">
+                                            <div class="w3-red" style="height:24px;width:90%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="cours-pourcentage">90%</td>
+                                    <td class="cours-moyenne"><span class="w3-badge w3-red">8.5</span></td>
+                                </tr>
+                                <tr class="cours-ligne">
+                                    <td class="cours-nom">Html avancé</td>
+                                    <td class="cours-img"><img src="../img/html5.png"</td>
+                                    <td class="cours-avance">
+                                        <div class="w3-border">
+                                            <div class="w3-yellow" style="height:24px;width:20%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="cours-pourcentage">20%</td>
+                                    <td class="cours-moyenne"><span class="w3-badge w3-yellow">6.5</span></td>
+                                </tr>
+                                <tr class="cours-ligne">
+                                    <td class="cours-nom">Css débutant</td>
+                                    <td class="cours-img"><img src="../img/css3.jpg"</td>
+                                    <td class="cours-avance">
+                                        <div class="w3-border">
+                                            <div class="w3-blue" style="height:24px;width:75%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="cours-pourcentage">75%</td>
+                                    <td class="cours-moyenne"><span class="w3-badge w3-blue">8.5</span></td>
+                                </tr>
+                                <tr class="cours-ligne">
+                                    <td class="cours-nom">Bootstrap</td>
+                                    <td class="cours-img"><img src="../img/bootstrap.jpeg"</td>
+                                    <td class="cours-avance">
+                                        <div class="w3-border">
+                                            <div class="w3-green" style="height:24px;width:50%"></div>
+                                        </div>
+                                    </td>
+                                    <td class="cours-pourcentage">50%</td>
+                                    <td class="cours-moyenne"><span class="w3-badge w3-green">7</span></td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                <div class="container perf">
-                    <div class="col-8">
-                        <table class="cours-table">
-                            <tr class="cours-ligne">
-                                <td class="cours-nom">Html debutant</td>
-                                <td class="cours-img"><img src="../img/html5.png"</td>
-                                <td class="cours-avance">
-                                    <div class="w3-border">
-                                        <div class="w3-red" style="height:24px;width:90%"></div>
-                                    </div>
-                                </td>
-                                <td class="cours-pourcentage">90%</td>
-                                <td class="cours-moyenne"><span class="w3-badge w3-red">8.5</span></td>
-                            </tr>
-                            <tr class="cours-ligne">
-                                <td class="cours-nom">Html avancé</td>
-                                <td class="cours-img"><img src="../img/html5.png"</td>
-                                <td class="cours-avance">
-                                    <div class="w3-border">
-                                        <div class="w3-yellow" style="height:24px;width:20%"></div>
-                                    </div>
-                                </td>
-                                <td class="cours-pourcentage">20%</td>
-                                <td class="cours-moyenne"><span class="w3-badge w3-yellow">6.5</span></td>
-                            </tr>
-                            <tr class="cours-ligne">
-                                <td class="cours-nom">Css débutant</td>
-                                <td class="cours-img"><img src="../img/css3.jpg"</td>
-                                <td class="cours-avance">
-                                    <div class="w3-border">
-                                        <div class="w3-blue" style="height:24px;width:75%"></div>
-                                    </div>
-                                </td>
-                                <td class="cours-pourcentage">75%</td>
-                                <td class="cours-moyenne"><span class="w3-badge w3-blue">8.5</span></td>
-                            </tr>
-                            <tr class="cours-ligne">
-                                <td class="cours-nom">Bootstrap</td>
-                                <td class="cours-img"><img src="../img/bootstrap.jpeg"</td>
-                                <td class="cours-avance">
-                                    <div class="w3-border">
-                                        <div class="w3-green" style="height:24px;width:50%"></div>
-                                    </div>
-                                </td>
-                                <td class="cours-pourcentage">50%</td>
-                                <td class="cours-moyenne"><span class="w3-badge w3-green">7</span></td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="col-3">
-                    <div class="dash-implication">
-                        <div class="container perf">
-                            <div class="col-8">
-                                <h3> Votre implication par cours</h3>
+                <div class="container">
+                    <div class="col-3">
+                        <div class="dash-implication">
+                            <div class="container perf">
+                                <div class="col-8">
+                                    <h3> Votre implication par cours</h3>
+                                </div>
+                            </div>
+                            <div class="chart-container" style="width:25vw; margin-right:auto; margin-left: auto;">
+                                <canvas id="myChart"></canvas>
                             </div>
                         </div>
-                        <div class="chart-container" style="width:25vw; margin-right:auto; margin-left: auto;">
-                            <canvas id="myChart"></canvas>
-                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="dash-moyenne">
-                        <div class="container perf">
-                            <div class="col-8">
-                                <h3>Votre temps passé par cours</h3>
+                    <div class="col-3">
+                        <div class="dash-moyenne">
+                            <div class="container perf">
+                                <div class="col-8">
+                                    <h3>Votre temps passé par cours</h3>
+                                </div>
+                            </div>
+                            <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
+                                <canvas id="myPie"></canvas>
                             </div>
                         </div>
-                        <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
-                            <canvas id="myPie"></canvas>
-                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div class="dash-etude">
-                        <div class="container perf">
-                            <div class="col-8">
-                                <h3>Votre journée</h3>
-                            </div>
-                        </div>¿
-                        <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
-                            <canvas id="myRadar"></canvas>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div class="dash-etude">
-                        <div class="container perf">
-                            <div class="col-8">
-                                <h3>Votre Semaine</h3>
+                    <div class="col-3">
+                        <div class="dash-etude">
+                            <div class="container perf">
+                                <div class="col-8">
+                                    <h3>Votre journée</h3>
+                                </div>
+                            </div>¿
+                            <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
+                                <canvas id="myRadar"></canvas>
                             </div>
                         </div>
-                        <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
-                            <canvas id="myPolar"></canvas>
+                    </div>
+                    <div class="col-3">
+                        <div class="dash-etude">
+                            <div class="container perf">
+                                <div class="col-8">
+                                    <h3>Votre Semaine</h3>
+                                </div>
+                            </div>
+                            <div class="chart-container" style="width:15vw; margin-right:auto; margin-left: auto;">
+                                <canvas id="myPolar"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -354,7 +357,7 @@
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="../js/dash.js"></script>
-
+        <script src="../js/infoPerso.js"></script>
         <script src="../js/calculatrice.js"></script>
         <script src="../js/clock.js"></script>
         <script src="../js/kino.js"></script>

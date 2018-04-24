@@ -729,6 +729,10 @@ select {
     margin-left: 25px; } }
 
 /* line 2, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+#perso {
+  display: none; }
+
+/* line 11, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .header {
   background-image: url("img/background-accueil2.jpg");
   background-attachment: fixed;
@@ -737,7 +741,7 @@ select {
   background-size: cover;
   height: 350px;
   margin-top: 0px; }
-  /* line 10, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 19, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .header h2 {
     font-family: Merriweather, Arial, serif;
     color: #262525;
@@ -755,27 +759,27 @@ select {
       display: block;
       margin: 10px auto; }
 
-/* line 16, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 25, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .entete {
   position: fixed;
   width: 100%; }
 
-/* line 21, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 30, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .content-avatar {
   position: fixed;
   right: 50px;
   top: 35px; }
-  /* line 25, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 34, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .content-avatar li {
     display: inline;
     margin: 10px;
     padding: 10px; }
 
-/* line 32, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 41, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .recherche {
   vertical-align: top; }
 
-/* line 36, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 45, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .imgHeader {
   height: 75px;
   border-radius: 100%;
@@ -783,12 +787,12 @@ select {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s; }
-  /* line 43, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 52, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .imgHeader:hover {
     box-shadow: 3px 3px #262525;
     height: 65px; }
 
-/* line 49, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 58, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .menu-content {
   display: none;
   position: fixed;
@@ -800,11 +804,11 @@ select {
   border-radius: 10px;
   opacity: 0.3; }
 
-/* line 62, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 71, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .presentation {
   padding-top: 175px; }
 
-/* line 67, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 76, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .menu-onglet {
   margin-left: auto;
   margin-right: auto;
@@ -813,7 +817,7 @@ select {
   border-bottom: 2px solid aqua;
   width: 100%; }
 
-/* line 76, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 85, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .onglet {
   width: 120px;
   border-radius: 20px;
@@ -829,21 +833,21 @@ select {
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -o-transition: all 1s; }
-  /* line 91, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 100, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .onglet:hover {
     text-decoration: underline;
     box-shadow: 2px 2px aqua; }
 
-/* line 97, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 106, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .active {
   background-color: white;
   color: aqua; }
 
-/* line 103, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 112, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .produit {
   margin: 25px; }
 
-/* line 107, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 116, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .item-produits {
   width: 80%;
   margin: 10px;
@@ -857,12 +861,12 @@ select {
   background-position: center;
   border-radius: 6px;
   background-color: white; }
-  /* line 120, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 129, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .item-produits p {
     margin-right: 5px;
     margin-left: 5px; }
 
-/* line 126, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 135, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .image-produit {
   display: block;
   height: 75px;
@@ -873,7 +877,7 @@ select {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-/* line 138, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 147, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .validation {
   margin-right: auto;
   margin-left: auto;
@@ -881,11 +885,11 @@ select {
   margin-bottom: 50px;
   text-align: center; }
 
-/* line 147, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 156, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .content-footer {
   background-color: rgba(185, 185, 185, 0.7); }
 
-/* line 150, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+/* line 159, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
 .espace-comm {
   background-color: #fff;
   margin: 25px;
@@ -893,14 +897,14 @@ select {
   border: 1px solid aqua;
   border-radius: 6px;
   text-align: center; }
-  /* line 157, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 166, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .espace-comm h3 {
     color: aqua; }
-  /* line 160, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 169, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .espace-comm p {
     color: aqua;
     text-align: center; }
-    /* line 163, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+    /* line 172, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
     .espace-comm p a {
       color: aqua;
       text-decoration: none;
@@ -908,21 +912,21 @@ select {
       -webkit-transition: all 1s;
       -moz-transition: all 1s;
       -o-transition: all 1s; }
-    /* line 171, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+    /* line 180, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
     .espace-comm p a:hover {
       color: #262525;
       text-shadow: 2px 2px aqua; }
 
 /*Description pour les ecrans tablette en paysage page accueil*/
 @media all and (max-width: 680px) {
-  /* line 181, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 190, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .header {
     height: 100%; }
-  /* line 184, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 193, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .content-avatar {
     position: fixed;
     right: 10px; }
-  /* line 188, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
+  /* line 197, /home/eleve/Documents/Admin-Dashboard/scss/_content.scss */
   .recherche {
     display: none; } }
 

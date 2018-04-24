@@ -31,7 +31,6 @@ var findWeather = () => {
                 var meteoParagraphe = `<p>Temps : ${meteoValue} </p>`
                 meteoReel.innerHTML = meteoParagraphe
             }
-            console.log(request.response)
         }
 
     }

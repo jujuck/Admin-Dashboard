@@ -1,3 +1,4 @@
+"user strict"
 //Définition des utilisateurs
 
 var users = [
@@ -64,39 +65,48 @@ var users = [
 ]
 
 
-//PArtie 3 vérification de la connexion
+//Partie 3 vérification de la connexion
 //Vérification du formulaire de connexion
-var validID = false;
+
 var userConnexion = document.getElementById("usernameConnexion");
 var passwordConnexion = document.getElementById("passConnexion");
 
+var sessionStor = (user) => {
+    var connexion = {
+        validID: true,
+        userParametre: user
+    }
+    
+    var connexionJSON = JSON.stringify(connexion)
+    console.log(connexionJSON)
+    sessionStorage.setItem("user", connexionJSON)
+};
+
 //Chargement du fichier JSon et vérification utilisateur
 var login = (utilisateur, motDePasse) => {
-    /*var requestURL = 'https://github.com/jujuck/Admin-Dashboard/blob/master/data/users.json'
-    var myRequestUser = new XMLHttpRequest();
-    myRequestUser.open('GET', requestURL);
-    myRequestUser.responseType = 'json'
-    myRequestUser.send();
-    
-    myRequestUser.onload= function () {
-        //if(myRequestUser.readyState === 4) {
-            var users = rmyRequestUSer.response//JSON.parse(myRequestUser.responsetext);*/  
-            for (let user of users)/*(i = 0; i < users.length; i++)*/ {
-                if(utilisateur === user/*s[i]*/.username && motDePasse === user/*s[i]*/.password) {
-                    return true;
-                } 
-            } return false;
-        //}
-    //}  
+    for (let user of users)/*(i = 0; i < users.length; i++)*/ {
+        if(utilisateur === user.username && motDePasse === user.password) {
+            sessionStor(user)
+            return true;
+        } 
+    } return false; 
 }
 
 //Lancement de la fonction
 var verificationUser = () => {
     (login(userConnexion.value, passConnexion.value)) ? 
-        (userConnexion.value = "", document.getElementById("connexion").classList.add('hidden'), window.location.href = 'html/dashboard.html')
-        : (userConnexion.value = "", alert("Accès refusé"));
+        (userConnexion.value = "", document.getElementById("connexion").classList.add('hidden'),
+            (document.title === "Developpeur.COM")? 
+                (window.location.href = 'html/dashboard.html') 
+                : (window.location.href = 'content.html'))
+        : (userConnexion.value = "", alert("Accès refusé"))
 }
 
+const afficheAvatar = () => {
+    document.getElementById("persoAvatar").classList.remove('hidden'),
+    document.getElementById("menu-responsive").classList.remove('hidden'),
+    document.getElementById("connectContent").classList.add('hidden')
+}
 
 //Partie 4 : vérification inscription
 //validate password 
