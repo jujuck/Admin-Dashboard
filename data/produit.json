@@ -31,7 +31,7 @@
         "url" : "https://jujuck.github.io/myBlog-Jekyll/index.html",
         "menu": "developpementWeb"
     },
-     {
+    {
         "name": "Jekyll My Sport Blog",
          "tag": ["Jekyll", "Sass"],
         "image": "img/sass.png",
@@ -61,6 +61,14 @@
         "image": "img/react.png",
         "text": "Un projet compilant les différents tutoriels de découverte de React",
         "url": "https://jujuck.github.io/office-app/#/to-do-list",
+        "menu": "developpementWeb"
+    },
+    {
+        "name": "E-Voyage",
+         "tag": ["JS", "PDF"],
+        "image": "img/pdf.png",
+        "text": "Un projet compilant mes connaissances après un mois de formation, mise en place d'un module de création pdf",
+        "url": "https://jujuck.github.io/E-Voyage/equipement.html",
         "menu": "developpementWeb"
     },
     {
