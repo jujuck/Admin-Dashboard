@@ -56,6 +56,14 @@
         "menu": "developpementWeb"
     },
     {
+        "name": "Office-App",
+         "tag": ["React"],
+        "image": "img/react.png",
+        "text": "Un projet compilant les différents tutoriels de découverte de React",
+        "url": "https://jujuck.github.io/office-app/#/to-do-list",
+        "menu": "developpementWeb"
+    },
+    {
         "name": "La découverte",
          "tag": ["Stage Découverte", "Kayak", "Canoe"],
         "image": "img/decouverte.jpeg",

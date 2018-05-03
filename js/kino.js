@@ -7,6 +7,7 @@ var findFilm = () => {
         request.open('GET', requestUrl);
         request.responseType = 'json';
         request.send()
+        console.log(request);
 
         request.onload = function() {
             var message = request.response.Error
