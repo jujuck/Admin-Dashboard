@@ -72,6 +72,14 @@
         "menu": "developpementWeb"
     },
     {
+        "name": "Burger-builder",
+         "tag": ["React", "Udemy"],
+        "image": "img/react.png",
+        "text": "Un tutoriel de mise en situation sur React sur Udemy",
+        "url": "https://jujuck.github.io/burgerbuilder/",
+        "menu": "developpementWeb"
+    },
+    {
         "name": "La découverte",
          "tag": ["Stage Découverte", "Kayak", "Canoe"],
         "image": "img/decouverte.jpeg",
