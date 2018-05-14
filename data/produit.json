@@ -75,8 +75,16 @@
         "name": "Burger-builder",
          "tag": ["React", "Udemy"],
         "image": "img/react.png",
-        "text": "Un tutoriel de mise en situation sur React sur Udemy",
+        "text": "Un tutoriel de mise en situation sur React sur Udemy, avec requete Get et Post sur firebase",
         "url": "https://jujuck.github.io/burgerbuilder/",
+        "menu": "developpementWeb"
+    },
+    {
+        "name": "Blog sur React",
+         "tag": ["React", "Udemy"],
+        "image": "img/react.png",
+        "text": "Un tutoriel avec requete Ajax, navigation routers et chargement asynchrone",
+        "url": "https://jujuck.github.io/reactblog/",
         "menu": "developpementWeb"
     },
     {
