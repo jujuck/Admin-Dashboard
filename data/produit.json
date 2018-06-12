@@ -51,7 +51,7 @@
         "name": "Parallax",
          "tag": ["Html", "Css", "JS"],
         "image": "img/js.png",
-        "text": "Un projet individuel pour tester le DOM et l'effet Parallax ",
+        "text": "Un projet pour tester le DOM et l'effet Parallax",
         "url" : "https://jujuck.github.io/parallax/index.html",
         "menu": "developpementWeb"
     },
@@ -67,7 +67,7 @@
         "name": "E-Voyage",
          "tag": ["JS", "PDF"],
         "image": "img/pdf.png",
-        "text": "Un projet compilant mes connaissances après un mois de formation, mise en place d'un module de création pdf",
+        "text": "Un projet compilant mes connaissances(HTML, CSS et JS) après un mois de formation, mise en place d'un module de création pdf",
         "url": "https://jujuck.github.io/E-Voyage/equipement.html",
         "menu": "developpementWeb"
     },
@@ -85,6 +85,14 @@
         "image": "img/react.png",
         "text": "Un tutoriel avec requete Ajax, navigation routers et chargement asynchrone",
         "url": "https://jujuck.github.io/reactblog/",
+        "menu": "developpementWeb"
+    },
+        {
+        "name": "Blog sur GatsBy",
+         "tag": ["React", "GatsBy"],
+        "image": "img/gatsby.png",
+        "text": "Un tutoriel d'initiation à Gatsby et graphQl",
+        "url": "https://pensive-kalam-00db30.netlify.com/",
         "menu": "developpementWeb"
     },
     {
